@@ -1,0 +1,21 @@
+library(qs)
+library(tidyverse)
+library(glue)
+
+### read in all prediction data and save to rf_model_data folder
+
+data_dir <- file.path("/homevol/fishingeffort/data_storage")
+
+all_files <- list.files(file.path(data_dir, "prep/random_forest/predictions/"), full.names = TRUE)
+
+for(file in all_files){
+  
+#  file <- all_files[1]
+  
+  data <- qs::qread(file)
+  
+  file_name <- basename(file)
+  
+  qs::qsave(data, here(glue("rf_model_data/{file_name}")))
+  
+}

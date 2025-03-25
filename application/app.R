@@ -19,7 +19,7 @@ read_data_file <- function(file_path) {
   
   # Read the data
   df <- qread(file_path) %>%
-    filter(eff_active_fishing_hours > 0)
+    filter(nom_active_fishing_hours > 0)
   
   # Return the data
   return(df)
@@ -40,13 +40,18 @@ ui <- fluidPage(
       conditionalPanel(
         condition = "input.tabset === 'Time Series'",
         # Controls for Time Series tab
+        radioButtons("sector", "Select Sector:",
+                     choices = c("Industrial" = "industrial", 
+                                 "Artisanal" = "artisanal"),
+                     selected = "industrial"),
+        
         radioButtons("group_var", "Group by:",
                      choices = c("Gear Type" = "gear", 
                                  "Vessel Length Category" = "length_category"),
                      selected = "gear"),
         
         selectInput("flag_country", "Select Flag Country (Fishing Fleet):",
-                    choices = c("All" = "All", setNames(as.list(unique(data$flag_fin)), unique(data$flag_fin))),
+                    choices = c("All" = "All", setNames(as.list(unique(data$flag_country_name)), unique(data$flag_country_name))),
                     selected = "All",
                     multiple = TRUE),
         
@@ -96,6 +101,11 @@ ui <- fluidPage(
       conditionalPanel(
         condition = "input.tabset === 'Map'",
         # Controls for Map tab
+        radioButtons("map_sector", "Select Sector:",
+                     choices = c("Industrial" = "industrial", 
+                                 "Artisanal" = "artisanal"),
+                     selected = "industrial"),
+        
         radioButtons("map_group_var", "Group by:",
                      choices = c("Gear Type" = "gear", 
                                  "Vessel Length Category" = "length_category"),
@@ -120,7 +130,7 @@ ui <- fluidPage(
         ),
         
         selectInput("map_flag_country", "Select Flag Country (Fishing Fleet):",
-                    choices = c("All" = "All", setNames(as.list(unique(data$flag_fin)), unique(data$flag_fin))),
+                    choices = c("All" = "All", setNames(as.list(unique(data$flag_country_name)), unique(data$flag_country_name))),
                     selected = "All",
                     multiple = TRUE),
         
@@ -162,20 +172,30 @@ ui <- fluidPage(
         uiOutput("map_location_selector"),
         
         selectInput("map_year", "Select Year:",
-                    choices = unique(data$year),
+                    choices = sort(unique(data$year)),
                     selected = max(data$year))
+        
+        #   sliderInput("map_year", "Select Year:",
+        #               min = min(data$year), max = max(data$year),
+        #               value = c(min(data$year), max(data$year)),
+        #               step = 1, sep = "")
       ),
       
       conditionalPanel(
         condition = "input.tabset === 'Data Table'",
         # Controls for Data Table tab
+        radioButtons("table_sector", "Select Sector:",
+                     choices = c("Industrial" = "industrial", 
+                                 "Artisanal" = "artisanal"),
+                     selected = "industrial"),
+        
         radioButtons("table_group_var", "Group by:",
                      choices = c("Gear Type" = "gear", 
                                  "Vessel Length Category" = "length_category"),
                      selected = "gear"),
         
         selectInput("table_flag_country", "Select Flag Country (Fishing Fleet):",
-                    choices = c("All" = "All", setNames(as.list(unique(data$flag_fin)), unique(data$flag_fin))),
+                    choices = c("All" = "All", setNames(as.list(unique(data$flag_country_name)), unique(data$flag_country_name))),
                     selected = "All",
                     multiple = TRUE),
         
@@ -229,14 +249,38 @@ ui <- fluidPage(
     mainPanel(
       tabsetPanel(id = "tabset",
                   tabPanel("Map",
-                           plotOutput("map", height = "600px"),
-                           br(),
-                           p("Map shows fishing effort by location. Color intensity represents fishing effort.")),
+                           conditionalPanel(
+                             condition = "input.map_sector === 'industrial'",
+                             plotOutput("map", height = "600px"),
+                             br(),
+                             p("Map shows fishing effort by location. Color intensity represents fishing effort.")
+                           ),
+                           conditionalPanel(
+                             condition = "input.map_sector === 'artisanal'",
+                             br(),
+                             h3("We have not modelled artisanal fishing effort for this project", style = "text-align: center; margin-top: 200px;")
+                           )),
                   tabPanel("Time Series", 
-                           plotlyOutput("timeSeries", height = "500px")),
+                           conditionalPanel(
+                             condition = "input.sector === 'industrial'",
+                             plotlyOutput("timeSeries", height = "500px")
+                           ),
+                           conditionalPanel(
+                             condition = "input.sector === 'artisanal'",
+                             br(),
+                             h3("We have not modelled artisanal fishing effort for this project", style = "text-align: center; margin-top: 200px;")
+                           )),
                   tabPanel("Data Table", 
-                           br(),
-                           dataTableOutput("dataTable"))
+                           conditionalPanel(
+                             condition = "input.table_sector === 'industrial'",
+                             br(),
+                             dataTableOutput("dataTable")
+                           ),
+                           conditionalPanel(
+                             condition = "input.table_sector === 'artisanal'",
+                             br(),
+                             h3("We have not modelled artisanal fishing effort for this project", style = "text-align: center; margin-top: 200px;")
+                           ))
       )
     )
   )
@@ -265,11 +309,11 @@ server <- function(input, output, session) {
     if ("All" %in% input$flag_country) {
       # If "All" flag countries are selected, show all locations
       if (input$location_type == "eez") {
-        location_choices <- unique(data$eez_sovereign)
+        location_choices <- sort(unique(data$eez_country_name))
         location_label <- "Select EEZ (Fishing Location):"
         input_id <- "location_selection"
       } else {
-        location_choices <- unique(data$fao_major_fishing_area)
+        location_choices <- sort(unique(data$fao_major_fishing_area))
         location_label <- "Select FAO Area (Fishing Location):"
         input_id <- "location_selection"
       }
@@ -277,17 +321,19 @@ server <- function(input, output, session) {
       # Otherwise, filter locations based on selected flag countries
       if (input$location_type == "eez") {
         location_choices <- data %>%
-          filter(flag_fin %in% input$flag_country) %>%
-          pull(eez_sovereign) %>%
-          unique()
+          filter(flag_country_name %in% input$flag_country) %>%
+          pull(eez_country_name) %>%
+          unique() %>%
+          sort()
         
         location_label <- "Select EEZ (Fishing Location):"
         input_id <- "location_selection"
       } else {
         location_choices <- data %>%
-          filter(flag_fin %in% input$flag_country) %>%
+          filter(flag_country_name %in% input$flag_country) %>%
           pull(fao_major_fishing_area) %>%
-          unique()
+          unique() %>% 
+          sort()
         
         location_label <- "Select FAO Area (Fishing Location):"
         input_id <- "location_selection"
@@ -354,11 +400,11 @@ server <- function(input, output, session) {
     if ("All" %in% input$map_flag_country) {
       # If "All" flag countries are selected, show all locations
       if (input$map_location_type == "eez") {
-        location_choices <- unique(data$eez_sovereign)
+        location_choices <- sort(unique(data$eez_country_name))
         location_label <- "Select EEZ (Fishing Location):"
         input_id <- "map_location_selection"
       } else {
-        location_choices <- unique(data$fao_major_fishing_area)
+        location_choices <- sort(unique(data$fao_major_fishing_area))
         location_label <- "Select FAO Area (Fishing Location):"
         input_id <- "map_location_selection"
       }
@@ -366,17 +412,19 @@ server <- function(input, output, session) {
       # Otherwise, filter locations based on selected flag countries
       if (input$map_location_type == "eez") {
         location_choices <- data %>%
-          filter(flag_fin %in% input$map_flag_country) %>%
-          pull(eez_sovereign) %>%
-          unique()
+          filter(flag_country_name %in% input$map_flag_country) %>%
+          pull(eez_country_name) %>%
+          unique() %>%
+          sort()
         
         location_label <- "Select EEZ (Fishing Location):"
         input_id <- "map_location_selection"
       } else {
         location_choices <- data %>%
-          filter(flag_fin %in% input$map_flag_country) %>%
+          filter(flag_country_name %in% input$map_flag_country) %>%
           pull(fao_major_fishing_area) %>%
-          unique()
+          unique() %>% 
+          sort()
         
         location_label <- "Select FAO Area (Fishing Location):"
         input_id <- "map_location_selection"
@@ -433,7 +481,7 @@ server <- function(input, output, session) {
     if ("All" %in% input$table_flag_country) {
       # If "All" flag countries are selected, show all locations
       if (input$table_location_type == "eez") {
-        location_choices <- unique(data$eez_sovereign)
+        location_choices <- unique(data$eez_country_name)
         location_label <- "Select EEZ (Fishing Location):"
         input_id <- "table_location_selection"
       } else {
@@ -445,15 +493,15 @@ server <- function(input, output, session) {
       # Otherwise, filter locations based on selected flag countries
       if (input$table_location_type == "eez") {
         location_choices <- data %>%
-          filter(flag_fin %in% input$table_flag_country) %>%
-          pull(eez_sovereign) %>%
+          filter(flag_country_name %in% input$table_flag_country) %>%
+          pull(eez_country_name) %>%
           unique()
         
         location_label <- "Select EEZ (Fishing Location):"
         input_id <- "table_location_selection"
       } else {
         location_choices <- data %>%
-          filter(flag_fin %in% input$table_flag_country) %>%
+          filter(flag_country_name %in% input$table_flag_country) %>%
           pull(fao_major_fishing_area) %>%
           unique()
         
@@ -519,7 +567,7 @@ server <- function(input, output, session) {
     # Filter by selected flag country if "All" is not selected
     if (!("All" %in% input$flag_country)) {
       filtered <- filtered %>% 
-        filter(flag_fin %in% input$flag_country)
+        filter(flag_country_name %in% input$flag_country)
     }
     
     # Check if "All" is selected or not for location
@@ -527,7 +575,7 @@ server <- function(input, output, session) {
       # Filter by selected location (EEZ or FAO area)
       if (input$location_type == "eez") {
         filtered <- filtered %>% 
-          filter(eez_sovereign %in% input$location_selection)
+          filter(eez_country_name %in% input$location_selection)
       } else {
         filtered <- filtered %>% 
           filter(fao_major_fishing_area %in% input$location_selection)
@@ -548,7 +596,7 @@ server <- function(input, output, session) {
     # Group by selected variable and year, then summarize
     filtered_data() %>%
       group_by(year, !!sym(input$group_var)) %>%
-      summarize(total_effort = sum(eff_active_fishing_hours, na.rm = TRUE),
+      summarize(total_effort = sum(nom_active_fishing_hours, na.rm = TRUE),
                 .groups = "drop")
   })
   
@@ -574,7 +622,7 @@ server <- function(input, output, session) {
       theme_bw() +
       labs(
         title = "Fishing Effort Over Time",
-        y = "Total Fishing Effort (Hours)",
+        y = "Total Nominal Fishing Effort (Hours)",
         fill = legend_label
       ) +
       theme(axis.text.y = element_text(size = 12),
@@ -590,22 +638,6 @@ server <- function(input, output, session) {
       layout(legend = list(orientation = "h", y = -0.2))
   })
   
-  # Summary statistics
-  output$summary <- renderPrint({
-    req(filtered_data())
-    
-    # Calculate summary statistics
-    summary_stats <- filtered_data() %>%
-      group_by(!!sym(input$group_var)) %>%
-      summarize(
-        Total_Fishing_Hours = sum(eff_active_fishing_hours, na.rm = TRUE),
-        Mean_Fishing_Hours_Per_Year = mean(eff_active_fishing_hours, na.rm = TRUE),
-        .groups = "drop"
-      )
-    
-    print(summary_stats)
-  })
-  
   # Filtered data for data table (using table-specific inputs)
   filtered_data_table <- reactive({
     req(input$table_flag_country, input$table_location_selection, input$table_location_type, input$table_year_range)
@@ -616,7 +648,7 @@ server <- function(input, output, session) {
     # Filter by selected flag country if "All" is not selected
     if (!("All" %in% input$table_flag_country)) {
       filtered <- filtered %>% 
-        filter(flag_fin %in% input$table_flag_country)
+        filter(flag_country_name %in% input$table_flag_country)
     }
     
     # Check if "All" is selected or not for location
@@ -624,7 +656,7 @@ server <- function(input, output, session) {
       # Filter by selected location (EEZ or FAO area)
       if (input$table_location_type == "eez") {
         filtered <- filtered %>% 
-          filter(eez_sovereign %in% input$table_location_selection)
+          filter(eez_country_name %in% input$table_location_selection)
       } else {
         filtered <- filtered %>% 
           filter(fao_major_fishing_area %in% input$table_location_selection)
@@ -644,16 +676,16 @@ server <- function(input, output, session) {
     
     # Select appropriate location column based on location type
     if (input$table_location_type == "eez") {
-      location_col <- "eez_sovereign"
+      location_col <- "eez_country_name"
     } else {
       location_col <- "fao_major_fishing_area"
     }
     
-    # Group by year, gear/length_category, flag_fin, and location, then sum fishing hours
+    # Group by year, gear/length_category, flag_country_name, and location, then sum fishing hours
     filtered_data_table() %>%
-      group_by(year, !!sym(input$table_group_var), flag_fin, !!sym(location_col)) %>%
-      summarize(total_fishing_hours = sum(eff_active_fishing_hours, na.rm = TRUE), .groups = "drop") %>%
-      arrange(year, !!sym(input$table_group_var), flag_fin, !!sym(location_col))
+      group_by(year, !!sym(input$table_group_var), flag_country_name, !!sym(location_col)) %>%
+      summarize(total_fishing_hours = sum(nom_active_fishing_hours, na.rm = TRUE), .groups = "drop") %>%
+      arrange(year, !!sym(input$table_group_var), flag_country_name, !!sym(location_col))
   })
   
   # Aggregated data for the map
@@ -662,7 +694,7 @@ server <- function(input, output, session) {
     
     # Group by location and selected variable, then summarize
     if (input$location_type == "eez") {
-      location_col <- "eez_sovereign"
+      location_col <- "eez_country_name"
     } else {
       location_col <- "fao_major_fishing_area"
     }
@@ -670,7 +702,7 @@ server <- function(input, output, session) {
     filtered_data() %>%
       group_by(!!sym(location_col), !!sym(input$group_var)) %>%
       summarize(
-        total_effort = sum(eff_active_fishing_hours, na.rm = TRUE),
+        total_effort = sum(nom_active_fishing_hours, na.rm = TRUE),
         mean_lon = mean(lon, na.rm = TRUE),
         mean_lat = mean(lat, na.rm = TRUE),
         .groups = "drop"
@@ -687,7 +719,7 @@ server <- function(input, output, session) {
     # Filter by selected flag country if "All" is not selected
     if (!("All" %in% input$map_flag_country)) {
       filtered <- filtered %>% 
-        filter(flag_fin %in% input$map_flag_country)
+        filter(flag_country_name %in% input$map_flag_country)
     }
     
     # Check if "All" is selected or not for location
@@ -695,7 +727,7 @@ server <- function(input, output, session) {
       # Filter by selected location (EEZ or FAO area)
       if (input$map_location_type == "eez") {
         filtered <- filtered %>% 
-          filter(eez_sovereign %in% input$map_location_selection)
+          filter(eez_country_name %in% input$map_location_selection)
       } else {
         filtered <- filtered %>% 
           filter(fao_major_fishing_area %in% input$map_location_selection)
@@ -769,7 +801,7 @@ server <- function(input, output, session) {
         raster_data <- raster_data %>%
           group_by(lon_bin, lat_bin) %>%
           summarize(
-            total_effort = sum(eff_active_fishing_hours, na.rm = TRUE),
+            total_effort = sum(nom_active_fishing_hours, na.rm = TRUE),
             .groups = "drop"
           )
       } else if ((group_var == "gear" && input$map_gear != "All" && input$map_gear != "All_aggregated") || 
@@ -778,7 +810,7 @@ server <- function(input, output, session) {
         raster_data <- raster_data %>%
           group_by(lon_bin, lat_bin) %>%
           summarize(
-            total_effort = sum(eff_active_fishing_hours, na.rm = TRUE),
+            total_effort = sum(nom_active_fishing_hours, na.rm = TRUE),
             .groups = "drop"
           )
       } else {
@@ -786,7 +818,7 @@ server <- function(input, output, session) {
         raster_data <- raster_data %>%
           group_by(lon_bin, lat_bin, !!sym(group_var)) %>%
           summarize(
-            total_effort = sum(eff_active_fishing_hours, na.rm = TRUE),
+            total_effort = sum(nom_active_fishing_hours, na.rm = TRUE),
             .groups = "drop"
           )
       }
@@ -860,7 +892,9 @@ server <- function(input, output, session) {
         legend.position = "bottom",
         legend.title = element_text(size = 12, face = "bold"),
         legend.text = element_text(size = 10),
-        strip.text = element_text(size = 10, face = "bold")
+        strip.text = element_text(size = 10, face = "bold"),
+        axis.title.x = element_blank(),
+        axis.title.y = element_blank()
       )
       
       return(p)
@@ -909,7 +943,7 @@ server <- function(input, output, session) {
       }
       
       # For the download, include all variables from the filtered dataset
-      # This includes year, flag_fin, gear, length_category, eez_sovereign, fao_major_fishing_area, and fishing hours
+      # This includes year, flag_country_name, gear, length_category, eez_country_name, fao_major_fishing_area, and fishing hours
       write.csv(data_to_download, file, row.names = FALSE)
     }
   )
