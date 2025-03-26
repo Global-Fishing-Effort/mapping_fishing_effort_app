@@ -6,11 +6,14 @@ library(qs)
 library(plotly)
 library(sf)  # For spatial data handling
 library(rnaturalearth)  # For world map data
-library(here)
-# Removed shinythemes dependency
+library(htmltools)
+library(scales)
+library(rnaturalearthdata)
+
+options(shiny.sanitize.errors = FALSE)
 
 # Read all data files
-data_files <- list.files(here("rf_model_data"), pattern = "model_preds_.*\\.qs$", full.names = TRUE)
+data_files <- list.files("rf_model_data", pattern = "model_preds_.*\\.qs$", full.names = TRUE)
 
 # Function to read and process each file
 read_data_file <- function(file_path) {
@@ -32,7 +35,7 @@ data <- lapply(data_files, read_data_file) %>%
 # UI
 ui <- fluidPage(
   # Removed shinythemes dependency
-  titlePanel("Global Fishing Effort Visualization"),
+  titlePanel("Modelled Fishing Effort"),
   
   sidebarLayout(
     sidebarPanel(
@@ -90,12 +93,13 @@ ui <- fluidPage(
                                  "FAO Fishing Area" = "fao"),
                      selected = "eez"),
         
-        uiOutput("location_selector"),
-        
-        sliderInput("year_range", "Year Range:",
-                    min = min(data$year), max = max(data$year),
-                    value = c(min(data$year), max(data$year)),
-                    step = 1, sep = "")
+        uiOutput("location_selector")
+        # ,
+        # 
+        # sliderInput("year_range", "Year Range:",
+        #             min = min(data$year), max = max(data$year),
+        #             value = c(min(data$year), max(data$year)),
+        #             step = 1, sep = "")
       ),
       
       conditionalPanel(
@@ -117,7 +121,7 @@ ui <- fluidPage(
                       choices = c("All aggregated" = "All_aggregated", 
                                   "All" = "All", 
                                   setNames(as.list(unique(data$gear)), unique(data$gear))),
-                      selected = "All_aggregated")
+                      selected = "All_aggregated") # see if we can make this able to select multiple and plot next to each other? 
         ),
         
         conditionalPanel(
@@ -175,10 +179,6 @@ ui <- fluidPage(
                     choices = sort(unique(data$year)),
                     selected = max(data$year))
         
-        #   sliderInput("map_year", "Select Year:",
-        #               min = min(data$year), max = max(data$year),
-        #               value = c(min(data$year), max(data$year)),
-        #               step = 1, sep = "")
       ),
       
       conditionalPanel(
@@ -236,10 +236,10 @@ ui <- fluidPage(
         
         uiOutput("table_location_selector"),
         
-        sliderInput("table_year_range", "Year Range:",
-                    min = min(data$year), max = max(data$year),
-                    value = c(min(data$year), max(data$year)),
-                    step = 1, sep = "")
+        selectInput("table_year", "Select Year:",
+                    choices = sort(unique(data$year)),
+                    selected = max(data$year))
+        
       ),
       
       # Download button (always visible)
@@ -582,9 +582,9 @@ server <- function(input, output, session) {
       }
     }
     
-    # Filter by year range
-    filtered <- filtered %>% 
-      filter(year >= input$year_range[1], year <= input$year_range[2])
+    # # Filter by year range
+    # filtered <- filtered %>% 
+    #   filter(year >= input$year_range[1], year <= input$year_range[2])
     
     return(filtered)
   })
@@ -608,8 +608,6 @@ server <- function(input, output, session) {
   output$timeSeries <- renderPlotly({
     req(aggregated_data())
     
-    # Print aggregated data for debugging
-    print(head(aggregated_data()))
     
     # Get the appropriate label for the legend
     legend_label <- if(input$group_var == "gear") "Gear Type" else "Vessel Length"
@@ -640,7 +638,7 @@ server <- function(input, output, session) {
   
   # Filtered data for data table (using table-specific inputs)
   filtered_data_table <- reactive({
-    req(input$table_flag_country, input$table_location_selection, input$table_location_type, input$table_year_range)
+    req(input$table_flag_country, input$table_location_selection, input$table_location_type, input$table_year)
     
     # Start with all data
     filtered <- data
@@ -663,9 +661,9 @@ server <- function(input, output, session) {
       }
     }
     
-    # Filter by year range
+    # Filter by selected year
     filtered <- filtered %>% 
-      filter(year >= input$table_year_range[1], year <= input$table_year_range[2])
+      filter(year == input$table_year)
     
     return(filtered)
   })
@@ -759,8 +757,6 @@ server <- function(input, output, session) {
     progress$set(message = "Rendering map...", value = 0)
     on.exit(progress$close())
     
-    # Print debugging information
-    print("Rendering map...")
     
     # Try to create map data
     tryCatch({
@@ -823,7 +819,6 @@ server <- function(input, output, session) {
           )
       }
       
-      print(paste("Number of raster cells:", nrow(raster_data)))
       
       # Update progress
       progress$set(value = 0.7, detail = "Generating plot...")
