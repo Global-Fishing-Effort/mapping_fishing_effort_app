@@ -13,7 +13,8 @@ library(rnaturalearthdata)
 options(shiny.sanitize.errors = FALSE)
 
 # Read all data files
-data_files <- list.files("rf_model_data", pattern = "model_preds_.*\\.qs$", full.names = TRUE)
+data_files <- list.files("rf_model_data", pattern = "model_preds_1950_2017_.*\\.qs$", full.names = TRUE)
+
 
 # Function to read and process each file
 read_data_file <- function(file_path) {
