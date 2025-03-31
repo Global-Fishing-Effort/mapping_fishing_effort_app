@@ -29,7 +29,7 @@ You can download the data used to create the plots shown in this interactive too
 
 ## How can I contact you?
 If you have any ideas on how to improve this app or if you found any issues, you can “create an issue” in our GitHub repository.
-For general enquiry we can contact Julia Blanchard at julia.blanchard@utas.edu.au 
+For general enquiry contact Julia Blanchard at julia.blanchard@utas.edu.au 
 
 
 ## Acknowledgments
