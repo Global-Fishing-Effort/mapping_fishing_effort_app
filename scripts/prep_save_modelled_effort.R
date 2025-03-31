@@ -12,7 +12,7 @@ all_files <- all_files[-101]
 
 for(file in all_files){
   
-#  file <- all_files[1]
+#  file <- all_files[3]
   
   data <- qs::qread(file)
   if(nrow(data) == 0){

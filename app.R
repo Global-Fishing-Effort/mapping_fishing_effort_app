@@ -611,7 +611,7 @@ server <- function(input, output, session) {
       theme_bw() +
       labs(
         title = paste(effort_type_label, "Fishing Effort Over Time"),
-        y = "Days at sea x kW",
+        y = "kW days",
         fill = legend_label
       ) +
       theme(axis.text.y = element_text(size = 12),
@@ -1032,7 +1032,7 @@ server <- function(input, output, session) {
                     aes(x = lon_bin, y = lat_bin, fill = total_effort),
                     alpha = 0.7) +
           # Set fill scale (log scale for better visualization)
-          scale_fill_viridis_c(name = "Days at sea x kW (Thousands of days)",
+          scale_fill_viridis_c(name = "kW days (Thousands of days)",
                                trans = "log10",
                                labels = function(x) scales::comma(x / 1000),
                                na.value = "transparent") +
@@ -1055,7 +1055,7 @@ server <- function(input, output, session) {
           # Add facet by the selected variable
           facet_wrap(as.formula(paste("~", input$map_group_var)), ncol = 3) +
           # Set fill scale (log scale for better visualization)
-          scale_fill_viridis_c(name = "Days at sea x kW (Thousands of days)",
+          scale_fill_viridis_c(name = "kW days (Thousands of days)",
                                trans = "log10",
                                labels = function(x) scales::comma(x / 1000),
                                na.value = "transparent") +
