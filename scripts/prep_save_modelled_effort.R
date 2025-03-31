@@ -1,6 +1,7 @@
 library(qs)
 library(tidyverse)
 library(glue)
+library(here)
 
 ### read in all prediction data and save to rf_model_data folder
 
@@ -21,5 +22,20 @@ for(file in all_files){
   file_name <- basename(file)
   
   qs::qsave(data, here(glue("rf_model_data/{file_name}")))
+  
+}
+
+
+all_files <- list.files(file.path(data_dir, "prep/random_forest/zenodo_data/mapped_by_flag_country/"), full.names = TRUE)
+
+for(file in all_files){
+  
+  #  file <- all_files[1]
+  
+  data <- read.csv(file)
+  
+  file_name <- basename(file)
+  
+  write.csv(data, here(glue("mapped_by_flag_country/{file_name}")))
   
 }

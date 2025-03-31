@@ -1,0 +1,625 @@
+"","lon","lat","year","flag_country_iso3c","flag_country_name","gear","length_category","eez_sovereign_iso3c","eez_sovereign_name","fao_fishing_id","fao_major_fishing_area","nom_active_fishing_hours","eff_active_fishing_hours","sector","nom_active_fishing_days","eff_active_fishing_days"
+"1",-111,5,1995,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",62616.7423153729,166856.706713938,"Industrial",4842.65227323872,12904.3604025852
+"2",-110,5,1995,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",67417.4747482198,179649.362063607,"Industrial",5220.59598200917,13911.47831126
+"3",-109,5,1995,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",70408.3807139352,187619.318677077,"Industrial",5451.74531785237,14527.4288623707
+"4",-103,5,1995,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",45979.0006373291,122521.618670335,"Industrial",3373.5278622076,8989.54062893615
+"5",-102,4,1995,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",36633.3181039818,97617.8988048985,"Industrial",2904.80033244334,7740.50835624602
+"6",-102,5,1995,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",51224.270957022,136498.847427467,"Industrial",3878.76729515685,10335.8672624639
+"7",-101,3,1995,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",35424.708107884,94397.2795872023,"Industrial",2754.38604628245,7339.69490758195
+"8",-101,5,1995,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",58349.1236592431,155484.655595623,"Industrial",4509.46256435472,12016.4998164283
+"9",-100,2,1995,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",28161.6358444845,75043.1536189041,"Industrial",2064.40549921066,5501.08309987672
+"10",-100,3,1995,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",29344.1125863655,78194.1347721932,"Industrial",2154.14610816896,5740.21758556856
+"11",-99,2,1995,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",28710.8455898672,76506.6492595462,"Industrial",2128.66567351153,5672.3191089732
+"12",-99,3,1995,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",28064.4957360427,74784.3014655489,"Industrial",2074.75311558657,5528.65670282986
+"13",-98,2,1995,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",21716.1082129313,57867.563291673,"Industrial",1664.17476784293,4434.57629526872
+"14",-98,3,1995,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",26891.5216755878,71658.6423917722,"Industrial",2053.3300239014,5471.56994944664
+"15",-97,1,1995,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",44289.2474132019,118018.88269731,"Industrial",3427.2517131443,9132.70018192183
+"16",-97,2,1995,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",35154.5661998607,93677.4243623622,"Industrial",2719.6163203376,7247.04297856136
+"17",-96,1,1995,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",47917.9609871871,127688.424327467,"Industrial",3809.99213747047,10152.6000420537
+"18",-96,2,1995,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",61240.7601343123,163190.085827267,"Industrial",4889.90495773823,13030.2760447511
+"19",-96,5,1995,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",62474.2140008985,166476.907249971,"Industrial",4841.89720086499,12902.3483386394
+"20",-95,2,1995,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",43841.1052790559,116824.70494423,"Industrial",3764.00350054878,10030.0527452881
+"21",-95,3,1995,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",59137.4734275643,157585.394810356,"Industrial",5007.26745321063,13343.0153978721
+"22",-95,4,1995,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",79386.4085551326,211543.338084271,"Industrial",6435.98054401045,17150.1499174114
+"23",-94,4,1995,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",66727.9622964539,177811.997603469,"Industrial",5761.53000680129,15352.9213916383
+"24",-82,2,1995,"COL","Colombia","Seine_Purse_Seine","24-50m","COL","Colombia",87,"Pacific, Southeast",37092.537625516,98841.5948035825,"Industrial",3205.00157868975,8540.46359901177
+"25",-112,5,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",25020.4841652794,68152.9696446252,"Industrial",1920.41830733715,5231.00231555691
+"26",-111,5,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",26521.3638802717,72241.19627447,"Industrial",2051.10867054254,5586.98808695704
+"27",-110,3,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",28144.9430852173,76663.6424405537,"Industrial",2071.89457026427,5643.6065274082
+"28",-110,5,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",27796.7553104952,75715.2183139657,"Industrial",2152.49280144085,5863.14699539046
+"29",-109,3,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",30525.6273447289,83148.357164703,"Industrial",2249.2498423921,6126.7022340219
+"30",-109,5,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",27376.5022161603,74570.4964056259,"Industrial",2119.77205359287,5774.01937819082
+"31",-108,3,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",28248.3754134867,76945.3804070235,"Industrial",2077.78806502525,5659.65974072306
+"32",-108,4,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",31526.8750202762,85875.6426155985,"Industrial",2389.12876150648,6507.71659271101
+"33",-108,5,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",25314.8758891113,68954.859411642,"Industrial",1960.1539423435,5339.23769215907
+"34",-107,4,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",26627.710139894,72530.8714604488,"Industrial",1999.93394391178,5447.59391825912
+"35",-107,5,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",22234.7597184431,60564.9712506138,"Industrial",1716.86026908587,4676.53323693248
+"36",-106,3,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",26518.3648734847,72233.0273190985,"Industrial",1942.40831384773,5290.90060674506
+"37",-106,4,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",19941.0742441496,54317.2313799055,"Industrial",1478.89296098278,4028.33719810169
+"38",-105,3,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",19087.2732238972,51991.573945324,"Industrial",1410.91635552147,3843.17661136218
+"39",-105,4,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",18037.6804117896,49132.6018091232,"Industrial",1323.54776722993,3605.19445616513
+"40",-104,3,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",22859.123294999,62265.6670324833,"Industrial",1743.23751749194,4748.38187895128
+"41",-104,4,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",18464.6167541057,50295.5281292475,"Industrial",1355.37645237499,3691.89219543309
+"42",-104,5,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",29188.2333188684,79505.4470657106,"Industrial",2147.31792173387,5849.05120822443
+"43",-103,3,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",28032.714224662,76357.9437148155,"Industrial",2265.22148089853,6170.20717130102
+"44",-103,4,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",17708.06782169,48234.7743850353,"Industrial",1336.36551457077,3640.10855053925
+"45",-103,5,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",19721.7220717608,53719.7408658315,"Industrial",1447.00358810723,3941.4741523182
+"46",-102,2,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",27781.9316683613,75674.8403889944,"Industrial",2355.16556320497,6415.20468096755
+"47",-102,3,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",19238.7250703991,52404.111649594,"Industrial",1594.42203687987,4343.02533725496
+"48",-102,4,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",23971.2366716911,65294.9381170236,"Industrial",1900.77393632104,5177.49327022009
+"49",-102,5,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",26470.3653786599,72102.2821227969,"Industrial",2004.36991299968,5459.676996452
+"50",-100,1,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",18632.5824424704,50753.047671429,"Industrial",1366.42709159316,3721.99288709897
+"51",-100,2,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",13204.2605298058,35966.9125954152,"Industrial",967.94618754649,2636.5759631874
+"52",-99,1,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",19554.7663310012,53264.9723067251,"Industrial",1448.55585374633,3945.70234839479
+"53",-98,1,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",24209.4025574058,65943.6750588142,"Industrial",1853.40930666527,5048.47737485074
+"54",-98,2,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",15779.3106927124,42981.0580622522,"Industrial",1209.21900237766,3293.7758285713
+"55",-97,1,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",32466.2513928685,88434.397633417,"Industrial",2512.34830584215,6843.35269828196
+"56",-97,2,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",29148.2960141183,79396.6623635306,"Industrial",2254.96116491238,6142.25923075242
+"57",-97,3,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",21981.2152192087,59874.3447045511,"Industrial",1701.95580253902,4635.93515539949
+"58",-96,1,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",34200.4321424946,93158.109900807,"Industrial",2719.30138254087,7407.06947773907
+"59",-96,2,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",41820.4037945012,113914.051043336,"Industrial",3339.24333076279,9095.72124400782
+"60",-96,3,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",39919.7742856765,108736.951177284,"Industrial",3144.43125235191,8565.07517102866
+"61",-95,2,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",28582.907160191,77856.607057463,"Industrial",2454.00205861635,6684.42411841155
+"62",-95,3,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",31678.0055072017,86287.3049727204,"Industrial",2682.22899568287,7306.088487943
+"63",-87,1,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",28817.47835016,78495.5524545168,"Industrial",2519.51830223225,6862.88295769255
+"64",-87,2,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","CRI","Costa Rica",87,"Pacific, Southeast",33799.1223602671,92064.9874326097,"Industrial",2996.19808600477,8161.30478754414
+"65",-86,2,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","CRI","Costa Rica",87,"Pacific, Southeast",35707.7551881794,97263.8874348706,"Industrial",3010.93714613307,8201.45232069652
+"66",-85,2,1996,"COL","Colombia","Seine_Purse_Seine","24-50m","COL","Colombia",87,"Pacific, Southeast",37211.7417976448,101360.576893944,"Industrial",3060.57390632298,8336.65724271698
+"67",-108,5,1997,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",57698.7438091414,160653.913534589,"Industrial",4467.66638877353,12439.5791370713
+"68",-105,5,1997,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",39067.1681009398,108776.951312678,"Industrial",2927.23669494521,8150.4726071783
+"69",-103,5,1997,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",35491.1937276439,98820.1612711179,"Industrial",2604.0263869069,7250.53965451585
+"70",-102,3,1997,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",30000.3974508683,83531.8230500457,"Industrial",2486.3027376183,6922.75496242015
+"71",-102,4,1997,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",40697.5011623998,113316.380932754,"Industrial",3227.06544273702,8985.30294390564
+"72",-102,5,1997,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",53318.4769849485,148457.686005614,"Industrial",4037.3432533634,11241.4058108582
+"73",-101,5,1997,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",37308.9624432966,103881.478707011,"Industrial",2883.39153875725,8028.39203026953
+"74",-100,2,1997,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",32834.9868048885,91424.3323652081,"Industrial",2406.98827656338,6701.91517064742
+"75",-100,4,1997,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",27311.3512908507,76044.5579769793,"Industrial",2016.5151212545,5614.69842398693
+"76",-99,2,1997,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",35259.4693971149,98174.9579598672,"Industrial",2614.19058303034,7278.84040731152
+"77",-98,2,1997,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",36150.8422672041,100656.858440614,"Industrial",2770.35456571939,7713.65671899991
+"78",-98,3,1997,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",30423.16198452,84708.9505289285,"Industrial",2322.99208198173,6468.03976035785
+"79",-97,1,1997,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",46364.7688135084,129096.078497926,"Industrial",3587.86257673616,9989.8910465645
+"80",-97,2,1997,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",46261.1600221597,128807.594612352,"Industrial",3578.84108365169,9964.77198721826
+"81",-96,-1,1997,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",18893.2484846845,52605.552704687,"Industrial",1473.08769312113,4101.6023444527
+"82",-96,0,1997,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",21771.4700588053,60619.5497066273,"Industrial",1711.16733036577,4764.50109980111
+"83",-96,1,1997,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",52047.7461716891,144919.517499305,"Industrial",4138.35437906506,11522.6568673489
+"84",-96,2,1997,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",72338.1411869518,201415.225224717,"Industrial",5776.00007654797,16082.4474782847
+"85",-95,-4,1997,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",26634.990918469,74161.3290952161,"Industrial",2066.34776900968,5753.45031623163
+"86",-95,-3,1997,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",16913.2109545658,47092.4209247098,"Industrial",1339.02011014864,3728.31030270738
+"87",-95,2,1997,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",54144.7484214611,150758.320840173,"Industrial",4648.6287537115,12943.4430032574
+"88",-95,3,1997,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",58704.7582508483,163455.017102236,"Industrial",4970.62874520877,13840.0060023282
+"89",-94,2,1997,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",55612.4793784265,154845.00811767,"Industrial",4855.82766213142,13520.3587785447
+"90",-93,2,1997,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",86819.4125240796,241736.257532829,"Industrial",8127.99915314095,22631.2530733302
+"91",-87,2,1997,"COL","Colombia","Seine_Purse_Seine","24-50m","CRI","Costa Rica",87,"Pacific, Southeast",47105.6198160288,131158.872330918,"Industrial",4175.78203446991,11626.8688296596
+"92",-83,2,1997,"COL","Colombia","Seine_Purse_Seine","24-50m","COL","Colombia",87,"Pacific, Southeast",54661.0381487024,152195.855866471,"Industrial",4778.34776222595,13304.6270603421
+"93",-82,2,1997,"COL","Colombia","Seine_Purse_Seine","24-50m","COL","Colombia",87,"Pacific, Southeast",41522.7652898234,115614.211058984,"Industrial",3587.7978920995,9989.7109414298
+"94",-105,5,1998,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",47380.1565458167,134851.977485411,"Industrial",3550.11483030496,10104.2301264658
+"95",-104,5,1998,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",42134.270700882,119921.294865819,"Industrial",3099.73110077557,8822.36149237716
+"96",-103,5,1998,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",41657.4707651054,118564.241219485,"Industrial",3056.45264897487,8699.18366365495
+"97",-102,5,1998,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",59840.8657898252,170317.273612079,"Industrial",4531.22687356913,12896.6417353423
+"98",-101,5,1998,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",47219.3651357596,134394.337806911,"Industrial",3649.30861062852,10386.5524826182
+"99",-100,2,1998,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",34208.4053165745,97362.935031708,"Industrial",2507.66753908561,7137.24797837388
+"100",-100,3,1998,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",27951.3446259667,79554.276958602,"Industrial",2051.9032588531,5840.06538259379
+"101",-99,2,1998,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",38743.5929083382,110270.849644131,"Industrial",2872.5087888596,8175.64817767874
+"102",-98,2,1998,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",29170.6907451068,83024.7432337861,"Industrial",2235.44324897261,6362.45138592695
+"103",-97,1,1998,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",56737.7679321429,161485.329757386,"Industrial",4390.56032113692,12496.280821735
+"104",-97,2,1998,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",47439.327253328,135020.387374673,"Industrial",3669.98608062751,10445.4040762398
+"105",-97,3,1998,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",43280.0199725045,123182.292005652,"Industrial",3351.07410539517,9537.72639766831
+"106",-96,1,1998,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",57029.3122132877,162315.114327619,"Industrial",4534.44233981647,12905.7934987303
+"107",-96,2,1998,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",74387.7413346017,211720.153561417,"Industrial",5939.65496752897,16905.2674441415
+"108",-96,3,1998,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",84008.8651429645,239103.506968767,"Industrial",6617.27441492416,18833.8875485401
+"109",-96,5,1998,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",71213.5113139789,202685.755482537,"Industrial",5519.21311230843,15708.6184727668
+"110",-95,4,1998,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",89547.3764241634,254867.051309797,"Industrial",7259.7461318942,20662.4712390156
+"111",-94,4,1998,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",80281.566441214,228494.981432896,"Industrial",6931.79647820067,19729.0707916477
+"112",-94,5,1998,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",90951.9691606292,258864.760939374,"Industrial",7342.97382151386,20899.3513876892
+"113",-112,5,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",27569.6723343734,80209.9617490888,"Industrial",2116.07829522695,6156.42279167073
+"114",-111,5,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",29365.2257060255,85433.8637785336,"Industrial",2271.04719538468,6607.28232323115
+"115",-110,5,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",38000.8169812322,110557.863710934,"Industrial",2942.6630585941,8561.25123678057
+"116",-109,5,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",30441.8252337507,88566.0739074971,"Industrial",2357.1210770955,6857.70179415874
+"117",-108,5,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",25876.4015001033,75283.6359226365,"Industrial",2003.63338284853,5829.28063302028
+"118",-107,5,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",24698.8695824802,71857.7776489012,"Industrial",1907.12687766625,5548.50895770523
+"119",-106,3,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",28005.457718288,81477.8160982689,"Industrial",2051.33439277418,5968.05980076391
+"120",-106,4,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",18128.5568981686,52742.4061386231,"Industrial",1344.47095784436,3911.54319113921
+"121",-105,3,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",20712.9031293863,60261.1865520532,"Industrial",1531.0816507302,4454.45992793633
+"122",-105,4,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",18913.2146979276,55025.2541660305,"Industrial",1387.7916956673,4037.57859270573
+"123",-104,3,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",21149.8426997562,61532.3988392713,"Industrial",1612.88772134731,4692.46282167622
+"124",-104,4,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",22634.856259728,65852.8303408713,"Industrial",1661.48865074637,4833.86017456418
+"125",-103,2,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",16251.6781154678,47281.899624717,"Industrial",1412.08829178165,4108.26601406238
+"126",-103,3,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",26426.3750888009,76883.7042867949,"Industrial",2135.41906908073,6212.69196716889
+"127",-103,4,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",22784.268978285,66287.5249681755,"Industrial",1719.44853859154,5002.48605921955
+"128",-103,5,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",25524.0676944919,74258.571833073,"Industrial",1872.72781771455,5448.4298835158
+"129",-102,2,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",29661.7885650333,86296.6703904047,"Industrial",2514.52720442005,7315.65208455928
+"130",-102,3,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",17806.306829671,51804.8663175348,"Industrial",1475.7094298496,4293.36248488629
+"131",-102,4,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",27115.687949524,78889.1600470658,"Industrial",2150.10988484949,6255.43276425142
+"132",-102,5,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",37924.974146947,110337.209988134,"Industrial",2871.72753545421,8354.8746237873
+"133",-101,2,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",21227.3683010177,61757.9483284472,"Industrial",1641.17191237413,4774.75157189602
+"134",-101,3,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",13756.9337747258,40023.8029118595,"Industrial",1069.64625688203,3111.98059625083
+"135",-101,4,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",25609.7226780958,74507.7725807335,"Industrial",1996.9872052898,5809.94454366462
+"136",-101,5,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",33623.8973200999,97823.8509762035,"Industrial",2598.5944042311,7560.23340563615
+"137",-100,2,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",15995.2535114174,46535.8694422411,"Industrial",1172.54159142555,3411.33964367795
+"138",-100,3,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",14660.3278946954,42652.0970362247,"Industrial",1076.2120744286,3131.08288981003
+"139",-100,4,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",23393.5211080193,68060.0556471349,"Industrial",1727.24478372882,5025.16810333902
+"140",-100,5,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",28221.079248824,82105.1356582119,"Industrial",2112.54523714955,6146.14387178338
+"141",-99,2,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",16664.6789371243,48483.4655956736,"Industrial",1235.54459246114,3594.63773448775
+"142",-99,3,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",18601.9670580008,54119.7243145969,"Industrial",1375.20693308092,4000.96505180353
+"143",-99,4,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",30735.0650477886,89419.2126021476,"Industrial",2260.30350547419,6576.02511616997
+"144",-99,5,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",30005.1714795306,87295.6931608995,"Industrial",2197.66230233619,6393.77962385228
+"145",-98,2,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",14669.0206205206,42677.3872608411,"Industrial",1124.13392612869,3270.50456465588
+"146",-98,3,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",15771.3762378612,45884.5309957538,"Industrial",1204.23978747337,3503.56094619016
+"147",-98,4,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",26406.2134830927,76825.0470201055,"Industrial",1997.73060143538,5812.10734689559
+"148",-97,1,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",28768.4692852414,83697.687551842,"Industrial",2226.20142362122,6476.81005667214
+"149",-97,2,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",25231.2487832573,73406.6576940624,"Industrial",1951.93180832698,5678.86240300125
+"150",-97,3,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",30450.7664930596,88592.0872042261,"Industrial",2357.73401096289,6859.48503631925
+"151",-96,1,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",30577.0414602005,88959.4659006934,"Industrial",2431.20293832251,7073.23222133437
+"152",-96,2,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",37813.8959389868,110014.044057702,"Industrial",3019.33478320509,8784.31649572516
+"153",-96,3,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",44275.0613412332,128811.867386294,"Industrial",3487.49182760596,10146.3514944924
+"154",-87,2,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","CRI","Costa Rica",87,"Pacific, Southeast",34815.1753612361,101289.701601963,"Industrial",3086.26835541393,8979.05001310205
+"155",-86,1,1999,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",37080.94260194,107881.622663085,"Industrial",3067.75882126512,8925.19920892623
+"156",-112,5,2000,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",58865.7822550574,175063.457267338,"Industrial",4518.17499499904,13436.7930716731
+"157",-109,5,2000,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",87742.5909984411,260941.428812176,"Industrial",6793.93922714249,20204.7852590215
+"158",-108,5,2000,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",88935.3598517526,264488.654911657,"Industrial",6886.34607535777,20479.5979210473
+"159",-107,5,2000,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",80444.9406115397,239238.635479306,"Industrial",6211.56801934605,18472.8467177471
+"160",-103,2,2000,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",64129.2458173185,190716.695755151,"Industrial",5572.11117129093,16571.1387593145
+"161",-102,2,2000,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",71866.8710342587,213727.948976034,"Industrial",6092.39061616201,18118.4199619938
+"162",-102,4,2000,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",59105.848985731,175777.401943457,"Industrial",4686.73597340438,13938.0837452964
+"163",-102,5,2000,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",88147.4680400065,262145.509892039,"Industrial",6674.6389903982,19849.9932033112
+"164",-101,2,2000,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",44631.6798370188,132732.053777238,"Industrial",3450.6519278265,10262.0407505009
+"165",-100,2,2000,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",46612.2390206878,138622.123096514,"Industrial",3416.93796114034,10161.7773489088
+"166",-99,2,2000,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",55362.803536678,164645.799645525,"Industrial",4104.68229188907,12207.0895089547
+"167",-98,2,2000,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",45117.9003734345,134178.045741305,"Industrial",3457.52888332036,10282.4924213717
+"168",-97,1,2000,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",67704.3066829731,201348.721545124,"Industrial",5239.18816911978,15581.0448621269
+"169",-97,2,2000,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",68509.4050903328,203743.037992362,"Industrial",5300.00271148353,15761.90382009
+"170",-96,1,2000,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",67302.9979058152,200155.252278775,"Industrial",5351.31060601501,15914.490553124
+"171",-96,2,2000,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",90291.1101641243,268520.578514519,"Industrial",7209.49488972567,21440.6239447901
+"172",-100,2,2001,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",142219.371848795,432341.787752515,"Industrial",10425.4758125651,31693.0724160921
+"173",-98,2,2001,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",158207.085182856,480943.862667256,"Industrial",12123.9145004125,36856.2650891176
+"174",-97,1,2001,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",192411.165835132,584923.040647021,"Industrial",14889.4265821274,45263.3225941318
+"175",-97,2,2001,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",280362.199033954,852291.025989319,"Industrial",21689.2908808387,65934.6660908878
+"176",-96,1,2001,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",195284.364048614,593657.460128954,"Industrial",15527.2026661379,47202.1390068497
+"177",-95,-3,2001,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",76022.5155469048,231105.719661992,"Industrial",6018.70794462674,18296.6562073325
+"178",-94,-4,2001,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",85909.5837517241,261162.052267984,"Industrial",6853.08718441115,20833.1391597077
+"179",-112,5,2002,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",64043.4988694661,199012.05539633,"Industrial",4915.584641864,15274.9400067271
+"180",-111,5,2002,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",68606.0736213238,213190.034352747,"Industrial",5305.85504922891,16487.6863010599
+"181",-110,5,2002,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",95211.360075085,295864.666985842,"Industrial",7372.86654099637,22910.8238991932
+"182",-109,5,2002,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",79895.9549002671,248272.790887997,"Industrial",6186.37147490408,19223.8482343891
+"183",-108,5,2002,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",78696.7948953658,244546.459542315,"Industrial",6093.56464711329,18935.4555344352
+"184",-107,5,2002,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",72051.6749614182,223897.072801195,"Industrial",5563.48076744631,17288.2456803952
+"185",-102,2,2002,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",74010.5515099038,229984.186326588,"Industrial",6274.11744837159,19496.5145758723
+"186",-102,4,2002,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",57855.9970608769,179784.694705034,"Industrial",4587.630282882,14255.8377994879
+"187",-101,2,2002,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",40812.9148582455,126824.146338564,"Industrial",3155.40808345318,9805.27702869784
+"188",-100,2,2002,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",32493.6673735977,100972.48972241,"Industrial",2381.96765223476,7401.84853618012
+"189",-99,2,2002,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",40849.5257539091,126937.91291479,"Industrial",3028.64584672004,9411.36954824745
+"190",-98,2,2002,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",34087.2205036757,105924.378507351,"Industrial",2612.21263551891,8117.32361447754
+"191",-97,1,2002,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",72448.9801689205,225131.679394534,"Industrial",5606.34704588535,17421.4505541129
+"192",-97,2,2002,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",45429.287643396,141169.3000648,"Industrial",3514.48603842481,10921.0942955225
+"193",-96,1,2002,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",72757.3686874648,226089.981704987,"Industrial",5784.99161757747,17976.5798650568
+"194",-96,2,2002,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",78967.3754353803,245387.275399804,"Industrial",6305.32605725597,19593.4938088902
+"195",-95,2,2002,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",72672.4178187635,225826.001015512,"Industrial",6239.33254697952,19388.4221879641
+"196",-103,2,2003,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",42546.5387269288,135146.388944118,"Industrial",3696.81633892003,11742.7032549287
+"197",-102,2,2003,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",55930.606155703,177660.032509642,"Industrial",4741.42111929185,15060.824262306
+"198",-102,3,2003,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",36162.1190201958,114866.683598251,"Industrial",2996.95947912813,9519.65220991428
+"199",-102,4,2003,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",52814.0144799141,167760.376194483,"Industrial",4187.83159045172,13302.3821417801
+"200",-102,5,2003,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",61335.2131184097,194827.424653101,"Industrial",4644.38076404776,14752.5817122535
+"201",-101,2,2003,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",45266.6405132732,143786.620205802,"Industrial",3499.74325241057,11116.7130616778
+"202",-101,3,2003,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",27479.4662417412,87286.78627699,"Industrial",2136.6177004207,6786.83097159161
+"203",-101,4,2003,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",46982.982329687,149238.471416799,"Industrial",3663.62477868573,11637.2723634083
+"204",-100,2,2003,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",36775.7525741483,116815.851766404,"Industrial",2695.86845987683,8563.25563306269
+"205",-99,2,2003,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",56572.6122514223,179699.324261985,"Industrial",4194.37934642306,13323.1806744385
+"206",-99,3,2003,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",40836.4552571748,129714.416975409,"Industrial",3018.95902820458,9589.53238595309
+"207",-98,2,2003,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",44689.4158918307,141953.102708685,"Industrial",3424.6927482401,10878.3198825717
+"208",-98,3,2003,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",40453.9081367325,128499.280245707,"Industrial",3088.90010626318,9811.69579621651
+"209",-97,2,2003,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",62755.050135521,199337.447124807,"Industrial",4854.83614168003,15421.0799067464
+"210",-97,3,2003,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",65170.5023390956,207009.978257724,"Industrial",5046.00466827144,16028.3146389162
+"211",-96,1,2003,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",96044.4834239315,305079.226210524,"Industrial",7636.56714839012,24257.0724885075
+"212",-96,2,2003,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",89720.4688049653,284991.393804966,"Industrial",7163.93075882457,22755.7728941191
+"213",-96,3,2003,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",97357.1414251118,309248.801317836,"Industrial",7668.70163007431,24359.14563688
+"214",-95,2,2003,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",58555.4114256838,185997.56041517,"Industrial",5027.30878200829,15968.9283388274
+"215",-95,3,2003,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",79076.8394230278,251182.578346191,"Industrial",6695.56647242781,21268.0433652103
+"216",-87,2,2003,"COL","Colombia","Seine_Purse_Seine","24-50m","CRI","Costa Rica",87,"Pacific, Southeast",73988.253667432,235019.007576897,"Industrial",6558.85267263025,20833.7806281155
+"217",-108,5,2004,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",142498.379119515,462685.630742295,"Industrial",11033.7795386474,35826.1706333428
+"218",-107,5,2004,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",133001.4542322,431849.555912881,"Industrial",10269.7270127233,33345.3275033241
+"219",-103,2,2004,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",83823.8668290768,272172.209499596,"Industrial",7283.35253013322,23648.7080073859
+"220",-102,3,2004,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",69946.6177403957,227113.425061219,"Industrial",5796.87210677446,18822.1749863262
+"221",-100,2,2004,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",61226.1674593695,198798.527280878,"Industrial",4488.22069487381,14573.0445212757
+"222",-99,2,2004,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",61414.8267434525,199411.095230006,"Industrial",4553.38847907649,14784.6412953878
+"223",-98,2,2004,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",59273.6813001266,192458.895239539,"Industrial",4542.33161161425,14748.7401593369
+"224",-97,1,2004,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",120804.590850657,392246.905962501,"Industrial",9348.26769770749,30353.3918265409
+"225",-97,2,2004,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",83841.6015874826,272229.793437953,"Industrial",6486.1271990739,21060.1543169923
+"226",-96,1,2004,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",111052.963946659,360583.825492964,"Industrial",8829.90241577058,28670.2837876296
+"227",-96,2,2004,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",133907.643512056,434791.910493422,"Industrial",10692.1541870571,34716.9289545615
+"228",-95,-3,2004,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",53144.5581854393,172557.916633756,"Industrial",4207.4584386389,13661.4224914859
+"229",-112,5,2005,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",37534.7903803579,124579.320921407,"Industrial",2880.93939878788,9561.94160883168
+"230",-111,5,2005,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",41292.5677510699,137051.519334485,"Industrial",3193.48371846693,10599.2874607439
+"231",-110,5,2005,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",49853.5470977772,165465.718071907,"Industrial",3860.50098493838,12813.1417878311
+"232",-109,3,2005,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",45152.6118179906,149863.144594961,"Industrial",3327.02433493948,11042.5135756893
+"233",-109,5,2005,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",55153.9643219291,183057.993709885,"Industrial",4270.59057038593,14174.2438894891
+"234",-108,3,2005,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",49263.72054718,163508.062510488,"Industrial",3623.55601316458,12026.7128939916
+"235",-108,4,2005,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",46488.5969780342,154297.327450726,"Industrial",3522.9385738635,11692.7599896605
+"236",-108,5,2005,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",49691.8880488388,164929.165867047,"Industrial",3847.6882402303,12770.6158267508
+"237",-107,3,2005,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",45071.0079289373,149592.298348591,"Industrial",3304.73498524198,10968.5344213912
+"238",-106,3,2005,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",42568.4296561953,141286.150942104,"Industrial",3118.03808666618,10348.8806919574
+"239",-106,4,2005,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",34146.1252949989,113332.219475357,"Industrial",2532.38435027769,8405.07485116223
+"240",-105,3,2005,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",30976.2884456039,102811.416824599,"Industrial",2289.7430915661,7599.73977584968
+"241",-104,3,2005,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",30020.9280013423,99640.5411070261,"Industrial",2289.39698721139,7598.591043033
+"242",-103,2,2005,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",27607.0475137098,91628.7848433744,"Industrial",2398.74235065399,7961.51224188727
+"243",-103,3,2005,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",38045.3889430745,126274.015938005,"Industrial",3074.30923714027,10203.7430656804
+"244",-102,2,2005,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",45000.8161551227,149359.329323655,"Industrial",3814.8669354536,12661.6807342832
+"245",-102,3,2005,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",32349.718362886,107369.880178046,"Industrial",2681.00425864512,8898.34967892056
+"246",-101,2,2005,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",23568.421821877,78224.4407389895,"Industrial",1822.168031597,6047.84131417029
+"247",-101,3,2005,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",28780.2516238105,95522.6915325412,"Industrial",2237.7579863101,7427.19933949203
+"248",-100,2,2005,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",22051.7110551967,73190.4230867662,"Industrial",1616.51382116954,5365.26758403728
+"249",-99,2,2005,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",26330.3122842029,87391.2546406844,"Industrial",1952.16932071143,6479.32027416093
+"250",-98,2,2005,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",22816.8331059877,75729.8907258187,"Industrial",1748.52683384849,5803.42352698185
+"251",-97,2,2005,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",29268.0389883308,97141.6753608824,"Industrial",2264.22468263189,7515.04325766475
+"252",-96,1,2005,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",38983.1696586671,129386.543903071,"Industrial",3099.58034176191,10287.6187719463
+"253",-96,2,2005,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",51241.5140362624,170072.430322213,"Industrial",4091.49287138819,13579.8121771063
+"254",-87,2,2005,"COL","Colombia","Seine_Purse_Seine","24-50m","CRI","Costa Rica",87,"Pacific, Southeast",63166.9015222655,209653.220828195,"Industrial",5599.56993624044,18585.1742620577
+"255",-86,1,2005,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",46534.1867049733,154448.641396149,"Industrial",3849.83907467096,12777.7545237121
+"256",-86,2,2005,"COL","Colombia","Seine_Purse_Seine","24-50m","CRI","Costa Rica",87,"Pacific, Southeast",61487.8799274373,204080.487692445,"Industrial",5184.76002579344,17208.405231745
+"257",-112,5,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",23753.1856563117,80587.8750229366,"Industrial",1823.1482768531,6185.4290876676
+"258",-110,5,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",29302.6536524018,99415.6583688666,"Industrial",2269.10480541211,7698.43410136044
+"259",-109,5,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",29817.8966111805,101163.732743786,"Industrial",2308.81006763497,7833.14288341885
+"260",-108,3,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",21038.196754302,71376.6816491467,"Industrial",1547.44878195267,5250.05828055154
+"261",-108,4,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",33033.1791842184,112072.281765738,"Industrial",2503.27755041552,8492.91633128813
+"262",-108,5,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",27399.5572356525,92958.9877391385,"Industrial",2121.57272147764,7197.89925462401
+"263",-107,3,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",23348.0701468236,79213.4320946969,"Industrial",1711.94716509885,5808.15500636635
+"264",-107,4,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",26267.9624850166,89119.8051696785,"Industrial",1972.91428873106,6693.54302331134
+"265",-107,5,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",20419.4388364704,69277.4101462349,"Industrial",1576.68999797133,5349.26549831703
+"266",-106,3,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",19844.4161753926,67326.5200628249,"Industrial",1453.55715355883,4931.51040557661
+"267",-106,4,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",17475.4596802025,59289.317275315,"Industrial",1296.03520826227,4397.0827702857
+"268",-106,5,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",22334.0583018262,75773.1752374146,"Industrial",1706.12946776268,5788.4171963466
+"269",-105,3,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",14326.4252260957,48605.529479338,"Industrial",1058.99818326835,3592.88284432996
+"270",-105,4,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",16860.7293402342,57203.7102107734,"Industrial",1237.18683127068,4197.42678649807
+"271",-105,5,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",20619.5597460647,69956.3640804657,"Industrial",1544.98866583687,5241.71179882271
+"272",-104,3,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",14612.6179871373,49576.500985771,"Industrial",1114.35874312504,3780.70564601573
+"273",-104,4,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",16574.0389486568,56231.0503839605,"Industrial",1216.6005073872,4127.58318234712
+"274",-104,5,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",24663.0856589342,83674.9096950721,"Industrial",1814.41217295093,6155.78994537985
+"275",-103,3,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",17107.1349366608,58039.6950633777,"Industrial",1382.36523315541,4689.97625234234
+"276",-103,4,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",13923.0226229441,47236.8979603032,"Industrial",1050.72148352069,3564.80233106669
+"277",-103,5,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",17864.9018177196,60610.5848627872,"Industrial",1310.76672398901,4447.06265784528
+"278",-102,3,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",11695.958040263,39681.094504971,"Industrial",969.310241379252,3288.59689479028
+"279",-102,4,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",15132.0228759331,51338.6956181129,"Industrial",1199.87779855991,4070.84773689918
+"280",-102,5,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",21368.2476043609,72496.4513103876,"Industrial",1618.03103126931,5489.52399134371
+"281",-101,3,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",10657.2352153947,36157.0002464091,"Industrial",828.634632071959,2811.32413712044
+"282",-101,4,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",14920.9940331385,50622.7341359172,"Industrial",1163.50475750636,3947.44424361453
+"283",-101,5,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",17172.4798007061,58261.3917996923,"Industrial",1327.1605457292,4502.68228195226
+"284",-100,2,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",9049.50071286544,30702.4094797403,"Industrial",663.379043032726,2250.65842478064
+"285",-100,3,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",10104.3558213202,34281.2360370474,"Industrial",741.758971377608,2516.57946632673
+"286",-100,4,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",12611.0049958024,42785.5913400525,"Industrial",931.125010895034,3159.04515269936
+"287",-100,5,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",17342.8510654279,58839.4135601228,"Industrial",1298.23374555706,4404.54178868051
+"288",-99,2,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",9886.91639785156,33543.525258498,"Industrial",733.030989530053,2486.96787988479
+"289",-99,3,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",11524.9915063976,39101.0531638387,"Industrial",852.020013468407,2890.66415578609
+"290",-99,4,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",11328.9157693578,38435.8233618144,"Industrial",833.145724171605,2826.62900323832
+"291",-99,5,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",23886.3589376319,81039.6944928262,"Industrial",1749.50343520337,5935.57286287212
+"292",-98,2,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",7907.5165911242,26827.9786975851,"Industrial",605.978265452375,2055.91373845535
+"293",-98,3,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",10005.789204284,33946.8272411041,"Industrial",764.002410642153,2592.04519666994
+"294",-98,5,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",22069.0830289479,74874.1886979306,"Industrial",1645.76248990647,5583.60902714441
+"295",-97,2,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",11730.963625017,39799.8586038197,"Industrial",907.527060538992,3078.98394736857
+"296",-97,3,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",15214.8892644931,51619.837956724,"Industrial",1178.05448017559,3996.80735848474
+"297",-97,5,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",24419.62728098,82848.9239254268,"Industrial",1874.18842498436,6358.59394808966
+"298",-96,1,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",13969.8065997124,47395.622828935,"Industrial",1110.74954381134,3768.46064833693
+"299",-96,2,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",25397.4910335157,86166.5404766985,"Industrial",2027.91926564148,6880.15943211791
+"300",-96,3,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",26917.7363693014,91324.3051191832,"Industrial",2120.27680508631,7193.50257496614
+"301",-96,5,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",24023.2849453834,81504.2459075177,"Industrial",1861.86057708483,6316.76902909968
+"302",-95,2,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",16683.010012732,56600.7585410002,"Industrial",1432.32949278796,4859.49092583253
+"303",-95,3,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",21002.8585732379,71256.789144607,"Industrial",1778.34669056289,6033.42991210335
+"304",-95,4,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",34562.1352475741,117259.599455756,"Industrial",2802.0064651037,9506.41947949559
+"305",-95,5,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",37126.542103439,125959.910319259,"Industrial",2894.98586027784,9821.87240384936
+"306",-94,4,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",29492.4304379851,100059.517601061,"Industrial",2546.48152130042,8639.4952473352
+"307",-94,5,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",41822.4458425205,141891.790325606,"Industrial",3376.51980278669,11455.5815719455
+"308",-93,5,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",33856.3691063358,114865.13353407,"Industrial",2836.98894683918,9625.10519630353
+"309",-92,5,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",24576.1056270979,83379.810922363,"Industrial",2083.31362390089,7068.09690227357
+"310",-87,2,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","CRI","Costa Rica",87,"Pacific, Southeast",17946.9181282854,60888.8431259673,"Industrial",1590.94432016572,5397.62640249887
+"311",-86,2,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","CRI","Costa Rica",87,"Pacific, Southeast",23154.0088253342,78555.0366377986,"Industrial",1952.38442984425,6623.89098900539
+"312",-85,2,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","COL","Colombia",87,"Pacific, Southeast",25999.7087396102,88209.6956954362,"Industrial",2138.41186400699,7255.02972685976
+"313",-82,2,2006,"COL","Colombia","Seine_Purse_Seine","24-50m","COL","Colombia",87,"Pacific, Southeast",13931.4994588611,47265.6574792728,"Industrial",1203.75904743842,4084.01572219934
+"314",-106,4,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",24535.2892308084,85089.2899538051,"Industrial",1819.61443475217,6310.49011838588
+"315",-106,5,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",32721.0626809351,113477.854850745,"Industrial",2499.60703522872,8668.7295915011
+"316",-105,3,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",25429.3962632879,88190.0861914484,"Industrial",1879.72114602463,6518.94241481166
+"317",-105,5,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",27462.4486249168,95240.7869295791,"Industrial",2057.71473223242,7136.23075098233
+"318",-104,4,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",21663.5547986137,75130.0087946284,"Industrial",1590.19125280504,5514.84204319176
+"319",-104,5,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",29335.7484031155,101737.459803416,"Industrial",2158.17030120711,7484.61437733993
+"320",-103,4,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",24334.6914603001,84393.6094709585,"Industrial",1836.45346306118,6368.88849098493
+"321",-103,5,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",24668.0742619809,85549.7933500629,"Industrial",1809.92267505344,6276.87873751282
+"322",-102,3,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",24200.9777201443,83929.8852776182,"Industrial",2005.6720000852,6955.74463223292
+"323",-102,4,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",29525.8905859089,102396.879921596,"Industrial",2341.22436155494,8119.4526248793
+"324",-102,5,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",37689.1192037616,130707.258506882,"Industrial",2853.86829757854,9897.32074393938
+"325",-101,3,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",22162.8674736673,76861.6436078793,"Industrial",1723.23488817938,5976.24228838065
+"326",-101,4,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",22071.3981345101,76544.4245586878,"Industrial",1721.0768047548,5968.75797529469
+"327",-101,5,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",35746.3457044104,123969.648200121,"Industrial",2762.62602859135,9580.88918249093
+"328",-100,2,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",20788.1153619483,72093.9524692811,"Industrial",1523.88518580453,5284.89015195347
+"329",-100,3,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",23852.5620847459,82721.5669755204,"Industrial",1751.01235839001,6072.5755818137
+"330",-100,4,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",21579.2215050653,74837.5378153789,"Industrial",1593.28720159086,5525.57890801697
+"331",-99,2,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",25548.2265667336,88602.1940761394,"Industrial",1894.18429845531,6569.10116204478
+"332",-99,3,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",24166.2648228395,83809.4996666674,"Industrial",1786.56455134106,6195.87190108867
+"333",-99,4,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",22623.8196322749,78460.24273217,"Industrial",1663.79016092975,5770.08577701511
+"334",-98,2,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",22732.501360373,78837.1549824322,"Industrial",1742.06422269348,6041.54311646691
+"335",-98,3,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",20721.5081870495,71862.9563247217,"Industrial",1582.21224571358,5487.17055166944
+"336",-98,4,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",17772.2134323213,61634.6931001256,"Industrial",1344.53562044106,4662.89922994964
+"337",-97,2,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",27178.7035527429,94256.7485311707,"Industrial",2102.5901820956,7291.86046984543
+"338",-97,3,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",24213.7749276487,83974.2664662683,"Industrial",1874.81785372233,6501.93761586617
+"339",-97,4,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",26228.5193635749,90961.4746413439,"Industrial",2030.01780195805,7040.17677302526
+"340",-96,2,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",42938.4801547153,148912.236317659,"Industrial",3428.51862919066,11890.2293348516
+"341",-96,3,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",41597.2526335633,144260.809698322,"Industrial",3276.56414730496,11363.245574957
+"342",-96,4,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",50316.1646332182,174498.318791501,"Industrial",3906.19001813461,13546.8113679442
+"343",-96,5,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",38743.6043374614,134364.251927636,"Industrial",3002.71964030275,10413.5427025201
+"344",-95,-3,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",9610.77786880628,33330.5328935601,"Industrial",760.885965123556,2638.7806517839
+"345",-95,3,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",33196.3167720918,115126.05360576,"Industrial",2810.78691572724,9747.91291925586
+"346",-95,4,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",54413.2882112856,188707.294802796,"Industrial",4411.37054361461,15298.796103368
+"347",-95,5,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",47226.2013909743,163782.212052651,"Industrial",3682.51869189939,12771.1109409656
+"348",-94,4,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",45190.0513092357,156720.768306679,"Industrial",3901.87003568799,13531.8295091392
+"349",-94,5,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",59315.6043676792,205708.708438174,"Industrial",4788.82353069142,16607.8170143984
+"350",-93,5,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",52165.8766543021,180913.188451787,"Industrial",4371.23115611165,15159.5912238299
+"351",-92,5,2007,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",42023.5386422382,145739.185333277,"Industrial",3562.33049720329,12354.2938392263
+"352",-111,5,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",32550.6867643794,115393.075938715,"Industrial",2517.40431434588,8924.26723025856
+"353",-110,5,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",38147.01929899,135232.228022329,"Industrial",2953.98450359775,10471.9559563474
+"354",-109,5,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",39119.229820302,138678.740943124,"Industrial",3029.01552128172,10737.9429686657
+"355",-108,5,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",35799.888509989,126911.585102142,"Industrial",2772.01803815662,9826.87985343935
+"356",-107,5,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",42184.1659877827,149544.023586206,"Industrial",3257.25663268012,11547.0639586644
+"357",-105,3,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",23008.979013151,81567.4606731281,"Industrial",1700.80578994701,6029.40309975678
+"358",-105,4,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",21766.4534398861,77162.6734909278,"Industrial",1597.1533031512,5661.95219567465
+"359",-103,2,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",23722.7124377569,84097.6652080346,"Industrial",2061.23726083256,7307.14253400163
+"360",-103,4,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",21812.9724415741,77327.5846257754,"Industrial",1646.1482096594,5835.64048090916
+"361",-103,5,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",33531.4781256172,118870.008172022,"Industrial",2460.23998237873,8721.6181080628
+"362",-102,2,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",31851.7915966235,112915.473430668,"Industrial",2700.1809517867,9572.2154150911
+"363",-102,3,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",22597.4714566025,80108.6551165549,"Industrial",1872.78036025406,6639.05766079927
+"364",-102,4,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",27469.1685258133,97378.9546321103,"Industrial",2178.13875443218,7721.56153001039
+"365",-102,5,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",38373.1994455852,136034.042835664,"Industrial",2905.66772819366,10300.6716644467
+"366",-101,3,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",17218.7940459248,61041.0964074902,"Industrial",1338.81713039017,4746.14338903061
+"367",-101,4,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",23673.7658247122,83924.1481244505,"Industrial",1846.02574761236,6544.21182634356
+"368",-101,5,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",30852.7680980363,109373.907771194,"Industrial",2384.43003115734,8452.86975502425
+"369",-100,2,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",22523.0043104205,79844.6670441519,"Industrial",1651.06225412271,5853.06090309644
+"370",-100,4,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",20336.6903047236,72094.1240245392,"Industrial",1501.54575213138,5323.0208092187
+"371",-99,2,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",24331.063488998,86254.2863436007,"Industrial",1803.94198028562,6395.02371876003
+"372",-98,2,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",25654.7437728818,90946.7691972631,"Industrial",1966.00499701333,6969.54155094853
+"373",-98,3,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",22083.0180962399,78284.9038664212,"Industrial",1686.1717467082,5977.52501574062
+"374",-98,4,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",20764.1280639268,73609.4025857518,"Industrial",1570.88535514526,5568.83160067939
+"375",-98,5,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",37104.0081941643,131534.725094195,"Industrial",2766.96520789015,9808.96743177939
+"376",-97,1,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",39438.0426615081,139808.941195482,"Industrial",3051.84908683775,10818.8885838299
+"377",-97,2,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",42484.1494605063,150607.473211676,"Industrial",3286.64519913525,11651.2472315162
+"378",-97,3,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",31746.391142674,112541.825935161,"Industrial",2458.05129862571,8713.85916422404
+"379",-97,5,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",34807.5193649497,123393.609308215,"Industrial",2671.45149864833,9470.36871699617
+"380",-96,1,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",44167.3835381609,156574.584110177,"Industrial",3511.78098037252,12449.3597410582
+"381",-96,2,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",53419.7043278351,189374.314672562,"Industrial",4265.41532895237,15121.014144088
+"382",-96,3,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",51784.2343095931,183576.528672636,"Industrial",4078.98009585249,14460.0961374582
+"383",-96,5,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",31565.5957976091,111900.901486056,"Industrial",2446.40724785879,8672.58068539784
+"384",-87,2,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","CRI","Costa Rica",87,"Pacific, Southeast",41672.3558711984,147729.642707648,"Industrial",3694.13831429461,13095.8214834347
+"385",-86,1,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",45663.8397393411,161879.562321903,"Industrial",3777.83403936099,13392.5251206956
+"386",-86,2,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","CRI","Costa Rica",87,"Pacific, Southeast",46017.7639570708,163134.233365517,"Industrial",3880.29418679882,13755.749149103
+"387",-85,2,2008,"COL","Colombia","Seine_Purse_Seine","24-50m","COL","Colombia",87,"Pacific, Southeast",49848.2774894824,176713.508731638,"Industrial",4099.89777390945,14534.249878974
+"388",-105,3,2009,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",297867.144587279,1079389.21176415,"Industrial",22018.1070989489,79787.6089993178
+"389",-98,2,2009,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",211963.194538518,768096.749283816,"Industrial",16243.416942099,58861.7084095732
+"390",-96,0,2009,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",223165.902207825,808692.303444555,"Industrial",17540.120170029,63560.6068967721
+"391",-96,1,2009,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",340169.117849227,1232680.01407317,"Industrial",27047.0954463688,98011.2898145142
+"392",-95,-3,2009,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",171423.775776181,621192.963289271,"Industrial",13571.6324793993,49179.8909362396
+"393",-112,5,2010,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",55764.2897090633,206560.617060162,"Industrial",4280.1235238104,15854.3211217177
+"394",-111,5,2010,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",66495.8183441057,246312.063522016,"Industrial",5142.65217189198,19049.2770820523
+"395",-110,5,2010,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",78391.0093188499,290373.917454179,"Industrial",6070.35178644744,22485.637624414
+"396",-109,5,2010,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",76201.5794164017,282263.88872398,"Industrial",5900.31470094727,21855.7907190329
+"397",-108,5,2010,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",61452.9478703468,227632.395185008,"Industrial",4758.35783530356,17625.7840955447
+"398",-107,5,2010,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",75706.8846210716,280431.453258327,"Industrial",5845.71832338592,21653.5562514703
+"399",-106,5,2010,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",70775.31647805,262164.06809102,"Industrial",5406.62388364756,20027.0741624265
+"400",-105,5,2010,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",71148.1588618002,263545.141054657,"Industrial",5331.01096193975,19746.9907641231
+"401",-102,5,2010,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",67405.5990345913,249682.049256552,"Industrial",5104.03814756467,18906.2440274965
+"402",-101,3,2010,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",45240.6638031975,167579.278426296,"Industrial",3517.60846482034,13029.8328708246
+"403",-100,2,2010,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",49212.007464015,182289.825290899,"Industrial",3607.51553627542,13362.8642831267
+"404",-100,3,2010,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",37249.3729292753,137978.148695484,"Industrial",2734.46986993281,10128.9514600226
+"405",-99,3,2010,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",38471.2858907115,142504.326588628,"Industrial",2844.10669669956,10535.0653136664
+"406",-98,2,2010,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",39934.2934477529,147923.560749465,"Industrial",3060.29251999268,11335.8551612923
+"407",-98,3,2010,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",38365.867942427,142113.840193832,"Industrial",2929.46563194065,10851.2496392803
+"408",-97,2,2010,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",55024.4155505865,203819.994638192,"Industrial",4256.78125844733,15767.8573155412
+"409",-97,3,2010,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",50810.9241968839,188212.490650618,"Industrial",3934.17499473306,14572.8676680811
+"410",-96,2,2010,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",86062.4102114276,318790.119119332,"Industrial",6871.84491905045,25454.5074316636
+"411",-96,3,2010,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",86613.5080806875,320831.481369775,"Industrial",6822.43891800935,25271.4990204605
+"412",-95,3,2010,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",72757.2346843313,269505.437447432,"Industrial",6160.4751117191,22819.4700784227
+"413",-87,2,2010,"COL","Colombia","Seine_Purse_Seine","24-50m","CRI","Costa Rica",87,"Pacific, Southeast",49993.8837808632,185186.031004546,"Industrial",4431.81859278855,16416.226011327
+"414",-108,5,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",34137.8401485523,129259.736000115,"Industrial",2643.32411675221,10008.6993203821
+"415",-107,5,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",41426.5381008001,156857.708484384,"Industrial",3198.75628303015,12111.7912227005
+"416",-105,4,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",27739.4353530983,105032.775211639,"Industrial",2035.43176770198,7706.97184691584
+"417",-105,5,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",31068.8908620109,117639.446818085,"Industrial",2327.93933687603,8814.52437528154
+"418",-104,3,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",30884.8282032331,116942.510791156,"Industrial",2355.27804589724,8918.0398377504
+"419",-104,4,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",25695.6186992935,97294.0547784233,"Industrial",1886.16081113543,7141.77134347698
+"420",-103,2,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",26197.1819622713,99193.1771211884,"Industrial",2276.24086963599,8618.77296869051
+"421",-103,3,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",37406.9004466992,141637.726794733,"Industrial",3022.71530850016,11445.2285522465
+"422",-103,4,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",28400.6460207142,107536.387507102,"Industrial",2143.29673433518,8115.39244558279
+"423",-103,5,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",28495.5401246454,107895.695148381,"Industrial",2090.74788983343,7916.42116509612
+"424",-102,2,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",39718.8660869969,150391.768263256,"Industrial",3367.09868609228,12749.2039729725
+"425",-102,3,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",27446.2568160828,103922.682126352,"Industrial",2274.62664689551,8612.66086539485
+"426",-102,4,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",31353.0996503777,118715.576789793,"Industrial",2486.11097769075,9413.4264864124
+"427",-102,5,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",32628.4614603969,123544.614893854,"Industrial",2470.6688224037,9354.95621099394
+"428",-101,2,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",25330.0318498558,95909.7943964599,"Industrial",1958.36507955309,7415.16604663146
+"429",-101,3,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",23889.5496804823,90455.5435090037,"Industrial",1857.4900346814,7033.21213237167
+"430",-101,4,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",25962.453680193,98304.4004545579,"Industrial",2024.49235663217,7665.55079096364
+"431",-101,5,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",30283.5621179857,114665.873045279,"Industrial",2340.43942945721,8861.85480567753
+"432",-100,2,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",20635.357561062,78133.8496812889,"Industrial",1512.68718417073,5727.6484167074
+"433",-100,3,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",23199.4986837097,87842.7300069982,"Industrial",1703.07108977644,6448.51925300457
+"434",-100,4,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",20174.4614578201,76388.7097319163,"Industrial",1489.56769511762,5640.1086356768
+"435",-99,2,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",23834.6353855174,90247.6156717733,"Industrial",1767.13604714311,6691.09521680423
+"436",-99,3,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",25460.1421050433,96402.4446978049,"Industrial",1882.21836061266,7126.84362363446
+"437",-99,4,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",24200.5825056201,91633.2401848839,"Industrial",1779.74770467929,6738.84807745846
+"438",-98,1,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",40334.8874572443,152724.275514509,"Industrial",3087.93476498594,11692.1759188854
+"439",-98,2,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",22450.6648284017,85007.340713948,"Industrial",1720.46618861831,6514.38416637376
+"440",-98,3,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",22894.3805491013,86687.4287531196,"Industrial",1748.12416817489,6619.10851683713
+"441",-98,4,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",32057.1250257391,121381.302968151,"Industrial",2425.24357757553,9182.95777381459
+"442",-97,1,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",40689.8116776823,154068.162849918,"Industrial",3148.71520572026,11922.3153679278
+"443",-97,2,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",36275.929715299,137355.411993079,"Industrial",2806.36688640287,10626.0455048526
+"444",-97,3,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",27678.9501753212,104803.753748144,"Industrial",2143.11853959329,8114.71772787385
+"445",-97,4,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",37884.4428988891,143445.896586094,"Industrial",2932.155354862,11102.3317653229
+"446",-96,1,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",55566.6889263535,210398.065893034,"Industrial",4418.14809213781,16728.9041577917
+"447",-96,2,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",57033.9611116896,215953.754668058,"Industrial",4554.00371562733,17243.3087583749
+"448",-96,3,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",52362.5791113192,198266.004022557,"Industrial",4124.53560065491,15617.1679445379
+"449",-95,-3,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",17557.3780284762,66479.3683179544,"Industrial",1390.01886305125,5263.1763020545
+"450",-95,2,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",39770.6422916844,150587.814015415,"Industrial",3414.53154185161,12928.8040410056
+"451",-95,3,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",41846.580784705,158448.160785821,"Industrial",3543.21904279624,13416.0672165971
+"452",-87,2,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","CRI","Costa Rica",87,"Pacific, Southeast",34176.3142026844,129405.414404441,"Industrial",3029.63509257142,11471.4296668553
+"453",-86,2,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","CRI","Costa Rica",87,"Pacific, Southeast",41595.3620868157,157496.944703428,"Industrial",3507.38992563464,13280.4036185114
+"454",-85,2,2011,"COL","Colombia","Seine_Purse_Seine","24-50m","COL","Colombia",87,"Pacific, Southeast",49503.4505220119,187440.181268802,"Industrial",4071.53660703434,15416.4922165523
+"455",-102,4,2012,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",565711.511872568,2189566.3858825,"Industrial",44857.4978409025,173619.35786338
+"456",-96,0,2012,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",389241.149304442,1506544.09293913,"Industrial",30593.0989742425,118409.506874357
+"457",-96,1,2012,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",407445.63092783,1577003.89479652,"Industrial",32396.3002243944,125388.733496854
+"458",-112,5,2013,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",36554.5456985469,144623.999716938,"Industrial",2805.70185261633,11100.4477332275
+"459",-111,5,2013,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",36905.7097444167,146013.341258461,"Industrial",2854.21298810383,11292.3766523521
+"460",-110,5,2013,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",42354.7028153438,167571.677090239,"Industrial",3279.81420488929,12976.2205924057
+"461",-109,5,2013,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",43331.6362736934,171436.805804161,"Industrial",3355.18361272631,13274.4112827668
+"462",-108,3,2013,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",44268.0249233759,175141.523486154,"Industrial",3256.10136872215,12882.4033900417
+"463",-108,5,2013,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",42861.2586136002,169575.808839756,"Industrial",3318.78636945599,13130.4096326346
+"464",-107,3,2013,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",41692.7218385494,164952.622885871,"Industrial",3057.02940362588,12094.7972722921
+"465",-106,3,2013,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",40174.6015537526,158946.348606078,"Industrial",2942.69576709669,11642.4489391081
+"466",-106,4,2013,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",38983.6646863435,154234.539174893,"Industrial",2891.15152935458,11438.5198878186
+"467",-105,3,2013,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",36856.9677780235,145820.499082497,"Industrial",2724.43832300962,10778.9376047812
+"468",-104,3,2013,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",41653.0681910116,164795.737633964,"Industrial",3176.46439245145,12567.3285391979
+"469",-103,2,2013,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",35625.4670774192,140948.203350952,"Industrial",3095.452949034,12246.8157617586
+"470",-103,3,2013,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",49398.3709469798,195439.167669295,"Industrial",3991.70234083325,15792.726928452
+"471",-103,4,2013,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",33241.0408858172,131514.485976836,"Industrial",2508.58428799509,9924.93509148823
+"472",-102,2,2013,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",40020.1481144385,158335.270729529,"Industrial",3392.63935274978,13422.6007577291
+"473",-102,3,2013,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",39886.9981624744,157808.477734372,"Industrial",3305.66129629278,13078.4817385474
+"474",-102,4,2013,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",35150.4765512289,139068.956094214,"Industrial",2787.21997504379,11027.3262375082
+"475",-101,2,2013,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",30507.321217906,120698.827761888,"Industrial",2358.64182477119,9331.70439077916
+"476",-101,3,2013,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",34530.2147658146,136614.959236534,"Industrial",2684.83628535329,10622.2565416371
+"477",-100,2,2013,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",27618.2727718907,109268.628489699,"Industrial",2024.57394534337,8010.00193280748
+"478",-99,2,2013,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",30360.6144590571,120118.398766129,"Industrial",2250.98204173135,8905.76041761964
+"479",-98,2,2013,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",25997.138732233,102854.791731173,"Industrial",1992.24381689772,7882.09137071948
+"480",-97,2,2013,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",32162.0088298217,127245.415502051,"Industrial",2488.10705303971,9843.91918592034
+"481",-96,1,2013,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",42394.2632606253,167728.193597772,"Industrial",3370.7988897947,13336.1913920025
+"482",-96,2,2013,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",49350.2805729842,195248.903446277,"Industrial",3940.48312121458,15590.083775266
+"483",-95,4,2013,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",57854.197729704,228893.70709419,"Industrial",4690.33047034894,18556.7715219357
+"484",-95,5,2013,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",72094.0352437831,285232.042511864,"Industrial",5621.61733402559,22241.3045542834
+"485",-94,4,2013,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",51972.2734591705,205622.527059514,"Industrial",4487.47126019471,17754.181589787
+"486",-87,2,2013,"COL","Colombia","Seine_Purse_Seine","24-50m","CRI","Costa Rica",87,"Pacific, Southeast",52795.6929774504,208880.294921293,"Industrial",4680.19117662918,18516.6565325675
+"487",-86,2,2013,"COL","Colombia","Seine_Purse_Seine","24-50m","CRI","Costa Rica",87,"Pacific, Southeast",67396.0977695589,266645.174724053,"Industrial",5682.95075423719,22483.9634186685
+"488",-85,1,2013,"COL","Colombia","Seine_Purse_Seine","24-50m","COL","Colombia",87,"Pacific, Southeast",41589.1864382707,164542.996574986,"Industrial",3276.3139544195,12962.3722402164
+"489",-85,2,2013,"COL","Colombia","Seine_Purse_Seine","24-50m","COL","Colombia",87,"Pacific, Southeast",70835.5518447543,280252.992731138,"Industrial",5826.04928291117,23050.1168525289
+"490",-111,5,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",24787.0463855769,100244.28752025,"Industrial",1916.98006136161,7752.69055669084
+"491",-111,6,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",77,"Pacific, Eastern Central",27177.0877611099,109910.142463485,"Industrial",2107.31734916663,8522.45656703943
+"492",-110,5,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",31357.2307736219,126815.563605789,"Industrial",2428.20475841135,9820.19608846437
+"493",-110,6,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","FRA","France",77,"Pacific, Eastern Central",28885.2689073764,116818.404113516,"Industrial",2256.90558913722,9127.42443227025
+"494",-109,5,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",33404.1809717741,135093.8820876,"Industrial",2586.49730845919,10460.366105193
+"495",-109,6,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","FRA","France",77,"Pacific, Eastern Central",24041.1737788304,97227.8140412767,"Industrial",1885.60440035066,7625.80045713668
+"496",-108,3,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",27250.7099115912,110207.886692705,"Industrial",2004.4055273613,8106.25844105822
+"497",-108,5,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",29347.8417927153,118689.150978458,"Industrial",2272.43017272734,9190.20927548358
+"498",-107,4,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",33280.344220235,134593.058926431,"Industrial",2499.5949603416,10108.9138250233
+"499",-107,5,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",25029.1761703247,101223.51382184,"Industrial",1932.6315498313,7815.98863125243
+"500",-106,4,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",29110.763783991,117730.355174326,"Industrial",2158.94605886678,8731.25446651378
+"501",-106,5,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",26245.1462499895,106141.165259038,"Industrial",2004.90286170637,8108.26977094017
+"502",-105,3,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",21109.4862619387,85371.4225297079,"Industrial",1560.39676669667,6310.58899447687
+"503",-105,4,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",27256.416663315,110230.966056486,"Industrial",1999.98938853802,8088.39860075922
+"504",-105,5,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",27665.6582552513,111886.029397602,"Industrial",2072.94088543463,8383.43055883033
+"505",-104,5,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",25292.500343512,102288.454909108,"Industrial",1860.71690875427,7525.14994700983
+"506",-103,2,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",16963.0171298082,68602.1859934419,"Industrial",1473.89566247289,5960.75943319147
+"507",-103,3,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",30031.4944778824,121453.993359023,"Industrial",2426.73562929332,9814.25460598916
+"508",-103,5,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",23822.916299664,96345.1326134593,"Industrial",1747.91254229019,7068.94418657098
+"509",-102,2,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",30679.3546021806,124074.082721943,"Industrial",2600.78961833655,10518.1673614778
+"510",-102,3,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",20002.2822297162,80893.6449993331,"Industrial",1657.70234037075,6704.1142153916
+"511",-102,4,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",32707.7561313833,132277.386291755,"Industrial",2593.52703498597,10488.7958711352
+"512",-102,5,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",31994.5539567199,129393.039252383,"Industrial",2422.66853567478,9797.80638155259
+"513",-101,2,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",23454.9052223888,94856.8145755958,"Industrial",1813.39161371861,7333.75600645157
+"514",-101,3,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",21514.7859687333,87010.5440171082,"Industrial",1672.84444745626,6765.35223918556
+"515",-101,4,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",26057.5984216089,105382.680438397,"Industrial",2031.91152448675,8217.49876560047
+"516",-101,5,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",26119.2521135117,105632.021578993,"Industrial",2018.60426049716,8163.68125234254
+"517",-100,2,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",19030.4739377383,76963.4377321902,"Industrial",1395.04023369247,5641.85067124247
+"518",-100,3,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",22249.8255985225,89983.2065458006,"Industrial",1633.35575677846,6605.65125664303
+"519",-100,4,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",24713.7974547729,99948.0526737965,"Industrial",1824.72649340735,7379.5967621774
+"520",-99,2,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",19376.7110315249,78363.6969740464,"Industrial",1436.61876865501,5810.00344542216
+"521",-99,3,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",24084.3020573327,97402.2343204495,"Industrial",1780.50520487367,7200.75610914722
+"522",-99,5,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",23741.492473976,96015.836687422,"Industrial",1738.89301205459,7032.46721516543
+"523",-98,2,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",22227.3463267525,89892.2954082852,"Industrial",1703.35257820556,6888.73385484745
+"524",-98,3,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",23999.9166527963,97060.9611157574,"Industrial",1832.53852380745,7411.19033768305
+"525",-97,1,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",31999.889508624,129414.617402148,"Industrial",2476.25964640276,10014.5406639991
+"526",-97,2,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",34852.1248652261,140949.686837812,"Industrial",2696.21895042153,10904.104647211
+"527",-97,3,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",26924.7789958234,108889.750117507,"Industrial",2084.72477008357,8431.08718973661
+"528",-96,0,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",13911.2018920289,56259.9714594571,"Industrial",1093.37560300091,4421.85230986725
+"529",-96,1,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",36034.7686109306,145732.559223423,"Industrial",2865.15081724626,11587.3024096989
+"530",-96,2,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",53958.7785720651,218221.212373533,"Industrial",4308.45891321991,17424.3589715197
+"531",-96,3,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",42612.9319004946,172336.103748111,"Industrial",3356.56794708723,13574.7017670027
+"532",-95,-3,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",13289.6706173133,53746.3617765512,"Industrial",1052.14416479741,4255.10327160546
+"533",-95,2,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",34236.952985885,138461.795953688,"Industrial",2939.43343961629,11887.717733041
+"534",-95,3,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",39377.1787641175,159250.003746447,"Industrial",3334.13069914683,13483.9605831314
+"535",-94,2,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",34541.2914753274,139692.607990127,"Industrial",3015.98778738688,12197.3204154044
+"536",-87,1,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",31146.3125613006,125962.563793295,"Industrial",2723.12877593634,11012.9339221501
+"537",-87,2,2014,"COL","Colombia","Seine_Purse_Seine","24-50m","CRI","Costa Rica",87,"Pacific, Southeast",33736.0901565366,136436.196102363,"Industrial",2990.61045665271,12094.6888876685
+"538",-103,2,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",6652.82956020553,27502.8137595543,"Industrial",578.056165181108,2389.68560815603
+"539",-102,2,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",14671.3656864225,60651.4618209348,"Industrial",1243.73983934312,5141.62355389351
+"540",-102,3,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",7623.64120902669,31516.151502767,"Industrial",631.814296449398,2611.92185499711
+"541",-102,4,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",9020.3360592707,37290.0914478034,"Industrial",715.25803666887,2956.87848223195
+"542",-102,5,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",10158.5700331177,41995.5534943231,"Industrial",769.219912238029,3179.95700851377
+"543",-101,3,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",5475.32693458582,22635.0150100543,"Industrial",425.724442429526,1759.94589175491
+"544",-100,1,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",22089.4109984452,91317.679379978,"Industrial",1619.9348490101,6696.81464882741
+"545",-100,2,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",5804.76703335586,23996.9211883815,"Industrial",425.521906876144,1759.10860927924
+"546",-99,1,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",15374.1535157651,63556.7884354187,"Industrial",1138.86914804755,4708.08785822649
+"547",-98,0,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",12848.8290663822,53117.0909525211,"Industrial",978.695571774259,4045.92990008546
+"548",-98,2,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",6865.87608295459,28383.5486084277,"Industrial",526.154024669364,2175.12203166594
+"549",-97,1,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",43244.5298701144,178772.99281067,"Industrial",3346.40793732002,13834.0586408715
+"550",-97,2,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",12585.6008389552,52028.9048131247,"Industrial",973.6432316725,4025.04351368233
+"551",-97,3,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",10227.6376523388,42281.0792020032,"Industrial",791.902862288208,3273.72837979298
+"552",-96,-5,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",2899.39621606697,11986.11108612,"Industrial",221.790345013086,916.881831611772
+"553",-96,-4,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",9051.67316268952,37419.639110387,"Industrial",700.781095061942,2897.03077003369
+"554",-96,-2,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",7811.62242046263,32293.2662930425,"Industrial",605.537907823629,2503.29519981103
+"555",-96,-1,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",12328.3935976266,50965.609445063,"Industrial",961.23252173065,3973.73760826785
+"556",-96,0,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",14363.2973130771,59377.9064080612,"Industrial",1128.90884501976,4666.91194101967
+"557",-96,1,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",57647.5045400292,238314.925509455,"Industrial",4583.59526401873,18948.594091382
+"558",-96,2,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",35869.2697168934,148283.649203312,"Industrial",2864.06176922703,11840.038396005
+"559",-96,3,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",27446.7728436009,113465.026420281,"Industrial",2161.94835391614,8937.49981078632
+"560",-95,-5,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",2707.42770448476,11192.512787236,"Industrial",209.771846069324,867.197327427739
+"561",-95,-4,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",13204.8337779418,54588.8153054361,"Industrial",1024.43356938686,4235.01089467437
+"562",-95,-3,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",13893.4181093175,57435.4246244019,"Industrial",1099.9428965354,4547.16663876525
+"563",-95,-2,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",14463.7215937849,59793.0606314254,"Industrial",1184.99638585276,4898.77797272873
+"564",-95,-1,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",13797.1781135604,57037.5682453117,"Industrial",1154.13486473562,4771.1963685496
+"565",-95,0,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",26019.2052202964,107563.458355504,"Industrial",2202.80692873881,9106.40925956437
+"566",-95,1,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",29676.3457266646,122682.086200835,"Industrial",2539.12564122407,10496.7516439031
+"567",-95,2,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",21519.1577101797,88960.2508841765,"Industrial",1847.53975599864,7637.73389394229
+"568",-95,3,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",24477.6278322884,101190.573643121,"Industrial",2072.56113717045,8567.97283697856
+"569",-95,4,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",7854.49510026274,32470.5020567495,"Industrial",636.776226162307,2632.43448463043
+"570",-94,-5,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","High seas","High seas",87,"Pacific, Southeast",2959.11597620985,12232.9927213868,"Industrial",229.347878177827,948.124692296921
+"571",-94,-4,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",11439.7705673232,47292.0396528841,"Industrial",912.561109527584,3772.52987054939
+"572",-94,-2,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",15999.4592831869,66141.8040154132,"Industrial",1395.51424884435,5769.0593359474
+"573",-94,-1,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",37131.3025026323,153500.895842583,"Industrial",3248.43373928126,13429.0330652849
+"574",-94,0,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",34287.249827209,141743.57508956,"Industrial",2997.76658895998,12392.7744495281
+"575",-94,1,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",18575.5411631162,76791.3328409896,"Industrial",1622.99109112407,6709.44916124112
+"576",-94,2,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",24986.2053115027,103293.034192659,"Industrial",2181.68131108997,9019.07590426141
+"577",-94,3,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",21570.9266099246,89174.2636430089,"Industrial",1891.58133447852,7819.80188766547
+"578",-93,-5,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",3327.10582729232,13754.2636705579,"Industrial",260.635431610635,1077.46751511651
+"579",-93,-4,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",6417.07458071949,26528.2020946957,"Industrial",537.601983616772,2222.44792210222
+"580",-93,-3,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",10501.2325947358,43412.1213665748,"Industrial",921.198237576435,3808.23577913991
+"581",-93,-2,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",10045.4371432048,41527.8618492574,"Industrial",878.65641697559,3632.36778817618
+"582",-93,-1,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",47383.248892017,195882.467423303,"Industrial",4242.24731980272,17537.4608507027
+"583",-93,0,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",64149.0501819547,265192.33117887,"Industrial",5817.52636765985,24049.6683077662
+"584",-93,1,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",36705.7334909694,151741.592502,"Industrial",3430.517048104,14181.765911656
+"585",-93,2,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",43674.7167707609,180551.386515666,"Industrial",4088.80975585914,16903.1495840949
+"586",-92,-2,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",53846.7639655602,222602.654629518,"Industrial",4985.65422131074,20610.7068093909
+"587",-92,-1,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",19977.8155789967,82588.3387240861,"Industrial",2156.16835327315,8913.60527391661
+"588",-92,0,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",13662.1696366802,56479.4428699367,"Industrial",1545.25722162123,6388.09715358798
+"589",-92,2,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",16941.502915748,70036.2147086735,"Industrial",1795.85675176821,7424.07622737793
+"590",-92,3,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",7665.45298722968,31689.001496663,"Industrial",695.233561488353,2874.09725260045
+"591",-92,4,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",13907.4239583754,57493.3248388442,"Industrial",1216.31697229697,5028.25735409867
+"592",-91,-3,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",7940.41693771534,32825.7031440392,"Industrial",696.849732134848,2880.77850602683
+"593",-91,-2,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",28488.2513002293,117770.500920721,"Industrial",2905.8920482289,12012.9648722491
+"594",-91,3,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",9783.37367753141,40444.4908378142,"Industrial",866.6767458058,3582.84379810522
+"595",-91,4,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",14839.5073445772,61346.5598491652,"Industrial",1303.99067896888,5390.70067304833
+"596",-90,-3,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",8257.96444840513,34138.4453340016,"Industrial",730.858313969141,3021.3700669485
+"597",-90,-2,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",23381.3609527695,96658.6036677404,"Industrial",2492.79515698731,10305.2213081531
+"598",-90,3,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",7577.55494046184,31325.6307552052,"Industrial",660.308130736069,2729.7154359975
+"599",-89,-4,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",11510.2520132683,47583.4101237177,"Industrial",1004.63931162446,4153.18138441545
+"600",-89,-3,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",6432.21016301699,26590.7726291282,"Industrial",564.121949125914,2332.08152472306
+"601",-89,-2,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",5920.6363895338,24475.9253917152,"Industrial",580.749345960887,2400.8192241215
+"602",-89,1,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",9485.26968022424,39212.1281799822,"Industrial",896.315683627783,3705.37123993613
+"603",-89,2,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",7568.45576115967,31288.0147255973,"Industrial",662.226435016125,2737.64571060789
+"604",-88,-1,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",5872.53145369993,24277.0594686998,"Industrial",539.606536974077,2230.73475061002
+"605",-88,1,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",6589.03653066704,27239.0932185908,"Industrial",574.989174421763,2377.00666081592
+"606",-88,2,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","CRI","Costa Rica",87,"Pacific, Southeast",14251.1367709326,58914.2344510605,"Industrial",1256.49250217166,5194.34309338233
+"607",-87,-4,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",4439.36660351271,18352.3524542275,"Industrial",363.19088975077,1501.43203122637
+"608",-87,-3,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",9178.61800204745,37944.4293884187,"Industrial",792.781381808788,3277.36018165113
+"609",-87,-1,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",3280.12704072467,13560.053251378,"Industrial",286.779053140618,1185.54531080217
+"610",-87,1,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",9201.20933416022,38037.8220109193,"Industrial",804.463702146174,3325.65492264982
+"611",-87,2,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","CRI","Costa Rica",87,"Pacific, Southeast",12395.9822928219,51245.0212771843,"Industrial",1098.86931453472,4542.72844813477
+"612",-85,-2,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",7075.80499353207,29251.3952409183,"Industrial",576.866563899333,2384.76779353223
+"613",-85,2,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","COL","Colombia",87,"Pacific, Southeast",9739.90289624421,40264.782521089,"Industrial",801.082970436267,3311.67896944868
+"614",-84,-2,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",6048.34211750403,25003.861185141,"Industrial",521.238060924428,2154.79942545723
+"615",-84,4,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","COL","Colombia",87,"Pacific, Southeast",6756.79082234784,27932.5898728656,"Industrial",590.412766211182,2440.76782719618
+"616",-83,3,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","COL","Colombia",87,"Pacific, Southeast",13062.5557438804,54000.6375627997,"Industrial",1146.1723205942,4738.27919149106
+"617",-83,4,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","COL","Colombia",87,"Pacific, Southeast",7035.06724277527,29082.9852791256,"Industrial",627.384342779276,2593.60841563266
+"618",-82,0,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","ECU","Ecuador",87,"Pacific, Southeast",7642.2103772593,31592.9164898976,"Industrial",690.723860083107,2855.45413590292
+"619",-82,1,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","COL","Colombia",87,"Pacific, Southeast",8615.92572990985,35618.2581518805,"Industrial",751.099797084022,3105.04840791422
+"620",-82,2,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","COL","Colombia",87,"Pacific, Southeast",6585.4714831896,27224.3553035535,"Industrial",569.021367940052,2352.33573414717
+"621",-80,4,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","COL","Colombia",87,"Pacific, Southeast",12349.6175530196,51053.349328842,"Industrial",1100.18505684093,4548.16773006371
+"622",-80,5,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","COL","Colombia",87,"Pacific, Southeast",5131.73340535025,21214.5985153828,"Industrial",445.750041853565,1842.73176901189
+"623",-79,6,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","COL","Colombia",87,"Pacific, Southeast",3956.96328712705,16358.0959581786,"Industrial",366.676502831307,1515.84156427157
+"624",-78,6,2015,"COL","Colombia","Seine_Purse_Seine","24-50m","COL","Colombia",87,"Pacific, Southeast",5195.43901917416,21477.9576795672,"Industrial",594.079789684331,2455.92731125049

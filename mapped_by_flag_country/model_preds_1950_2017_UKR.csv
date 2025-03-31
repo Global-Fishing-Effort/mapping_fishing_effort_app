@@ -1,0 +1,824 @@
+"","lon","lat","year","flag_country_iso3c","flag_country_name","gear","length_category","eez_sovereign_iso3c","eez_sovereign_name","fao_fishing_id","fao_major_fishing_area","nom_active_fishing_hours","eff_active_fishing_hours","sector","nom_active_fishing_days","eff_active_fishing_days"
+"1",36,45,1953,"UKR","Ukraine","Trawl_Midwater_or_Unsp","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",10611617.6806767,11613001.2312933,"Industrial",1380398.5472289,1510662.22992897
+"2",174,-39,1953,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",12726055.2074095,13926971.2913109,"Industrial",2265794.53885336,2479610.13686686
+"3",174,-39,1953,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",10039180.3283544,10986544.843832,"Industrial",1787413.27079154,1956085.59780005
+"4",174,-38,1953,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",14783367.5527777,16178425.4539898,"Industrial",2469075.70401284,2702074.27874737
+"5",174,-38,1953,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",11649331.3161345,12748640.4984566,"Industrial",1945637.94872699,2129241.41955863
+"6",36,45,1959,"UKR","Ukraine","Trawl_Bottom","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",17879240.8534606,22400425.5250103,"Industrial",2325797.89833691,2913930.35280005
+"7",36,45,1959,"UKR","Ukraine","Trawl_Midwater_or_Unsp","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",4927912.39445263,6174050.42476096,"Industrial",641041.103710393,803143.356019827
+"8",37,45,1959,"UKR","Ukraine","Trawl_Bottom","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",31521748.0349281,39492760.0708438,"Industrial",4177732.63233813,5234170.14520403
+"9",37,45,1959,"UKR","Ukraine","Trawl_Midwater_or_Unsp","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",8602113.53320267,10777359.3486154,"Industrial",1140080.50489197,1428376.55422075
+"10",-60,-63,1961,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",3521720.58871713,4615763.28748146,"Industrial",710896.980641673,931741.204836058
+"11",-60,-63,1961,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",3526895.10896408,4622545.30212019,"Industrial",711941.512917065,933110.227053434
+"12",-59,-63,1961,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",14633467.5131704,19179438.122446,"Industrial",2917104.61619085,3823319.89547792
+"13",-59,-63,1961,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",14530695.4555746,19044739.3357367,"Industrial",2896617.54821751,3796468.40234061
+"14",-59,-62,1961,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",971866.995577119,1273783.05163439,"Industrial",173053.058225232,226812.98326208
+"15",-59,-62,1961,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",948670.639602439,1243380.61463973,"Industrial",168922.657296538,221399.449596084
+"16",-58,-63,1961,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",12475992.9912878,16351731.7667269,"Industrial",2469260.40910563,3236350.31697191
+"17",-58,-63,1961,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",12351061.6742947,16187989.8196,"Industrial",2444533.8839205,3203942.3549257
+"18",-60,-63,1962,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",19776631.178184,26511339.1729862,"Industrial",3992124.59866283,5351597.46381486
+"19",-60,-62,1962,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",16511360.0150659,22134116.8585664,"Industrial",2854187.27953883,3826148.46529309
+"20",-60,-62,1962,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",6051812.46993259,8112688.73632412,"Industrial",1046128.61412235,1402375.87775605
+"21",-59,-62,1962,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",15125329.4985005,20276089.3311425,"Industrial",2693253.84882064,3610410.97554566
+"22",-59,-62,1962,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",5562259.08080126,7456423.4793342,"Industrial",990429.707927402,1327709.33923419
+"23",-60,-63,1963,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",5180060.88595256,7102396.85532856,"Industrial",1045650.71265496,1433694.79564852
+"24",-60,-63,1963,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2780661.89200308,3812573.77322563,"Industrial",561306.353929241,769608.807848961
+"25",-59,-63,1963,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",14317521.8061474,19630796.6433062,"Industrial",2854122.50483599,3913295.83751445
+"26",-59,-62,1963,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1785487.43690835,2448087.12413322,"Industrial",317928.340797539,435912.491689765
+"27",-59,-62,1963,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",972319.116484121,1333149.62648798,"Industrial",173133.5640002,237383.943467051
+"28",-58,-63,1963,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",21917421.1851633,30051041.2386379,"Industrial",4337916.86481465,5947730.68843394
+"29",-58,-63,1963,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",11885632.3306079,16296425.7654623,"Industrial",2352415.66516193,3225404.10055418
+"30",167,-48,1963,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",2872309.40834098,3938231.95488951,"Industrial",467935.559959911,641587.835109883
+"31",167,-48,1963,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1552234.91067133,2128273.8931081,"Industrial",252878.714947997,346722.756617929
+"32",-60,-63,1964,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",6125373.85793129,8590004.49364403,"Industrial",1236472.25019945,1733984.31374546
+"33",-60,-63,1964,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2962992.92835973,4155194.95782116,"Industrial",598111.824425248,838770.55975318
+"34",-59,-63,1964,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",14424077.5068225,20227808.6977243,"Industrial",2875363.82211373,4032307.04373041
+"35",-58,-63,1964,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",26066507.5241656,36554734.77366,"Industrial",5159107.98266906,7234947.90394542
+"36",-58,-63,1964,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",12436559.4117811,17440584.6419226,"Industrial",2461455.67751165,3451857.11454217
+"37",-59,-62,1965,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2690620.79640658,3859259.69907964,"Industrial",479098.641544126,687189.395720278
+"38",-59,-62,1965,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2503260.35589253,3590521.49626661,"Industrial",445736.774777441,639337.201880593
+"39",167,-49,1965,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",12070007.9976327,17312471.343061,"Industrial",1766825.27664936,2534224.66465533
+"40",167,-49,1965,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",11216246.2288916,16087888.3802303,"Industrial",1641850.39067211,2354968.43445997
+"41",167,-48,1965,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",5640561.19334748,8090471.35989991,"Industrial",918918.815929967,1318040.19272459
+"42",167,-48,1965,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",5220447.80860787,7487886.76048893,"Industrial",850477.027812048,1219871.53403838
+"43",168,-48,1965,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",3975195.56106077,5701774.12040039,"Industrial",620475.057175139,889970.963443899
+"44",168,-48,1965,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",3683076.43995957,5282776.55935348,"Industrial",574879.154889806,824571.027351837
+"45",168,-47,1965,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1358513.08116486,1948566.95964518,"Industrial",253144.700529643,363095.067909379
+"46",168,-47,1965,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1260634.28046806,1808175.67469418,"Industrial",234906.009983251,336934.620668475
+"47",169,-48,1965,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",2352350.00513655,3374065.04293645,"Industrial",348417.21523847,499748.057783241
+"48",169,-48,1965,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",2177622.03281942,3123446.06951367,"Industrial",322537.463753331,462627.746343523
+"49",169,-47,1965,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1692254.94997842,2427265.61013055,"Industrial",293032.897405846,420308.225140185
+"50",169,-47,1965,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1599378.82252393,2294049.84960034,"Industrial",276950.355748532,397240.42422237
+"51",170,-47,1965,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",2308904.75489877,3311749.8688387,"Industrial",369067.778263293,529367.945413427
+"52",170,-47,1965,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",2067103.00899431,2964924.4319795,"Industrial",330416.884175176,473929.498610786
+"53",-60,-62,1966,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2154898.03806051,3161323.60962269,"Industrial",372500.05834307,546472.829909694
+"54",-60,-62,1966,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1877523.58690509,2754403.93841032,"Industrial",324552.546482478,476131.867789752
+"55",-59,-63,1966,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",27179650.4797916,39873659.5632117,"Industrial",5418120.06004013,7948603.86108634
+"56",-59,-63,1966,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",23734803.0493958,34819927.4047009,"Industrial",4731407.88247616,6941168.99335484
+"57",-59,-62,1966,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2228088.66536882,3268697.25516237,"Industrial",396739.018089698,582032.375821517
+"58",-59,-62,1966,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1945410.87238315,2853997.36444924,"Industrial",346404.706099321,508189.880232952
+"59",-60,-64,1967,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",4475181.19283396,6714962.19988591,"Industrial",877100.437339635,1316079.95932548
+"60",-60,-63,1967,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",8329938.40505519,12498984.7577326,"Industrial",1681487.19124875,2523053.80325336
+"61",-60,-63,1967,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",4050630.46954679,6077928.31545402,"Industrial",817663.099032206,1226894.85981815
+"62",-59,-63,1967,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",12613445.3885584,18926341.8272587,"Industrial",2514423.85312429,3772866.48309516
+"63",-59,-62,1967,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2282831.79251084,3425365.03772279,"Industrial",406486.715677796,609929.031455293
+"64",-59,-62,1967,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1095278.23768468,1643453.44858603,"Industrial",195027.971421463,292637.415019666
+"65",-58,-63,1967,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",22675878.1648874,34024916.1241249,"Industrial",4488031.39223946,6734243.78861958
+"66",-58,-63,1967,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",10952345.2065857,16433878.5164923,"Industrial",2167698.5891516,3252608.87988342
+"67",-60,-64,1968,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2889743.47778065,4434891.09846002,"Industrial",566367.071844907,869203.894635973
+"68",-60,-63,1968,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",27921491.3617583,42851130.0217874,"Industrial",5636251.77070539,8649959.07033873
+"69",-60,-63,1968,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2325255.54891532,3568571.12571432,"Industrial",469377.711065473,720354.262800698
+"70",-59,-63,1968,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",11909035.4174247,18276804.0035667,"Industrial",2374003.4383022,3643384.54163615
+"71",-59,-62,1968,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",7993218.85352795,12267197.906708,"Industrial",1423292.46076022,2184327.81776829
+"72",-59,-62,1968,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",675561.119573812,1036784.06706348,"Industrial",120292.095824169,184612.353687334
+"73",-58,-63,1968,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",9956671.19923808,15280509.4332134,"Industrial",1970633.84180557,3024332.97299442
+"74",-60,-63,1969,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",3288857.46830207,5162492.57014615,"Industrial",663891.0683225,1042104.36014143
+"75",-60,-63,1969,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2663221.87364641,4180437.51298484,"Industrial",537599.829702492,843866.039589665
+"76",-59,-63,1969,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",14891235.6088738,23374650.2948318,"Industrial",2968489.32738159,4659613.329208
+"77",-59,-63,1969,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",12223284.5204375,19186789.3722128,"Industrial",2436647.34059038,3824785.32837073
+"78",-59,-62,1969,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1061963.60906021,1666955.55960633,"Industrial",189095.885659379,296822.259453443
+"79",-59,-62,1969,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",871252.379617527,1367597.7082764,"Industrial",155137.369068997,243517.854723025
+"80",-58,-63,1969,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",12874205.4743072,20208534.6501679,"Industrial",2548075.00281517,3999692.41506828
+"81",-58,-63,1969,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",10525580.5381735,16521917.3675072,"Industrial",2083232.91972944,3270033.6130831
+"82",-60,-63,1970,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",7757793.95323864,12454988.9626435,"Industrial",1565993.71212653,2514172.7812921
+"83",-60,-63,1970,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",6759057.52600379,10851536.8404577,"Industrial",1364388.07854708,2190498.81467552
+"84",-58,-63,1970,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",21957880.5952516,35252954.9128756,"Industrial",4345924.62977384,6977298.39469589
+"85",-58,-63,1970,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",18993445.1081846,30493610.7624069,"Industrial",3759200.73623896,6035324.46987343
+"86",-60,-63,1971,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2731984.44029189,4486152.6513422,"Industrial",551480.289488557,905577.911193273
+"87",-60,-63,1971,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",3185406.3797198,5230710.34564733,"Industrial",643008.359241931,1055874.84800616
+"88",-60,-62,1971,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",566975.154838852,931021.808401558,"Industrial",98008.4786037625,160938.323680683
+"89",-60,-62,1971,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",645913.050385761,1060644.59987006,"Industrial",111653.843803114,183345.183092028
+"90",-59,-63,1971,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",10279399.8727416,16879655.7964215,"Industrial",2049144.18222873,3364870.41086723
+"91",-59,-63,1971,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",11910819.9806498,19558587.4677026,"Industrial",2374359.18157473,3898901.31897022
+"92",-59,-62,1971,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",875853.430040136,1438226.41498716,"Industrial",155956.643568804,256094.178181289
+"93",-59,-62,1971,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1004091.31897896,1648804.02186547,"Industrial",178791.001523344,293590.151426478
+"94",-58,-63,1971,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",9502826.60842824,15604455.9243869,"Industrial",1880808.48836428,3088448.7709018
+"95",-58,-63,1971,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",10971633.1097768,18016362.1135852,"Industrial",2171516.06931192,3565815.5398334
+"96",-60,-62,1972,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",278158.400659079,467174.06572644,"Industrial",48083.0269665002,80756.6593248627
+"97",-60,-62,1972,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",401040.695981584,673557.987174035,"Industrial",69324.7105025626,116432.603811542
+"98",-59,-63,1972,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",3310417.89003089,5559930.53337536,"Industrial",659914.357266217,1108342.8456046
+"99",-59,-63,1972,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",4788986.08374305,8043223.19278679,"Industrial",954659.133195012,1603374.14789862
+"100",-59,-62,1972,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",308717.277396076,518498.4717319,"Industrial",54970.9674507813,92325.1294947329
+"101",-59,-62,1972,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",446111.353167035,749255.295299188,"Industrial",79435.6988413917,133414.264331487
+"102",-58,-63,1972,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2953883.83931736,4961122.58205305,"Industrial",584635.501367848,981910.10408054
+"103",-58,-63,1972,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",4251800.70874611,7141006.77548116,"Industrial",841520.443690977,1413354.85874063
+"104",166,-51,1972,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",817485.674948696,1372987.85704116,"Industrial",134905.760913795,226577.635860301
+"105",166,-51,1972,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1178876.4467371,1979952.79418621,"Industrial",194544.355875594,326742.163756996
+"106",166,-50,1972,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1455947.96050075,2445301.40589536,"Industrial",231477.565374622,388772.422778849
+"107",166,-50,1972,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",2097580.50711566,3522939.48834856,"Industrial",333489.137068747,560103.436282552
+"108",167,-51,1972,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1276103.78368002,2143248.56448022,"Industrial",199290.126198153,334712.804986382
+"109",167,-51,1972,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1837850.99800441,3086717.21185744,"Industrial",287018.628116176,482055.041726393
+"110",167,-49,1972,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1195846.02775534,2008453.63449583,"Industrial",175049.675959888,294000.356014801
+"111",167,-49,1972,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1732575.91045233,2909905.04096892,"Industrial",253616.974645034,425956.120330795
+"112",167,-48,1972,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",375027.957478822,629868.935258939,"Industrial",61096.8013313144,102613.622357621
+"113",167,-48,1972,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",541569.924824452,909580.379581983,"Industrial",88228.5958797699,148182.157191095
+"114",168,-48,1972,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",215384.985778244,361744.528527758,"Industrial",33618.7262519887,56463.500618611
+"115",168,-48,1972,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",312596.818125775,525014.258461874,"Industrial",48792.1979233645,81947.729874695
+"116",169,-47,1972,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",242143.841736467,406686.703571081,"Industrial",41929.9181449724,70422.3575090656
+"117",169,-47,1972,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",354853.416403322,595985.283512044,"Industrial",61446.8433165786,103201.526720903
+"118",170,-43,1972,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",2156027.12412032,3621102.05913314,"Industrial",374078.022502774,628273.495452396
+"119",170,-43,1972,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",3072295.28082339,5159997.59149311,"Industrial",533053.657042436,895277.092551598
+"120",171,-41,1972,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",967563.49488028,1625047.34957013,"Industrial",149743.453613163,251497.915844436
+"121",171,-41,1972,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1424068.69198241,2391759.36851377,"Industrial",220393.767693987,370156.904376808
+"122",172,-41,1972,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",457924.005269246,769094.943127639,"Industrial",81356.8763915551,136640.930594183
+"123",172,-41,1972,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",693388.717781797,1164563.88031937,"Industrial",123190.61581125,206901.753502756
+"124",172,-40,1972,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",588786.843033186,988882.387353022,"Industrial",91567.0546533518,153789.183097265
+"125",172,-40,1972,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",845241.028788002,1419603.67546714,"Industrial",131450.341314648,220774.171290836
+"126",173,-40,1972,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1004634.35880758,1687308.80268416,"Industrial",173998.530860495,292234.931247515
+"127",173,-40,1972,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1446879.38596928,2430070.50571703,"Industrial",250593.547078963,420878.1973016
+"128",173,-39,1972,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",516258.961821955,867069.977360402,"Industrial",78486.6853402058,131820.372165269
+"129",173,-39,1972,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",787221.356494877,1322158.16911871,"Industrial",119681.011797355,201007.284838943
+"130",174,-40,1972,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1332478.41684434,2237931.1860254,"Industrial",248863.138918914,417971.933052233
+"131",174,-40,1972,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1922152.7709648,3228304.1706857,"Industrial",358994.912050323,602941.030147821
+"132",174,-39,1972,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",393447.650575722,660805.275463378,"Industrial",70050.893499198,117652.246512232
+"133",174,-39,1972,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",591375.676473574,993230.398561635,"Industrial",105290.740636139,176838.460638912
+"134",174,-38,1972,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",469600.005544536,788705.080758232,"Industrial",78431.2478300285,131727.26346547
+"135",174,-38,1972,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",691060.037151131,1160652.80233132,"Industrial",115418.86797122,193848.906536335
+"136",-60,-62,1973,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",11681495.0909518,20066687.8643287,"Industrial",2019287.00386688,3468768.48379436
+"137",-60,-62,1973,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2006940.85380056,3447560.03934627,"Industrial",346923.878498053,595952.241412574
+"138",-59,-63,1973,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",33947932.2193057,58316384.5192942,"Industrial",6767341.34940624,11625063.8700422
+"139",-59,-62,1973,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",15048410.0335745,25850436.4935333,"Industrial",2679557.37728383,4602993.11739321
+"140",-59,-62,1973,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2600374.70867797,4466971.66784357,"Industrial",463029.198353473,795400.102733972
+"141",-60,-63,1974,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",6408550.88095597,11259725.9565723,"Industrial",1293634.56208197,2272896.15508531
+"142",-60,-63,1974,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",5395762.1495989,9480271.63393081,"Industrial",1089192.32056617,1913694.26121319
+"143",-59,-63,1974,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",17594005.15968,30912398.1780676,"Industrial",3507272.19111918,6162223.63849252
+"144",-58,-63,1974,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",18106405.5846039,31812677.8936924,"Industrial",3583637.02933249,6296395.49215681
+"145",-58,-63,1974,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",15142307.9158219,26604803.5896622,"Industrial",2996979.99711413,5265648.05237222
+"146",30,46,1974,"UKR","Ukraine","Trawl_Midwater_or_Unsp","12-24m","High seas","High seas",27,"Atlantic, Northeast",9932914.555124,17451979.0695742,"Industrial",1080130.87703372,1897773.44341184
+"147",-59,-63,1975,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",33006910.9735741,59314870.2886928,"Industrial",6579753.72416385,11824106.7451839
+"148",174,-39,1975,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",21443151.0540088,38534285.270369,"Industrial",3817818.93620049,6860788.49268111
+"149",174,-39,1975,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",3183491.42950852,5720874.07263414,"Industrial",566800.738949112,1018565.84935253
+"150",-60,-63,1976,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",3406431.69576668,6261077.90524506,"Industrial",687624.684093623,1263865.56408281
+"151",-60,-63,1976,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",5025479.60156868,9236914.78556409,"Industrial",1014446.8264965,1864570.07763184
+"152",-59,-63,1976,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",16083142.2569068,29561081.984052,"Industrial",3206089.63516347,5892845.87796182
+"153",-59,-62,1976,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",804890.415625262,1479401.92186376,"Industrial",143320.792447959,263425.991506977
+"154",-59,-62,1976,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1171241.99832483,2152762.20172563,"Industrial",208554.267872409,383326.200329583
+"155",-58,-63,1976,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",9636466.28933319,17711984.7269398,"Industrial",1907258.58122459,3505572.87772261
+"156",-58,-63,1976,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",14109025.6511087,25932622.9492503,"Industrial",2792471.7876699,5132609.4201531
+"157",167,-49,1976,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",3529990.21367324,6488180.50866171,"Industrial",516725.087263075,949749.273108648
+"158",167,-49,1976,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",5140610.64432596,9448527.55000356,"Industrial",752490.041894691,1383089.16661351
+"159",167,-48,1976,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1368386.32032079,2515116.7324586,"Industrial",222927.452446926,409744.35175747
+"160",168,-48,1976,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",800019.100491943,1470448.36392552,"Industrial",124872.321246626,229517.395726894
+"161",168,-48,1976,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1168984.00213734,2148611.96731548,"Industrial",182462.825896656,335369.697613446
+"162",-60,-63,1977,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1730717.63731852,3253616.49683949,"Industrial",349363.872493136,656777.301180413
+"163",-60,-63,1977,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",4482174.97357337,8426145.38691245,"Industrial",904774.974377421,1700907.59988028
+"164",-59,-63,1977,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",8050551.90875569,15134420.5052263,"Industrial",1604835.08879758,3016966.95464931
+"165",-59,-63,1977,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",21134674.9684055,39731568.9456336,"Industrial",4213086.05472633,7920278.84542743
+"166",-59,-62,1977,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",702653.156238695,1320934.0746285,"Industrial",125116.171360991,235208.811873106
+"167",-59,-62,1977,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1842536.47643944,3463827.34335571,"Industrial",328086.634889832,616777.725408746
+"168",-58,-63,1977,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",6796844.2822332,12777546.2653665,"Industrial",1345237.89045845,2528944.12016884
+"169",-58,-63,1977,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",17773596.9324836,33412999.8682517,"Industrial",3517767.22409435,6613132.74075583
+"170",-60,-64,1978,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",7799138.33504347,14996070.893238,"Industrial",1528569.98404729,2939112.35591913
+"171",-60,-63,1978,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",10296230.0756077,19797442.9371423,"Industrial",2078404.20281832,3996325.67487901
+"172",-60,-63,1978,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",6194213.73934599,11910144.9894443,"Industrial",1250368.31679889,2404190.19587377
+"173",-59,-63,1978,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",23411358.8063687,45015023.6199624,"Industrial",4666930.97749342,8973507.68582691
+"174",-59,-62,1978,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",3331015.01928383,6404827.7168227,"Industrial",593128.832139158,1140459.57815835
+"175",-59,-62,1978,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1959863.15318415,3768396.65147839,"Industrial",348978.115220451,671010.095117808
+"176",174,-39,1978,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",3477003.04562836,6685531.39184147,"Industrial",619058.646529707,1190317.05191311
+"177",174,-39,1978,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",2149864.31845092,4133728.15628524,"Industrial",382769.896297925,735984.445216157
+"178",-60,-63,1979,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",4160726.31997833,8182588.86926753,"Industrial",839887.124386094,1651743.11091881
+"179",-60,-63,1979,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2758803.7027206,5425532.64365947,"Industrial",556894.044556091,1095201.8133146
+"180",-60,-62,1979,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1764101.27031515,3469325.86011008,"Industrial",304946.134113573,599714.725465742
+"181",-60,-62,1979,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1121551.54467373,2205671.43330034,"Industrial",193873.681467426,381276.85072724
+"182",-59,-63,1979,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",12413662.5147625,24413020.4460716,"Industrial",2474598.1902825,4866606.94564034
+"183",-59,-62,1979,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1809263.81418912,3558143.65306044,"Industrial",322162.021764871,633571.922463693
+"184",-59,-62,1979,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1218299.96480244,2395939.30597036,"Industrial",216933.526608298,426626.921283603
+"185",-58,-63,1979,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",10570461.3195843,20788134.6872878,"Industrial",2092115.76670961,4114407.40615363
+"186",166,-50,1979,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",5173586.82110093,10174505.76676,"Industrial",822535.773318979,1617619.50816541
+"187",167,-49,1979,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",7216731.84602551,14192606.0823161,"Industrial",1056395.67453966,2077534.2628341
+"188",167,-49,1979,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",4852762.074732,9543563.76367299,"Industrial",710354.350791113,1397000.70540794
+"189",-59,-63,1981,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",35559062.400511,73156567.5598078,"Industrial",7088511.65881161,14583376.1370177
+"190",-59,-62,1981,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",15574121.5170622,32041038.0936041,"Industrial",2773166.87361995,5705307.05954956
+"191",-59,-62,1981,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2130794.29504964,4383737.54195533,"Industrial",379414.540143172,780579.22693593
+"192",-58,-63,1982,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2839263.49116179,5974470.71597696,"Industrial",561949.732950368,1182472.93138308
+"193",-58,-63,1982,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",11094123.932119,23344616.9255474,"Industrial",2195759.56947256,4620388.80434166
+"194",166,-51,1982,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",654893.121075381,1378047.43594213,"Industrial",108073.887437146,227412.594028323
+"195",166,-51,1982,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",2571457.10094336,5410943.78693634,"Industrial",424355.297579638,892942.23887682
+"196",166,-50,1982,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1603142.96619731,3373385.64556792,"Industrial",254879.735286124,536326.240696951
+"197",166,-50,1982,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",6332892.74770403,13325879.1888662,"Industrial",1006850.95538233,2118648.57453709
+"198",166,-49,1982,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",525579.048429314,1105940.55238145,"Industrial",76671.0533385749,161333.727693933
+"199",166,-49,1982,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",2069646.54200839,4355017.66431422,"Industrial",301918.390560928,635306.51122593
+"200",167,-51,1982,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1235960.07186712,2600747.43977544,"Industrial",193020.851319754,406160.762244346
+"201",167,-51,1982,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",4832326.11762054,10168338.0107709,"Industrial",754668.150135904,1587997.3018716
+"202",167,-49,1982,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1468160.34652327,3089350.82072029,"Industrial",214911.440897169,452223.653833255
+"203",167,-49,1982,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",5744100.40248524,12086923.1584551,"Industrial",840829.747976405,1769301.34242375
+"204",167,-48,1982,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",488729.390944186,1028400.30286816,"Industrial",79620.2040616598,167539.426702469
+"205",167,-48,1982,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1914745.47850217,4029069.80118972,"Industrial",311936.275062069,656386.470086535
+"206",168,-49,1982,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",467924.042503556,984621.011026746,"Industrial",66487.1044697242,139904.330781899
+"207",168,-49,1982,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1832597.0117512,3856210.32178817,"Industrial",260392.837092316,547927.089085212
+"208",168,-48,1982,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",394574.206506024,830275.897037467,"Industrial",61587.7758920445,129595.004012329
+"209",168,-48,1982,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1549457.09772454,3260418.09252087,"Industrial",241849.606273084,508907.818822355
+"210",169,-48,1982,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",191245.40488495,402424.810028024,"Industrial",28326.2232455497,59604.9615689292
+"211",169,-48,1982,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",771554.662001446,1623530.45015097,"Industrial",114278.456076607,240468.44944897
+"212",169,-47,1982,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",263361.963656719,554174.821909685,"Industrial",45604.0735929332,95961.5770281151
+"213",169,-47,1982,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1053695.94274821,2217221.32274415,"Industrial",182459.253608465,383936.70433762
+"214",170,-47,1982,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",192094.615906281,404211.747518827,"Industrial",30705.4385671184,64611.3839421833
+"215",170,-47,1982,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",758320.896920037,1595683.53062867,"Industrial",121214.098608055,255062.654365001
+"216",-59,-63,1983,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",7617510.62322138,16394475.482297,"Industrial",1518510.59107369,3268152.2726171
+"217",-59,-62,1983,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",238298.395320757,512867.968657288,"Industrial",42432.0058897916,91322.5480912668
+"218",-59,-62,1983,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",576729.494934665,1241242.45206833,"Industrial",102693.890544015,221018.7230423
+"219",-58,-63,1983,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2699533.10061668,5809959.63389852,"Industrial",534294.161040152,1149912.74141511
+"220",-58,-63,1983,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",6512445.69801505,14016144.7232412,"Industrial",1288949.4519425,2774088.70601023
+"221",166,-51,1983,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",815480.216413091,1755083.92118643,"Industrial",134574.809659213,289633.126439899
+"222",166,-51,1983,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1972187.2341091,4244559.26028331,"Industrial",325460.650425047,700459.364976824
+"223",167,-51,1983,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",946017.363223842,2036027.15300733,"Industrial",147740.271687649,317967.953276942
+"224",167,-51,1983,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",2285315.6526182,4918477.08383166,"Industrial",356899.533280513,768122.413925324
+"225",167,-49,1983,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",780867.932419269,1680591.04951347,"Industrial",114304.580493558,246007.355303614
+"226",167,-49,1983,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1884223.49616505,4055242.90532361,"Industrial",275815.368186498,593612.338076662
+"227",167,-48,1983,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",368026.518141603,792070.011706276,"Industrial",59956.1782399188,129038.230832279
+"228",167,-48,1983,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",889582.142407471,1914566.75869012,"Industrial",144924.191220127,311907.159342472
+"229",168,-51,1983,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",618474.617708419,1331086.68408469,"Industrial",88015.5099519589,189427.779144867
+"230",168,-48,1983,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",199421.302869638,429196.337524948,"Industrial",31127.0080677391,66991.8292004959
+"231",168,-48,1983,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",478546.723264221,1029932.59999827,"Industrial",74694.7668152228,160758.754897567
+"232",168,-47,1983,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",386683.390456661,832223.501589592,"Industrial",72054.404505995,155076.143177794
+"233",168,-47,1983,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",931980.361507061,2005816.59054494,"Industrial",173664.790412558,373762.937707974
+"234",169,-47,1983,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",233596.53571005,502748.583739867,"Industrial",40449.8563788849,87056.547928465
+"235",169,-47,1983,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",571213.816065812,1229371.55795918,"Industrial",98912.0696985693,212879.453903627
+"236",170,-47,1983,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",482922.01977749,1039349.15285425,"Industrial",77192.8580144117,166135.16944339
+"237",170,-43,1983,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1586519.96293113,3414522.65982527,"Industrial",275266.597416579,592431.268646262
+"238",170,-43,1983,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",3785757.94757229,8147742.60559388,"Industrial",656841.850855571,1413660.99139673
+"239",172,-41,1983,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",377027.484994459,811441.974239059,"Industrial",66984.4300363284,144164.498120754
+"240",172,-41,1983,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",952322.76760563,2049597.70153116,"Industrial",169194.025203811,364140.91625933
+"241",172,-40,1983,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",424921.07629388,914518.996005713,"Industrial",66082.9498429702,142224.324268849
+"242",172,-40,1983,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1074742.57906762,2313070.73056019,"Industrial",167142.00332466,359724.536151593
+"243",173,-41,1983,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",411294.293373921,885191.310160048,"Industrial",77472.8257933556,166737.718637576
+"244",173,-41,1983,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1006709.5078597,2166649.33739489,"Industrial",189627.309650085,408117.616450078
+"245",173,-40,1983,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",824811.137847535,1775166.01496361,"Industrial",142853.890039344,307451.438355901
+"246",173,-40,1983,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1989682.15954538,4282211.99755096,"Industrial",344604.750579253,741661.471036513
+"247",173,-39,1983,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",319914.223464135,688522.294544941,"Industrial",48636.4573784297,104675.82488244
+"248",173,-39,1983,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",826823.984876194,1779498.08260266,"Industrial",125701.786761609,270536.526048534
+"249",174,-40,1983,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1074557.981299,2312673.43756759,"Industrial",200692.08536207,431931.327135859
+"250",174,-40,1983,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",2596065.43361689,5587275.58214709,"Industrial",484859.630356222,1043519.29592309
+"251",174,-39,1983,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",278003.398795028,598321.437405873,"Industrial",49496.7664768343,106527.389930212
+"252",174,-39,1983,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",700574.523806929,1507782.84693976,"Industrial",124732.912456432,268451.30597766
+"253",174,-38,1983,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",316440.783107415,681046.724692255,"Industrial",52851.0331993005,113746.473205911
+"254",174,-38,1983,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",780700.740990842,1680231.21860417,"Industrial",130390.401564705,280627.405370838
+"255",-60,-63,1984,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1404722.97831263,3092187.81186922,"Industrial",283558.36267073,624191.193951467
+"256",-60,-63,1984,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",4342510.98223577,9559080.14568637,"Industrial",876582.303424376,1929602.60250392
+"257",-59,-63,1984,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",5337376.35458438,11749056.8359818,"Industrial",1063977.84313889,2342112.55133377
+"258",-59,-63,1984,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",16387784.1689028,36074092.3676602,"Industrial",3266818.39456167,7191180.16805561
+"259",-59,-62,1984,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",412107.845492617,907164.527584418,"Industrial",73380.9495596252,161531.975595805
+"260",-59,-62,1984,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1253742.88402303,2759838.43437278,"Industrial",223244.581095657,491423.706586658
+"261",-58,-63,1984,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",4618996.02366247,10167700.9830067,"Industrial",914196.089963398,2012401.05749461
+"262",-58,-63,1984,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",14152223.3582059,31152998.316908,"Industrial",2801021.51897976,6165831.08235096
+"263",-60,-63,1985,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",9549835.34626712,21501154.5302148,"Industrial",1927736.44082862,4340238.08839637
+"264",-60,-63,1985,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",4796304.65318481,10798729.3793945,"Industrial",968185.411162543,2179839.0636591
+"265",-60,-62,1985,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2355735.62120649,5303864.80890386,"Industrial",407217.251508594,916836.85996514
+"266",-60,-62,1985,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1161798.35900399,2615752.53856697,"Industrial",200830.827662444,452164.304768775
+"267",-59,-63,1985,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",15589609.9608765,35099517.4975036,"Industrial",3107706.57334347,6996903.80464423
+"268",-58,-63,1985,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",12826490.074968,28878439.8036721,"Industrial",2538631.12555625,5715648.29619121
+"269",-59,-63,1986,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",6763624.96293495,15575289.7423837,"Industrial",1348292.98550079,3104851.91326836
+"270",-59,-63,1986,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",16562940.7363862,38141174.6465615,"Industrial",3301734.93304459,7603242.12482712
+"271",-59,-62,1986,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",421863.885781654,971469.040478243,"Industrial",75118.1343965109,172982.197348991
+"272",-59,-62,1986,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1033909.49071725,2380888.94247824,"Industrial",184100.499462342,423947.016068625
+"273",-58,-63,1986,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",5828601.56109221,13422115.8926481,"Industrial",1153602.36939109,2656517.95438549
+"274",-58,-63,1986,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",14214998.2268222,32734327.7138407,"Industrial",2813445.98073356,6478809.30190653
+"275",174,-39,1986,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",542066.924238765,1248272.8494038,"Industrial",96511.6256857137,222247.173934254
+"276",174,-39,1986,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1399473.71889566,3222711.01341383,"Industrial",249167.543112369,573783.540577774
+"277",174,-38,1986,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",724904.279780521,1669311.09500433,"Industrial",121071.436433623,278803.557606185
+"278",174,-38,1986,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1818158.70107759,4186859.66801908,"Industrial",303663.658421773,699277.309145628
+"279",-60,-62,1987,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",215031.018384126,506463.844338673,"Industrial",37170.6992530137,87548.3703788649
+"280",-60,-62,1987,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",563210.405653168,1326532.83866745,"Industrial",97357.6964012892,229307.16491921
+"281",-59,-63,1987,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",3981592.44198476,9377868.50432492,"Industrial",793709.466457688,1869428.65587913
+"282",-59,-63,1987,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",10452468.2616126,24618761.0438025,"Industrial",2083644.45331198,4907620.2493456
+"283",-59,-62,1987,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",225201.746979811,530419.022261396,"Industrial",40099.9840614804,94447.7324169905
+"284",-59,-62,1987,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",592093.956182265,1394562.43806685,"Industrial",105429.724787775,248319.261680653
+"285",-58,-63,1987,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",3585777.9727272,8445604.31634183,"Industrial",709700.589771201,1671562.0459131
+"286",-58,-63,1987,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",9366279.43916569,22060454.010575,"Industrial",1853782.94264051,4366226.05777735
+"287",168,-48,1987,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",441294.630080255,1039383.88292057,"Industrial",68880.2114573357,162233.974222383
+"288",168,-48,1987,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1152490.51627462,2714467.80944696,"Industrial",179888.41253095,423692.254480491
+"289",168,-47,1987,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",569082.829541465,1340364.19379195,"Industrial",106042.631799549,249762.845233098
+"290",168,-47,1987,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1488054.5766374,3504823.8488237,"Industrial",277283.403006795,653087.258356667
+"291",169,-47,1987,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",309897.188721873,729902.703011212,"Industrial",53662.168995431,126390.827747593
+"292",169,-47,1987,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",823540.91046628,1939690.83446295,"Industrial",142605.332092106,335879.192022153
+"293",170,-47,1987,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",379131.541484012,892970.788367966,"Industrial",60602.4286572084,142737.262859263
+"294",170,-47,1987,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",962574.678984045,2267157.90142634,"Industrial",153863.123817214,362394.736238557
+"295",170,-46,1987,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",174417.495419236,410806.570669482,"Industrial",30616.693887002,72111.6823213449
+"296",170,-46,1987,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",460376.420091148,1084327.33711804,"Industrial",80813.0164513873,190339.381230385
+"297",170,-43,1987,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",2030497.48492665,4782442.87667791,"Industrial",352298.204118434,829770.068301013
+"298",170,-43,1987,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",5277747.44175997,12430710.1314444,"Industrial",915707.09115646,2156770.39136193
+"299",-60,-64,1988,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",4509292.7441188,10862917.6070705,"Industrial",883786.034025235,2129046.70747248
+"300",-60,-63,1988,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2274049.50952651,5478201.0967471,"Industrial",459041.224148042,1105833.50408388
+"301",-60,-63,1988,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2677197.08009921,6449386.40032574,"Industrial",540420.874649377,1301877.64857665
+"302",-59,-63,1988,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",12783332.046619,30795135.8774296,"Industrial",2548289.8629413,6138848.01694633
+"303",-59,-62,1988,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",474726.983237625,1143620.60690987,"Industrial",84531.0692154178,203635.934110127
+"304",-59,-62,1988,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",548235.262111483,1320702.56236414,"Industrial",97620.1364662719,235167.5882226
+"305",-58,-63,1988,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",9184472.73624046,22125458.7492215,"Industrial",1817799.58693033,4379091.85753022
+"306",-58,-63,1988,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",10670782.4498111,25705989.1945257,"Industrial",2111971.42030278,5087753.85167858
+"307",-60,-62,1989,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",500334.78486441,1232791.04679672,"Industrial",86488.8886904386,213102.768087303
+"308",-60,-62,1989,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1290982.81151349,3180894.27268903,"Industrial",223161.914909671,549855.854537896
+"309",-59,-63,1989,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",5611359.14159883,13826009.1430554,"Industrial",1118594.86757533,2756142.0461968
+"310",-59,-63,1989,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",14679058.9655245,36168207.7991115,"Industrial",2926193.03190649,7209941.58323587
+"311",-59,-62,1989,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",660244.063629601,1626796.68687004,"Industrial",117564.70268682,289671.470535289
+"312",-59,-62,1989,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1709851.12212508,4212957.4406512,"Industrial",304460.350171559,750169.696671817
+"313",-58,-63,1989,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",4847255.79533398,11943310.213062,"Industrial",959373.481259911,2363831.32656254
+"314",-58,-63,1989,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",12643318.0188574,31152279.8873059,"Industrial",2502377.53784388,6165688.89008022
+"315",174,-39,1989,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",512890.28400607,1263726.94691428,"Industrial",91316.9073677515,224998.679343547
+"316",174,-39,1989,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1385305.05987479,3413297.90883649,"Industrial",246644.901986809,607716.345346234
+"317",-59,-63,1990,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",16713757.4256356,42120506.8243565,"Industrial",3331799.44509629,8396501.01953237
+"318",-58,-63,1990,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",14359280.7719616,36186966.7212346,"Industrial",2842002.51941442,7162158.90092001
+"319",-58,-63,1990,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",14219845.3691404,35835574.1715808,"Industrial",2814405.33175532,7092610.95299147
+"320",36,45,1990,"UKR","Ukraine","Trawl_Bottom","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",45603569.273338,114926009.865768,"Industrial",5932281.26640858,14950001.1997609
+"321",36,45,1990,"UKR","Ukraine","Trawl_Midwater_or_Unsp","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",28939500.3790591,72930723.6049751,"Industrial",3764557.43911008,9487098.75742907
+"322",167,-49,1990,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",4699538.30796936,11843353.3723864,"Industrial",687925.233581517,1733647.24387314
+"323",167,-49,1990,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",4687207.21053501,11812277.6507273,"Industrial",686120.189654444,1729098.33466545
+"324",174,-39,1990,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1474875.41784181,3716848.25382222,"Industrial",262592.344035201,661761.585817553
+"325",174,-39,1990,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1538082.18317442,3876136.25368597,"Industrial",273845.913297248,690121.817980151
+"326",-59,-63,1991,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",16320596.5159793,42067455.2103066,"Industrial",3253424.89009544,8385925.45990494
+"327",-58,-63,1991,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",15678883.8974423,40413396.9893486,"Industrial",3103179.62617914,7998658.00285019
+"328",-58,-63,1991,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",14855096.5108309,38290028.584575,"Industrial",2940134.84243322,7578398.90687967
+"329",-59,-63,1992,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",6844013.5974955,18043126.5825242,"Industrial",1364318.0360744,3596802.17945789
+"330",-59,-63,1992,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",12092883.5155007,31880916.7909523,"Industrial",2410652.58759595,6355292.7189391
+"331",-59,-62,1992,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",523062.491688639,1378969.02360952,"Industrial",93137.8102575421,245542.659458029
+"332",-59,-62,1992,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",924285.72080408,2436728.6857803,"Industrial",164580.617910661,433889.979861932
+"333",-58,-63,1992,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",6191555.22882012,16323026.4149639,"Industrial",1225438.50481423,3230668.9264255
+"334",-58,-63,1992,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",10894703.6325892,28722110.7792406,"Industrial",2156290.11395549,5684707.50686147
+"335",168,-48,1992,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",591334.742027234,1558957.68631233,"Industrial",92299.4736317038,243332.521555278
+"336",168,-48,1992,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1040063.63628135,2741958.29332836,"Industrial",162340.074664213,427983.152700738
+"337",169,-47,1992,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",968676.927796221,2553758.86923922,"Industrial",167737.258978583,442211.949646586
+"338",-60,-63,1993,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",3505439.32751249,9452226.20350304,"Industrial",707610.433870046,1908032.99101595
+"339",-59,-63,1993,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",14321776.8460439,38617891.1505971,"Industrial",2854970.72461117,7698273.0471485
+"340",-59,-62,1993,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2001196.63745369,5396117.72665449,"Industrial",356338.058394259,960846.164537592
+"341",-59,-62,1993,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1044469.55126018,2816355.25216414,"Industrial",185980.85014851,501487.231950173
+"342",167,-49,1993,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",8847294.90803774,23856248.8026903,"Industrial",1295079.86047384,3492112.30008267
+"343",167,-49,1993,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",4623835.90476398,12467921.6544085,"Industrial",676843.806003954,1825072.45484953
+"344",174,-39,1993,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1143067.29003251,3082218.68409276,"Industrial",203515.982060932,548769.76000411
+"345",174,-38,1993,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",2806903.70819287,7568662.95561238,"Industrial",468801.01740421,1264096.40759106
+"346",174,-38,1993,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1502104.68553822,4050343.46411704,"Industrial",250877.222033852,676476.763799296
+"347",-60,-63,1994,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1416960.77917335,3907870.83077016,"Industrial",286028.693709895,788845.538522451
+"348",-60,-63,1994,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2169217.69365098,5982538.59613156,"Industrial",437879.800490566,1207639.42437337
+"349",-59,-63,1994,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",6386321.18460879,17612991.5803471,"Industrial",1273079.46604814,3511057.03400231
+"350",-59,-63,1994,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",9899793.14552678,27302881.9376585,"Industrial",1973471.5820539,5442685.60161666
+"351",-59,-62,1994,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",465439.256956758,1283646.32422485,"Industrial",82877.2735374318,228569.262149681
+"352",-59,-62,1994,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",721671.272510789,1990314.87441382,"Industrial",128502.584519938,354400.4245601
+"353",-58,-63,1994,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",5578494.0442404,15385065.3282233,"Industrial",1104100.85157097,3045026.77526465
+"354",-58,-63,1994,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",8620661.28933205,23775132.8686628,"Industrial",1706209.48864928,4705596.92962404
+"355",174,-39,1994,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",928826.47595726,2561633.28272079,"Industrial",165371.745011844,456082.78511588
+"356",174,-38,1994,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1063213.13463954,2932261.53949974,"Industrial",177574.812339194,489737.923321114
+"357",-60,-63,1995,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2765039.43198612,7799637.51355021,"Industrial",558152.793226033,1574440.28247061
+"358",-59,-63,1995,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",10048496.8369837,28344851.7868812,"Industrial",2003114.87913324,5650396.798868
+"359",-59,-62,1995,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",996128.927961613,2809885.62585568,"Industrial",177373.198343889,500335.23417337
+"360",-59,-62,1995,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1012600.80553262,2856349.58319936,"Industrial",180306.22189685,508608.722163148
+"361",-58,-63,1995,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",8596449.75220183,24248909.869058,"Industrial",1701417.51817278,4799367.32454473
+"362",-58,-63,1995,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",8792820.34812072,24802833.0604488,"Industrial",1740283.37344807,4909000.3298808
+"363",173,-40,1995,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",2389334.80118506,6739847.95014944,"Industrial",413822.941147966,1167313.89014114
+"364",174,-39,1995,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",989921.042814939,2792374.39136488,"Industrial",176249.250545463,497164.796417416
+"365",174,-39,1995,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1045731.81657338,2949805.71029328,"Industrial",186186.009763468,525194.458151459
+"366",174,-38,1995,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1089945.4240099,3074523.68255149,"Industrial",182039.562739355,513498.138965883
+"367",174,-38,1995,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1112021.2877575,3136795.3930515,"Industrial",185726.610269608,523898.581685986
+"368",-60,-63,1996,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1782129.54798422,5141656.75254597,"Industrial",359741.916730478,1037898.42743098
+"369",-60,-63,1996,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",3753267.57898654,10828625.5695812,"Industrial",757637.218009327,2185873.92951542
+"370",-59,-63,1996,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",5411857.69177712,15613856.2857104,"Industrial",1078825.30511941,3112539.95039748
+"371",-59,-63,1996,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",11380430.1816918,32833901.3046271,"Industrial",2268628.77082087,6545265.15858794
+"372",-59,-62,1996,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",653304.409305041,1884861.30616643,"Industrial",116329.010550596,335623.099505311
+"373",-59,-62,1996,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1355609.8487205,3911096.44098291,"Industrial",241383.266587852,696419.575112743
+"374",-58,-63,1996,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",4735752.24956352,13663211.2743404,"Industrial",937304.593337468,2704235.78183589
+"375",-58,-63,1996,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",9927782.33146999,28642838.6309777,"Industrial",1964916.12959673,5669017.88781576
+"376",36,45,1996,"UKR","Ukraine","Trawl_Midwater_or_Unsp","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",9442369.75794404,27242365.3380774,"Industrial",1228298.44501455,3543787.8245688
+"377",37,45,1996,"UKR","Ukraine","Trawl_Bottom","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",31272940.3571666,90226170.7861079,"Industrial",4144756.92447419,11958119.1235449
+"378",37,45,1996,"UKR","Ukraine","Trawl_Midwater_or_Unsp","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",15484530.7833177,44674722.0773628,"Industrial",2052241.18529942,5920961.11092657
+"379",166,-51,1997,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",836125.559246188,2467254.32779913,"Industrial",137981.812093109,407159.211053434
+"380",166,-51,1997,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",2314380.43229396,6829315.37567025,"Industrial",381931.161401951,1127009.33546376
+"381",166,-50,1997,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1813320.59066271,5350778.98950167,"Industrial",288295.355986427,850707.117939529
+"382",166,-50,1997,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",5058058.65790234,14925410.3955659,"Industrial",804168.236377471,2372954.08511333
+"383",166,-49,1997,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",902368.283975875,2662724.55050333,"Industrial",131636.767178054,388436.138479425
+"384",166,-49,1997,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",2498682.14471869,7373156.18112377,"Industrial",364505.76286554,1075590.15627811
+"385",167,-51,1997,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1493229.22937784,4406247.64766206,"Industrial",233198.776910844,688127.14215968
+"386",167,-51,1997,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",4124643.10514487,12171071.0063333,"Industrial",644148.740454465,1900765.68053422
+"387",167,-50,1997,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",505658.780422319,1492107.0174094,"Industrial",77224.570470821,227875.650492418
+"388",167,-50,1997,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1402879.11167775,4139640.89650177,"Industrial",214248.700934888,632208.917382588
+"389",167,-49,1997,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1752854.68150444,5172355.09801158,"Industrial",256585.410563327,757136.841066338
+"390",167,-49,1997,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",4864336.38589593,14353771.2335843,"Industrial",712048.615246301,2101125.85142555
+"391",167,-48,1997,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",674487.987197245,1990291.27510614,"Industrial",109882.630700873,324243.641578308
+"392",167,-48,1997,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1868191.33031447,5512692.55425071,"Industrial",304352.015045579,898087.396075511
+"393",168,-50,1997,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",329762.421350319,973068.879697453,"Industrial",47049.8840907367,138835.643596368
+"394",168,-50,1997,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",915841.965908524,2702482.93331092,"Industrial",130670.61481712,385585.198728253
+"395",168,-49,1997,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",334947.140596693,988368.042433935,"Industrial",47592.4797741473,140436.744690977
+"396",168,-49,1997,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",922520.810307774,2722190.98740222,"Industrial",131080.542821138,386794.821650092
+"397",168,-48,1997,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",390184.251147082,1151362.7010154,"Industrial",60902.5623571388,179712.375597245
+"398",168,-48,1997,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1082904.03802685,3195452.69830249,"Industrial",169026.890523747,498767.5864557
+"399",168,-47,1997,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",154995.314081808,457362.958503136,"Industrial",28881.7552887264,85224.8025939897
+"400",168,-47,1997,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",430678.936617241,1270855.14670644,"Industrial",80252.514271643,236810.561480722
+"401",169,-47,1997,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",314649.248565686,928472.657817478,"Industrial",54485.0413792265,160775.439354355
+"402",169,-47,1997,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",887335.664820499,2618366.02772035,"Industrial",153652.108293262,453399.402721033
+"403",167,-48,1998,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",9181173.97818107,27709670.1755178,"Industrial",1495729.45522292,4514256.01720764
+"404",174,-39,1998,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",4642975.92886581,14012949.969959,"Industrial",826652.82620546,2494918.10287545
+"405",174,-39,1998,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",7443124.16356393,22464067.900023,"Industrial",1325201.70680947,3999586.79565277
+"406",174,-38,1998,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",4942281.76925643,14916283.9159815,"Industrial",825445.744705427,2491275.01427694
+"407",174,-38,1998,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",7805363.2959314,23557340.6020132,"Industrial",1303629.42043991,3934479.55101794
+"408",-60,-63,1999,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",783741.459802593,2419338.74278688,"Industrial",158206.599115894,488369.410369132
+"409",-60,-63,1999,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2873979.85786104,8871714.93755562,"Industrial",580143.583770978,1790850.58094269
+"410",-59,-63,1999,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2804159.69477819,8656186.43199902,"Industrial",558994.454514053,1725565.13872509
+"411",-59,-63,1999,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",10220974.2874659,31551219.8230819,"Industrial",2037497.34976349,6289569.36621676
+"412",-59,-62,1999,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",227738.614098166,703008.428895752,"Industrial",40551.7049400989,125179.432095317
+"413",-59,-62,1999,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",817152.742772975,2522476.34042886,"Industrial",145504.252966247,449158.420852422
+"414",-58,-63,1999,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2369255.14539502,7313675.56623215,"Industrial",468925.233741242,1447529.63017464
+"415",-58,-63,1999,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",8610272.38800468,26579129.2698675,"Industrial",1704153.30740906,5260566.56655831
+"416",36,45,1999,"UKR","Ukraine","Trawl_Bottom","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",9871444.99338322,30472254.6205441,"Industrial",1284114.14149697,3963943.7901711
+"417",36,45,1999,"UKR","Ukraine","Trawl_Midwater_or_Unsp","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",7649063.52271441,23611964.7558291,"Industrial",995018.525181473,3071531.86507262
+"418",37,45,1999,"UKR","Ukraine","Trawl_Bottom","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",18530654.4331311,57202448.1269136,"Industrial",2455958.96642823,7581322.3912784
+"419",37,45,1999,"UKR","Ukraine","Trawl_Midwater_or_Unsp","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",14280185.3905943,44081636.0261788,"Industrial",1892623.3543907,5842356.49334412
+"420",167,-49,1999,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",902268.552965043,2785221.1201592,"Industrial",132075.379404649,407704.707165073
+"421",167,-49,1999,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",3262615.54248571,10071398.0178393,"Industrial",477586.395102921,1474265.84908682
+"422",-60,-63,2000,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",3011677.32764798,9508740.9866137,"Industrial",607939.291308695,1919441.10465328
+"423",-60,-63,2000,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",3445969.40883466,10879927.3599449,"Industrial",695605.794500722,2196229.74479161
+"424",-59,-63,2000,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",10449627.0800205,32992510.9833127,"Industrial",2083078.07873738,6576883.16200715
+"425",-58,-63,2000,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",7863925.65177722,24828699.7661647,"Industrial",1556435.65090519,4914119.89289938
+"426",-58,-63,2000,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",8942188.41641922,28233088.8254993,"Industrial",1769846.44371363,5587919.8162624
+"427",36,45,2000,"UKR","Ukraine","Trawl_Midwater_or_Unsp","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",22447331.426008,70872752.0080244,"Industrial",2920032.0462027,9219390.18667627
+"428",173,-40,2000,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",2549600.7240267,8049830.79744004,"Industrial",441580.338530378,1394197.52086979
+"429",174,-39,2000,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",918980.207411098,2901487.71379868,"Industrial",163618.67847737,516591.74106423
+"430",-60,-63,2001,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1500979.14565309,4847077.41036568,"Industrial",302988.699918296,978434.435430501
+"431",-60,-63,2001,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",3647942.35170753,11780216.27981,"Industrial",736376.193980921,2377962.69569285
+"432",-60,-62,2001,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",333554.111570783,1077138.61582391,"Industrial",57658.8422404041,186196.372241866
+"433",-60,-62,2001,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",791286.756684136,2555284.1120763,"Industrial",136783.438392393,441711.609560995
+"434",-59,-63,2001,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",4611199.92692698,14890841.7983133,"Industrial",919218.399939124,2968410.82332211
+"435",-59,-63,2001,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",11173999.4106407,36083939.1297405,"Industrial",2227477.88470212,7193143.06817434
+"436",-59,-62,2001,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",442456.676401035,1428815.16206262,"Industrial",78784.9379923668,254418.387041416
+"437",-59,-62,2001,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1056138.35598023,3410563.28618417,"Industrial",188058.62658482,607293.394704066
+"438",-58,-63,2001,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",3866371.92097391,12485585.8607353,"Industrial",765236.01111394,2471159.03895841
+"439",-58,-63,2001,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",9344219.42209338,30175072.7246926,"Industrial",1849416.80306197,5972279.11822316
+"440",36,45,2001,"UKR","Ukraine","Trawl_Bottom","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",24832203.0617031,80190061.839682,"Industrial",3230264.98526115,10431420.3730938
+"441",36,45,2001,"UKR","Ukraine","Trawl_Midwater_or_Unsp","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",7370377.27579879,23800989.7091892,"Industrial",958765.985563925,3096120.93140164
+"442",37,45,2001,"UKR","Ukraine","Trawl_Midwater_or_Unsp","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",14400546.782259,46503354.2986575,"Industrial",1908575.4428686,6163318.75222815
+"443",-60,-63,2002,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",863475.069910164,2851975.6944688,"Industrial",174301.681406843,575701.80796196
+"444",-60,-63,2002,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2115976.8659736,6988869.51356082,"Industrial",427132.569786354,1410778.08705399
+"445",-59,-63,2002,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",4126550.09529074,13629600.8812409,"Industrial",822606.010576878,2716989.09446603
+"446",-59,-63,2002,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",10282200.2516484,33961125.4861278,"Industrial",2049702.42300309,6769971.35760593
+"447",-59,-62,2002,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",263156.41765925,869180.516220051,"Industrial",46858.2872705611,154768.447911277
+"448",-59,-62,2002,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",659547.849321061,2178423.55981225,"Industrial",117440.73303272,387895.525674833
+"449",-58,-63,2002,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",3558307.84870847,11752751.0076347,"Industrial",704263.676675783,2326115.66722539
+"450",-58,-63,2002,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",8830027.97298261,29164739.1314332,"Industrial",1747647.54197979,5772312.93167855
+"451",167,-49,2002,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1622530.67824567,5359063.87936374,"Industrial",237508.393948516,784467.543277147
+"452",167,-49,2002,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",4048116.38081265,13370541.8127009,"Industrial",592569.147082663,1957199.30275194
+"453",-59,-63,2003,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",5754747.55451143,19440749.8974015,"Industrial",1147178.59189352,3875411.02044893
+"454",-59,-63,2003,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",8636129.26157139,29174664.4775446,"Industrial",1721566.84752108,5815815.58483444
+"455",-59,-62,2003,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",462147.721753383,1561232.38928492,"Industrial",82291.1745796604,277996.928381753
+"456",-58,-63,2003,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",7719645.83220866,26078590.3289252,"Industrial",1527879.65167192,5161499.42288905
+"457",173,-40,2003,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1405520.3622495,4748143.95929092,"Industrial",243430.334610688,822358.966710389
+"458",173,-40,2003,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",2102478.45123328,7102615.24904938,"Industrial",364140.603467562,1230143.69135134
+"459",174,-40,2003,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",2234671.93776888,7549192.70278827,"Industrial",417363.212684697,1409940.88052018
+"460",174,-40,2003,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",3347302.10072879,11307891.8501474,"Industrial",625165.929268895,2111942.24597488
+"461",174,-39,2003,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",457593.657645914,1545847.80108337,"Industrial",81471.6888784502,275228.532998495
+"462",174,-39,2003,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",719012.081997297,2428974.32544393,"Industrial",128015.60438073,432463.687443501
+"463",-59,-63,2004,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",12796114.2013067,44213567.9296687,"Industrial",2550837.91810394,8813741.71841528
+"464",-59,-63,2004,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",19281860.2716075,66623337.7975041,"Industrial",3843737.21104925,13281011.2203568
+"465",-59,-62,2004,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",890056.753286508,3075354.29143598,"Industrial",158485.722687585,547605.246068734
+"466",-59,-62,2004,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1341723.46292911,4635968.43055595,"Industrial",238910.622141821,825492.087286009
+"467",-60,-63,2005,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",988291.418204582,3492634.97780472,"Industrial",199497.196752807,705025.73888445
+"468",-60,-63,2005,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2668110.74189585,9429138.74404697,"Industrial",538586.700065921,1903372.54030598
+"469",-59,-63,2005,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",3265492.94300356,11540295.3647299,"Industrial",650958.80587434,2300497.05241503
+"470",-59,-63,2005,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",8774098.93003657,31007781.9732935,"Industrial",1749070.37369571,6181237.89530574
+"471",-58,-63,2005,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",3008955.22967708,10633687.6838519,"Industrial",595535.283371943,2104629.58891254
+"472",-58,-63,2005,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",8057184.18850678,28474195.7696213,"Industrial",1594685.56446328,5635639.93215992
+"473",36,45,2005,"UKR","Ukraine","Trawl_Bottom","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",24811775.9384696,87685145.1989577,"Industrial",3227607.74938213,11406408.588071
+"474",36,45,2005,"UKR","Ukraine","Trawl_Midwater_or_Unsp","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",20931277.7629928,73971413.1869976,"Industrial",2722818.16826983,9622475.51433543
+"475",-60,-63,2006,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1927124.75713173,6965763.49297721,"Industrial",389010.751038547,1406113.88958184
+"476",-60,-63,2006,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1423941.92524685,5146964.48286364,"Industrial",287437.91273794,1038969.84958439
+"477",-59,-63,2006,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",6565431.72445432,23731335.738692,"Industrial",1308784.20808017,4730716.69236346
+"478",-59,-62,2006,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",547426.017838269,1978719.93292184,"Industrial",97476.040415096,352335.800394179
+"479",-59,-62,2006,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",409886.008347479,1481569.36008573,"Industrial",72985.3237028007,263811.930956031
+"480",-58,-63,2006,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",5771066.59561437,20860032.4698766,"Industrial",1142214.99425447,4128637.48372524
+"481",167,-49,2006,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",2469483.5677427,8926167.55559296,"Industrial",361486.586306637,1306625.35301735
+"482",167,-49,2006,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1839765.55778028,6649995.91261373,"Industrial",269307.550685355,973436.046631064
+"483",-60,-63,2007,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1326875.47511171,4905460.47226296,"Industrial",267844.011238839,990219.681130108
+"484",-60,-63,2007,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1527898.09382392,5648641.37252075,"Industrial",308422.577619441,1140238.69733385
+"485",-59,-63,2007,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",4873201.82682971,18016233.9143845,"Industrial",971447.097680733,3591441.26781467
+"486",-59,-62,2007,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",272622.93021433,1007887.3512123,"Industrial",48543.9180779036,179466.93247901
+"487",-59,-62,2007,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",310397.992953697,1147541.8105651,"Industrial",55270.2398497585,204334.153400986
+"488",-58,-63,2007,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",3858974.91948205,14266635.6308828,"Industrial",763771.989537245,2823666.10490043
+"489",-58,-63,2007,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",4419579.82832379,16339192.7565982,"Industrial",874727.446751741,3233868.58415097
+"490",173,-40,2007,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",913060.518326026,3375586.00294059,"Industrial",158138.319063682,584637.584963795
+"491",173,-40,2007,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1039542.75904556,3843191.02234956,"Industrial",180044.521924654,665624.847331294
+"492",174,-40,2007,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1504342.63284256,5561556.80059415,"Industrial",280961.721320305,1038715.87349949
+"493",174,-40,2007,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1715206.04735711,6341119.13658535,"Industrial",320344.071199959,1184312.47563972
+"494",174,-39,2007,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",379365.097440883,1402513.29153232,"Industrial",67543.5829881253,249708.720010343
+"495",174,-39,2007,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",420572.175012662,1554855.91448178,"Industrial",74880.2454339932,276832.371250871
+"496",174,-38,2007,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",380297.58484432,1405960.69875646,"Industrial",63516.213317543,234819.528751028
+"497",174,-38,2007,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",416535.185140553,1539931.15732407,"Industrial",69568.5135220621,257194.891003494
+"498",-60,-63,2008,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2890871.36829396,10931231.7235572,"Industrial",583553.315878549,2206586.07950554
+"499",-59,-63,2008,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2646705.64450443,10007969.5767296,"Industrial",527606.819527463,1995035.98341953
+"500",-59,-63,2008,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",9348883.31772518,35350867.2241138,"Industrial",1863650.61171051,7047009.04778724
+"501",-59,-62,2008,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",275208.116712554,1040642.5304783,"Industrial",49004.2428256687,185299.401294696
+"502",-59,-62,2008,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",963220.348540366,3642218.37962787,"Industrial",171513.414714429,648542.477712671
+"503",-58,-63,2008,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2292930.89224622,8670243.57574165,"Industrial",453819.064902697,1716022.86197432
+"504",-58,-63,2008,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",8074732.9009706,30532931.1481718,"Industrial",1598158.82233926,6043106.79805426
+"505",-60,-63,2009,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",527996.97025148,2042031.71430253,"Industrial",106581.837622859,412205.949763042
+"506",-59,-63,2009,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",7193168.26777918,27819625.0295217,"Industrial",1433920.17921186,5545695.61324255
+"507",-59,-62,2009,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",167673.140698587,648476.961487386,"Industrial",29856.2971190205,115469.423166653
+"508",-59,-62,2009,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",510727.133001503,1975240.5064884,"Industrial",90941.3455614172,351716.245055933
+"509",-58,-63,2009,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2050665.86057736,7930963.54462407,"Industrial",405869.739215484,1569703.85447281
+"510",-58,-63,2009,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",6221549.47274361,24061883.0244302,"Industrial",1231374.99412398,4762350.79341955
+"511",168,-48,2009,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",148565.841617868,574579.358099795,"Industrial",23189.1482208037,89684.1814679153
+"512",168,-48,2009,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",458225.614027474,1772190.54060894,"Industrial",71522.9124443229,276615.328760366
+"513",173,-40,2009,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",593929.725668823,2297027.07442635,"Industrial",102866.180909253,397835.623272286
+"514",173,-40,2009,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1802763.00799443,6972197.65094992,"Industrial",312231.123821992,1207555.90080972
+"515",173,-39,2009,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",259144.054678357,1002241.31584336,"Industrial",39397.5879964285,152370.427651154
+"516",173,-39,2009,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",834222.060911559,3226359.24282076,"Industrial",126826.513902154,490502.366858804
+"517",174,-40,2009,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",760025.28296257,2939402.7218416,"Industrial",141947.723268748,548983.742368379
+"518",174,-40,2009,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",2310632.03935069,8936384.43074837,"Industrial",431550.06109686,1669022.66626503
+"519",174,-39,2009,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",241215.571763431,932902.791639006,"Industrial",42946.9239509316,166097.507525036
+"520",174,-39,2009,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",760549.640263859,2941430.67711254,"Industrial",135411.106847424,523703.335872452
+"521",174,-38,2009,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",263364.76285401,1018564.9321463,"Industrial",43986.4283245638,170117.79744659
+"522",174,-38,2009,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",815841.932567994,3155273.97698555,"Industrial",136259.582725455,526984.821845628
+"523",-60,-63,2010,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1364846.32066169,5398903.00230851,"Industrial",275508.832673103,1089826.33529041
+"524",-60,-63,2010,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",3078941.62047384,12179325.1790062,"Industrial",621517.308493847,2458527.09716605
+"525",-59,-63,2010,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",9903691.73340813,39175891.2516341,"Industrial",1974248.74499871,7809507.42608877
+"526",-58,-63,2010,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",3738614.05336474,14788781.9541457,"Industrial",739950.052340208,2927009.80224728
+"527",-58,-63,2010,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",8372117.96559263,33117466.8794987,"Industrial",1657017.55741896,6554640.57029517
+"528",-60,-63,2011,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",3066675.26363902,12407385.643185,"Industrial",619041.21312578,2504563.54193904
+"529",-59,-63,2011,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",10145390.6995811,41046985.4447888,"Industrial",2022430.15991744,8182500.1910139
+"530",-59,-62,2011,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",367488.496926751,1486812.62566877,"Industrial",65435.9172038802,264745.559887111
+"531",-59,-62,2011,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",627941.315637214,2540572.24668602,"Industrial",111812.794910755,452380.622998817
+"532",-58,-63,2011,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",4939206.54648965,19983413.672865,"Industrial",977572.461459303,3955136.25694112
+"533",-58,-63,2011,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",8495677.69531805,34372452.3805411,"Industrial",1681472.61674641,6803028.49531961
+"534",-59,-63,2012,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",16441055.2480969,68035079.882997,"Industrial",3277437.7034088,13562434.5638504
+"535",36,45,2012,"UKR","Ukraine","Trawl_Bottom","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",14910953.7158783,61703334.2375562,"Industrial",1939672.10905805,8026598.34756414
+"536",36,45,2012,"UKR","Ukraine","Trawl_Midwater_or_Unsp","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",11190495.7574286,46307628.1478417,"Industrial",1455701.15237516,6023867.85355997
+"537",-60,-64,2013,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",855020.182586204,3618847.61534254,"Industrial",167577.25414145,709265.768091148
+"538",-60,-64,2013,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2564248.97003017,10853107.8673136,"Industrial",502572.699550719,2127124.07536885
+"539",-60,-62,2013,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",129934.977383491,549945.945874121,"Industrial",22460.8245036588,95064.7749013785
+"540",-60,-62,2013,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",383278.617682089,1622215.40480511,"Industrial",66254.321516172,280419.454777916
+"541",-59,-63,2013,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2241928.29336657,9488895.14359577,"Industrial",446916.588147167,1891561.23119976
+"542",-59,-63,2013,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",6718583.90591272,28436207.52068,"Industrial",1339314.28819344,5668608.08286752
+"543",-59,-62,2013,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",184206.157932354,779647.111192843,"Industrial",32800.2073526372,138825.906777779
+"544",-59,-62,2013,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",546463.601577451,2312891.01908501,"Industrial",97304.6701782444,411839.136441356
+"545",-58,-63,2013,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1884845.28450047,7977551.87774933,"Industrial",373050.372948793,1578924.66171379
+"546",-58,-63,2013,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",5633070.12380038,23841802.5676453,"Industrial",1114902.60119008,4718792.25991154
+"547",-59,-63,2014,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",5626620.07384886,24357473.5887631,"Industrial",1121637.05397947,4855533.97242167
+"548",-58,-63,2014,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",5188978.10232278,22462934.3053441,"Industrial",1027007.48555479,4445885.34085104
+"549",36,45,2014,"UKR","Ukraine","Trawl_Midwater_or_Unsp","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",3878730.58686015,16790911.1664524,"Industrial",504559.646635575,2184223.94005269
+"550",37,45,2014,"UKR","Ukraine","Trawl_Bottom","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",12636044.6242769,54701067.2770945,"Industrial",1674717.27494388,7249802.05837632
+"551",37,45,2014,"UKR","Ukraine","Trawl_Midwater_or_Unsp","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",7183300.51740205,31096297.6594017,"Industrial",952038.222822829,4121345.59709797
+"552",166,-49,2014,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1958411.62109475,8477906.57813369,"Industrial",285691.528816783,1236750.26505354
+"553",166,-49,2014,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",803131.656781046,3476733.43172119,"Industrial",117160.206973584,507183.106297953
+"554",167,-49,2014,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",4780615.76878881,20695145.7176751,"Industrial",699793.469888439,3029385.44573473
+"555",167,-49,2014,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1964261.72949222,8503231.52613308,"Industrial",287531.480865839,1244715.36361204
+"556",167,-48,2014,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1968850.11525524,8523094.51378303,"Industrial",320750.605239018,1388519.98058311
+"557",167,-48,2014,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",806226.146840345,3490129.38860131,"Industrial",131344.444432246,568586.25503406
+"558",168,-49,2014,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1097905.08721788,4752798.9830288,"Industrial",156000.811245219,675322.945188979
+"559",168,-49,2014,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",449223.313927708,1944674.57564911,"Industrial",63829.9268478393,276317.884798185
+"560",168,-48,2014,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1487539.41630437,6439514.58767909,"Industrial",232185.081263129,1005122.41991539
+"561",168,-48,2014,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",616127.21840296,2667196.69225907,"Industrial",96169.2488315526,416313.862980159
+"562",174,-38,2014,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",1179543.05596055,5106207.35988577,"Industrial",197003.902589301,852824.127313036
+"563",174,-38,2014,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",511600.472831881,2214703.47054678,"Industrial",85446.0455725687,369893.429977834
+"564",-178,-44,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",113852.152203922,504099.902094547,"Industrial",16559.186355379,73318.6334990013
+"565",-178,-44,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",146803.194461339,649996.284853527,"Industrial",21351.7391423234,94538.481731246
+"566",-178,-43,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",26954.7875335301,119346.93805607,"Industrial",3923.38871303519,17371.4754427958
+"567",-178,-43,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",36334.3721798483,160876.655416422,"Industrial",5288.62880214911,23416.3097470715
+"568",-177,-44,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",355242.340257732,1572896.29995761,"Industrial",58809.2606666141,260388.073219678
+"569",-177,-44,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",469958.703094662,2080822.6426337,"Industrial",77800.1964878011,344473.693937655
+"570",-177,-43,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",36988.5130640732,163772.976208875,"Industrial",5692.93851135544,25206.46022628
+"571",-177,-43,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",49620.2769455364,219702.274097964,"Industrial",7637.10574355969,33814.5936031021
+"572",-61,-63,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",47353.5767248251,209666.070677832,"Industrial",9496.36680880671,42046.7903847709
+"573",-61,-63,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",62706.3246290891,277642.991321018,"Industrial",12575.2329833569,55678.997656295
+"574",-60,-64,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",173861.305456545,769800.705231242,"Industrial",34075.4531451288,150874.904529867
+"575",-60,-64,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",255390.768059915,1130786.36356616,"Industrial",50054.5887877232,221625.264159081
+"576",-60,-63,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",60565.4138325322,268163.742118907,"Industrial",12225.7767872904,54131.7205006735
+"577",-60,-63,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",76769.5990878413,339910.547450198,"Industrial",15496.7649538882,68614.5807946188
+"578",-60,-62,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",50815.024260488,224992.222446204,"Industrial",8783.98846136253,38892.6132502213
+"579",-60,-62,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",66864.1429797004,296052.444132379,"Industrial",11558.2717702109,51176.2277212779
+"580",-59,-64,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",68896.0513837144,305049.066573857,"Industrial",13787.9900322823,61048.6871860351
+"581",-59,-64,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",90245.8873698019,399579.121754938,"Industrial",18060.6779418919,79966.7446423138
+"582",-59,-63,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",798758.851973428,3536641.6117963,"Industrial",159228.366907426,705010.863781833
+"583",-59,-63,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1039669.24360317,4603313.62882234,"Industrial",207252.58364751,917646.307980401
+"584",-59,-62,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",35120.0845793845,155500.189107624,"Industrial",6253.56974694079,27688.7510350082
+"585",-59,-62,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",46506.9761608516,205917.60169283,"Industrial",8281.14802752833,36666.2011134444
+"586",-59,-61,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",19828.4564473645,87793.8867233646,"Industrial",3005.99083885045,13309.5392421524
+"587",-59,-61,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",26095.9761330932,115544.40350141,"Industrial",3956.14582482362,17516.5131651911
+"588",-58,-63,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",407902.319298928,1806057.37566061,"Industrial",80732.4153300312,357456.595030646
+"589",-58,-63,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",536050.943036632,2373457.35387115,"Industrial",106095.712928696,469756.938843044
+"590",-58,-62,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",65601.7494714864,290462.980678445,"Industrial",11838.3551646313,52416.3449168905
+"591",-58,-62,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",86950.4447243834,384987.985067963,"Industrial",15690.8962743028,69474.1304625006
+"592",-58,-61,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",19866.177148572,87960.9015879724,"Industrial",3076.8012277166,13623.0643657774
+"593",-58,-61,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",26145.5305043804,115763.813966919,"Industrial",4049.32462615043,17929.0782657787
+"594",-57,-62,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",5469.25979720007,24216.0844123525,"Industrial",993.664912981225,4399.6215763356
+"595",-57,-62,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",8444.7167860202,37390.4298042977,"Industrial",1534.25126643786,6793.1602365714
+"596",-57,-61,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",33910.38280309,150144.0273207,"Industrial",5373.59877077976,23792.5288350599
+"597",-57,-61,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",44506.2248592597,197058.932658261,"Industrial",7052.66574501697,31226.8854189139
+"598",-56,-61,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",28521.632426644,126284.412156703,"Industrial",4830.23910603978,21386.7108641625
+"599",-56,-61,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",37426.9254724409,165714.122229017,"Industrial",6338.38191067006,28064.2714147705
+"600",-43,-58,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",12504.1530920284,55364.2792643631,"Industrial",1937.05635923669,8576.64876895665
+"601",-43,-58,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",16410.257040889,72659.2234536042,"Industrial",2542.16279373834,11255.8611376672
+"602",-43,-57,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",23007.4928094028,101869.614655043,"Industrial",3120.06794154296,13814.63515106
+"603",-43,-57,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",30266.8219278285,134011.537552699,"Industrial",4104.51245477793,18173.4318284422
+"604",-38,-54,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",48054.6920133961,212770.37869032,"Industrial",8091.01046314832,35824.3344843727
+"605",-38,-54,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",63130.3229763932,279520.316617262,"Industrial",10629.3076147807,47063.0798295895
+"606",-37,-54,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",34738.4600552435,153810.481170335,"Industrial",6193.53586084236,27422.940722961
+"607",-37,-54,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",45534.4343627603,201611.506325195,"Industrial",8118.3550359009,35945.4072632405
+"608",-36,-55,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",61946.6344068957,274279.332758428,"Industrial",10523.8175861222,46596.0046615817
+"609",-36,-55,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",81551.4931253457,361083.20224389,"Industrial",13854.3933136019,61342.6990862408
+"610",-36,-54,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",212043.018680435,938856.779494038,"Industrial",36311.4094067393,160774.983805898
+"611",-36,-54,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",278682.483540281,1233914.4227726,"Industrial",47723.1168339885,211302.272798243
+"612",36,45,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",3963018.84326727,17546944.6314169,"Industrial",515524.17534308,2282571.57451316
+"613",37,45,2015,"UKR","Ukraine","Trawl_Bottom","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",11349388.9382913,50251363.2098779,"Industrial",1504190.45517585,6660060.84652284
+"614",37,45,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",9108555.38100823,40329688.8719758,"Industrial",1207201.73914632,5345092.44429602
+"615",166,-51,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",113277.359851787,501554.910517075,"Industrial",18693.6222779319,82769.2140875773
+"616",166,-51,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",149775.314894862,663155.85707548,"Industrial",24716.7056759284,109437.447339762
+"617",166,-50,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",427115.269621355,1891126.00360481,"Industrial",67906.0003712444,300665.446160949
+"618",166,-50,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",566432.869210239,2507978.53518468,"Industrial",90055.7609681685,398737.304550839
+"619",166,-49,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",69404.7771302627,307301.536940589,"Industrial",10124.7136566974,44828.9036638924
+"620",166,-49,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",91300.5797845622,404248.953046912,"Industrial",13318.8559236231,58971.5155764839
+"621",166,-48,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",54612.6351408778,241806.79499437,"Industrial",8340.06890243538,36927.0833778284
+"622",166,-48,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",71854.4763827335,318147.999914077,"Industrial",10973.1252197324,48585.3911573907
+"623",167,-51,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",264325.961171165,1170348.46129892,"Industrial",41279.9921393058,182774.234769106
+"624",167,-51,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",347249.823079283,1537508.06135912,"Industrial",54230.2765251492,240113.836740859
+"625",167,-49,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",429009.103212914,1899511.27616759,"Industrial",62798.9747494713,278053.215596181
+"626",167,-49,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",565493.08619545,2503817.48494035,"Industrial",82777.698130485,366512.434902851
+"627",167,-48,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",71850.2077880149,318129.099979924,"Industrial",11705.3083198095,51827.2572259653
+"628",167,-48,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",94926.0045802192,420301.142216498,"Industrial",15464.6477078728,68472.3761875168
+"629",168,-50,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",45451.2598910971,201243.237107524,"Industrial",6484.90055627741,28713.0078108413
+"630",168,-50,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",59008.2176214787,261268.989210521,"Industrial",8419.18187076308,37277.3695939114
+"631",168,-49,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",57124.38236206,252927.985975603,"Industrial",8116.77629889234,35938.4171347619
+"632",168,-49,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",74079.589858368,328000.070898274,"Industrial",10525.9336614451,46605.3739474709
+"633",168,-48,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",62934.7918642815,278654.569131913,"Industrial",9823.28239717479,43494.2651395244
+"634",168,-48,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",82817.9427089144,366690.624666095,"Industrial",12926.7772989082,57235.5203185449
+"635",168,-47,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",17477.0737583691,77382.7371722665,"Industrial",3256.66985768238,14419.463529082
+"636",168,-47,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",23172.4401045075,102599.947052837,"Industrial",4317.94179395523,19118.4267793561
+"637",169,-53,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",33688.5937247853,149162.018193119,"Industrial",5288.58899354673,23416.1334876668
+"638",169,-53,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",47298.1176619163,209420.516178938,"Industrial",7425.07409260767,32875.7871561724
+"639",169,-52,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",42939.9690391881,190124.066779405,"Industrial",6746.60165901727,29871.7342619048
+"640",169,-52,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",56411.0183722452,249769.444740658,"Industrial",8863.13331501737,39243.0406440509
+"641",169,-48,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",28512.3580267712,126243.348162942,"Industrial",4223.09450629274,18698.4741697737
+"642",169,-48,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",38438.4700903734,170192.909261086,"Industrial",5693.29592861233,25208.042752396
+"643",169,-47,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",38962.4778976024,172513.043568672,"Industrial",6746.78941762957,29872.5655953161
+"644",169,-47,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",52842.1467181055,233967.654290378,"Industrial",9150.20952259511,40514.1197175005
+"645",170,-54,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",52176.5615730612,231020.662073212,"Industrial",7710.58312156324,34139.9272778787
+"646",170,-54,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",70217.2682308985,310898.980435111,"Industrial",10376.6148427645,45944.2393055635
+"647",170,-52,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",164904.447916949,730142.684531752,"Industrial",24995.1100202073,110670.13025332
+"648",170,-52,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",216860.343296873,960186.309243766,"Industrial",32870.2361167065,145538.599732203
+"649",170,-51,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",213860.454316302,946903.787024142,"Industrial",31437.019925371,139192.789593817
+"650",170,-51,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",280952.368794762,1243964.72847521,"Industrial",41299.3848915051,182860.099500654
+"651",170,-47,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",53684.0548437945,237695.346701252,"Industrial",8581.14861920006,37994.5051108878
+"652",170,-47,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",70455.2263053467,311952.580562205,"Industrial",11261.9430422074,49864.1815290653
+"653",170,-46,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",26204.5143603907,116024.975090923,"Industrial",4599.85732911255,20366.6560918524
+"654",170,-46,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",34513.1711139707,152812.97580008,"Industrial",6058.33258026259,26824.3050434085
+"655",170,-43,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",706244.869503158,3127020.11055222,"Industrial",122535.881497439,542548.600708839
+"656",170,-43,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",919703.9795948,4072146.87728787,"Industrial",159571.761470824,706531.30202071
+"657",170,-42,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",671080.371067741,2971323.27149074,"Industrial",101547.732723374,449619.977601198
+"658",170,-42,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",891818.815554728,3948680.53791368,"Industrial",134949.825123831,597513.462114912
+"659",171,-53,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",59656.1370353348,264137.763377433,"Industrial",8512.22461094619,37689.3322604835
+"660",171,-53,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",81128.7654520289,359211.503074339,"Industrial",11576.1145165568,51255.229536456
+"661",171,-52,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",193155.009025131,855226.882002546,"Industrial",27570.4553299233,122072.912663285
+"662",171,-52,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",253007.569920454,1120234.34565945,"Industrial",36113.6578327967,159899.404845521
+"663",171,-51,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",60013.3451501723,265719.363480999,"Industrial",9050.62453034327,40073.1901094739
+"664",171,-51,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",78840.6231210051,349080.361038644,"Industrial",11889.9700695066,52644.8787477458
+"665",171,-46,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",27975.8842006471,123868.018421778,"Industrial",4711.11872638951,20859.2849828176
+"666",171,-46,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",33312.0676465841,147494.884498384,"Industrial",5609.72817084174,24838.0321931317
+"667",171,-45,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",28128.6597488353,124544.458325577,"Industrial",5092.78588670646,22549.181699077
+"668",171,-45,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",36045.6301013798,159598.200414308,"Industrial",6526.17927398227,28895.7764028338
+"669",171,-42,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",366388.3246819,1622247.05484634,"Industrial",63000.9301981244,278947.407931791
+"670",171,-42,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",481331.006460306,2131175.46339499,"Industrial",82765.4679404056,366458.283641744
+"671",171,-41,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",345191.584761609,1528394.85871567,"Industrial",53423.0366626224,236539.644002387
+"672",171,-41,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",461032.628666263,2041300.91943092,"Industrial",71350.9949580967,315918.749680746
+"673",172,-53,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",45522.1695815063,201557.201905737,"Industrial",6792.84648069743,30076.4911297381
+"674",172,-53,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",62560.7153217879,276998.28117603,"Industrial",9335.34888188121,41333.8559375309
+"675",172,-52,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",132641.591530544,587293.362574735,"Industrial",19823.9946283687,87774.131255634
+"676",172,-52,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",173509.992664655,768245.207679658,"Industrial",25931.9955593291,114818.351427912
+"677",172,-41,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",127763.70545922,565695.686611802,"Industrial",22699.085159908,100504.086969304
+"678",172,-41,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",167799.656416877,742961.715995846,"Industrial",29812.055599982,131997.981753308
+"679",172,-40,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",125518.317342025,555753.846179878,"Industrial",19520.3795058411,86429.8233038049
+"680",172,-40,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",166802.375052174,738546.081960164,"Industrial",25940.8007727007,114857.338018087
+"681",172,-39,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",54108.9649673781,239576.709043124,"Industrial",7787.11209394234,34478.7724093665
+"682",172,-39,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",70821.2605508733,313573.259870952,"Industrial",10192.2684138652,45128.013920617
+"683",173,-45,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",16474.1881210952,72942.2892599929,"Industrial",2431.71063395463,10766.8152842926
+"684",173,-45,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",21768.3805696886,96383.2330045215,"Industrial",3213.1721530787,14226.8699925736
+"685",173,-44,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",243276.945322638,1077150.33879506,"Industrial",41441.0204526156,183487.215203841
+"686",173,-44,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",316042.218397638,1399331.04704634,"Industrial",53836.2236468273,238369.100136966
+"687",173,-43,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",30347.9042411126,134370.543380843,"Industrial",5569.55254630702,24660.1477350647
+"688",173,-43,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",44156.3484385081,195509.794885879,"Industrial",8103.72607371509,35880.6350278206
+"689",173,-41,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",53845.5618942884,238410.446826858,"Industrial",10142.5376028474,44907.822237984
+"690",173,-41,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",76069.0579930637,336808.781779066,"Industrial",14328.6327408475,63442.4753681653
+"691",173,-40,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",350933.898858952,1553819.93780492,"Industrial",60780.3050883894,269115.209956288
+"692",173,-40,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",461360.615197125,2042753.13596697,"Industrial",79905.7572911156,353796.424990677
+"693",173,-39,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",71990.3471193616,318749.59086959,"Industrial",10944.6695161452,48459.3986564612
+"694",173,-39,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",105362.670051108,466511.265962296,"Industrial",16018.2531296323,70923.5590022966
+"695",173,-38,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",26148.9104943059,115778.779451167,"Industrial",3786.33973622882,16764.6676271077
+"696",173,-38,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",44617.5838705343,197551.993751918,"Industrial",6460.58774725293,28605.3586850969
+"697",174,-44,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",200942.051407156,889705.345750458,"Industrial",30420.9322613792,134693.887447283
+"698",174,-44,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",267146.431455312,1182836.57651305,"Industrial",40443.7171724913,179071.484133877
+"699",174,-41,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",50205.0985893222,222291.672081825,"Industrial",9655.09615752005,42749.5917600371
+"700",174,-41,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",71614.8072830837,317086.823929875,"Industrial",13772.4627587426,60979.937523252
+"701",174,-40,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",565480.821095831,2503763.17911126,"Industrial",105613.216962743,467620.605321982
+"702",174,-40,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",743650.302897765,3292639.07292593,"Industrial",138889.415616522,614956.673711836
+"703",174,-39,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",71605.296634701,317044.713905375,"Industrial",12748.8752345988,56447.828461476
+"704",174,-39,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",93786.1710428054,415254.334022787,"Industrial",16698.0412001538,73933.4371043913
+"705",174,-38,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",157521.873104575,697455.070217196,"Industrial",26308.8520490732,116486.948076339
+"706",174,-38,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",205867.769969976,911514.808261242,"Industrial",34383.4452642466,152238.592383701
+"707",174,-37,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",103093.847377222,456465.665017241,"Industrial",17780.6508349728,78726.8766692521
+"708",174,-37,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",135436.262498336,599667.246897337,"Industrial",23358.7644184546,103424.929862564
+"709",175,-44,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",35077.0642971822,155309.709440561,"Industrial",5040.45451321661,22317.4755807293
+"710",175,-44,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",47282.8541517458,209352.934373644,"Industrial",6794.38488887667,30083.3026954181
+"711",175,-43,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",34072.8074654539,150863.19033001,"Industrial",5014.52734579709,22202.6786067172
+"712",175,-43,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",45822.7764018122,202888.190084281,"Industrial",6743.78140281525,29859.2470945761
+"713",175,-41,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",59211.5544530889,262169.297855747,"Industrial",11483.7280393627,50846.1725866585
+"714",175,-41,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",76180.927932229,337304.10509346,"Industrial",14774.8368750074,65418.1205886557
+"715",176,-43,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",15172.7114437708,67179.7783814767,"Industrial",2209.72600477514,9783.94032172319
+"716",176,-43,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",20993.3764797175,92951.7696697086,"Industrial",3057.43703801287,13537.3260995714
+"717",178,-44,2015,"UKR","Ukraine","Trawl_Bottom","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",20987.0531591523,92923.7720849798,"Industrial",3376.60815154197,14950.5108656638
+"718",178,-44,2015,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","NZL","New Zealand",81,"Pacific, Southwest",27826.616898564,123207.111878429,"Industrial",4477.02594247022,19822.7990915067
+"719",-62,-64,2016,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",160239.593384426,725664.574112381,"Industrial",32757.1142490313,148344.593608936
+"720",-62,-64,2016,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",131614.018289642,596030.160287803,"Industrial",26905.3068772134,121843.969046876
+"721",-61,-64,2016,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",135268.881115244,612581.653085323,"Industrial",26954.2237654312,122065.495151041
+"722",-61,-64,2016,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",108413.159356257,490962.236303841,"Industrial",21602.8441450352,97831.1187954295
+"723",-60,-64,2016,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",137971.377396638,624820.237642719,"Industrial",27041.3085505279,122459.869238956
+"724",-60,-64,2016,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",116417.537987902,527211.042782224,"Industrial",22816.9249653398,103329.232106855
+"725",-60,-63,2016,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",262543.209297279,1188958.99656798,"Industrial",52997.1558150782,240004.094440332
+"726",-60,-63,2016,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",203492.120829212,921538.928537415,"Industrial",41077.0618047679,186022.492511154
+"727",-59,-64,2016,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",149290.970481959,676082.397773634,"Industrial",29877.2189635469,135302.635989788
+"728",-59,-64,2016,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",115411.30437967,522654.190962065,"Industrial",23096.9682941182,104597.442532374
+"729",-59,-63,2016,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",3967142.93133415,17965691.4056382,"Industrial",790829.032672417,3581365.8851041
+"730",-59,-63,2016,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",3078472.25707041,13941237.6938851,"Industrial",613677.217913881,2779112.25043853
+"731",-59,-62,2016,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",88099.4751948823,398969.235983047,"Industrial",15687.2120155279,71041.4560211002
+"732",-59,-62,2016,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",69109.9832787082,312973.002012946,"Industrial",12305.8957807011,55728.7523773868
+"733",-58,-63,2016,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",3243203.71313145,14687244.2168713,"Industrial",641897.966205351,2906913.35662913
+"734",-58,-63,2016,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2511114.64394855,11371889.4323243,"Industrial",497002.200735246,2250735.18168644
+"735",-56,-63,2016,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",106279.729075255,481300.736648462,"Industrial",20400.0968352085,92384.3306707474
+"736",-56,-63,2016,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",87617.313693472,396785.708721249,"Industrial",16817.8983832565,76161.9073662555
+"737",-56,-56,2016,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",41,"Atlantic, Southwest",44123.8730895417,199820.349624171,"Industrial",5634.62827300063,25517.1024816516
+"738",-56,-56,2016,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",41,"Atlantic, Southwest",34346.5425076463,155542.513648605,"Industrial",4386.0610128369,19862.8131143308
+"739",-55,-62,2016,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",92821.0199007484,420351.327985209,"Industrial",16399.2210931732,74265.8761109218
+"740",-55,-62,2016,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",72867.8055946811,329990.759440527,"Industrial",12873.9724665738,58301.3570477444
+"741",-54,-38,2016,"UKR","Ukraine","Trawl_Bottom","Over 50m","ARG","Argentina",41,"Atlantic, Southwest",75436.5280993999,341623.533107942,"Industrial",12038.2627923839,54516.7436947403
+"742",-54,-38,2016,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","ARG","Argentina",41,"Atlantic, Southwest",58463.5630619157,264759.387454491,"Industrial",9329.6941634307,42250.6597696017
+"743",-51,-38,2016,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",41,"Atlantic, Southwest",131961.405126592,597603.344017013,"Industrial",14726.0218588039,66688.5889737731
+"744",-51,-38,2016,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",41,"Atlantic, Southwest",101091.584066769,457805.588174237,"Industrial",11281.1535712298,51088.0820954358
+"745",-46,-60,2016,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",13579.3692233261,61495.8324346164,"Industrial",2222.92328256679,10066.779645767
+"746",-46,-60,2016,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",10285.5499544959,46579.3694903767,"Industrial",1683.72978831578,7624.97603714747
+"747",36,45,2016,"UKR","Ukraine","Trawl_Bottom","12-24m","RUS","Russia",37,"Mediterranean and Black Sea",2467578.5132332,11174730.7458425,"Industrial",265546.629731056,1202560.35291146
+"748",36,45,2016,"UKR","Ukraine","Trawl_Bottom","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",991701.257114007,4491040.29279378,"Industrial",129004.174085355,584211.161980316
+"749",36,45,2016,"UKR","Ukraine","Trawl_Midwater_or_Unsp","12-24m","RUS","Russia",37,"Mediterranean and Black Sea",306354.983661372,1387365.9689868,"Industrial",32968.1641237819,149300.35874939
+"750",36,45,2016,"UKR","Ukraine","Trawl_Midwater_or_Unsp","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",1066578.75966224,4830132.2104006,"Industrial",138744.517061141,628321.495063072
+"751",37,45,2016,"UKR","Ukraine","Other","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",667008.485539885,1944761.06403518,"Industrial",88401.9221585905,257748.769209047
+"752",37,45,2016,"UKR","Ukraine","Trawl_Bottom","12-24m","RUS","Russia",37,"Mediterranean and Black Sea",4590200.12792729,20787282.0354193,"Industrial",500185.880920098,2265152.86633389
+"753",37,45,2016,"UKR","Ukraine","Trawl_Bottom","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",3253541.17327445,14734058.6679919,"Industrial",431207.847838359,1952777.41690745
+"754",37,45,2016,"UKR","Ukraine","Trawl_Midwater_or_Unsp","12-24m","RUS","Russia",37,"Mediterranean and Black Sea",573184.17548231,2595734.5610049,"Industrial",62458.852283754,282852.542775134
+"755",37,45,2016,"UKR","Ukraine","Trawl_Midwater_or_Unsp","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",3601379.07239846,16309285.0873602,"Industrial",477308.519042384,2161549.93828615
+"756",38,44,2016,"UKR","Ukraine","Other","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",612966.615153696,1787194.0650642,"Industrial",69863.3988183893,203696.985523643
+"757",38,44,2016,"UKR","Ukraine","Trawl_Bottom","12-24m","RUS","Russia",37,"Mediterranean and Black Sea",4610583.67034259,20879591.3973771,"Industrial",453870.931685997,2055409.96071899
+"758",38,44,2016,"UKR","Ukraine","Trawl_Bottom","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",2968237.0988443,13442024.3131169,"Industrial",338307.384280793,1532066.3186172
+"759",38,44,2016,"UKR","Ukraine","Trawl_Midwater_or_Unsp","12-24m","RUS","Russia",37,"Mediterranean and Black Sea",571678.8076146,2588917.31871457,"Industrial",56276.6911066378,254855.870648517
+"760",38,44,2016,"UKR","Ukraine","Trawl_Midwater_or_Unsp","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",3175510.69855981,14380688.1307506,"Industrial",361931.571640192,1639051.33709377
+"761",39,44,2016,"UKR","Ukraine","Other","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",604180.3658741,1761576.46668533,"Industrial",74223.1594615079,216408.507087551
+"762",39,44,2016,"UKR","Ukraine","Trawl_Bottom","12-24m","RUS","Russia",37,"Mediterranean and Black Sea",4511597.97254531,20431322.5724372,"Industrial",466544.137530267,2112802.12159122
+"763",39,44,2016,"UKR","Ukraine","Trawl_Bottom","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",3043952.30736925,13784909.8845766,"Industrial",373947.533326782,1693467.08750653
+"764",39,44,2016,"UKR","Ukraine","Trawl_Midwater_or_Unsp","12-24m","RUS","Russia",37,"Mediterranean and Black Sea",554545.039445473,2511324.95643516,"Industrial",57345.4768630047,259695.99751311
+"765",39,44,2016,"UKR","Ukraine","Trawl_Midwater_or_Unsp","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",3218573.98953224,14575705.5046927,"Industrial",395399.691809074,1790615.80786991
+"766",40,43,2016,"UKR","Ukraine","Other","24-50m","GEO","Georgia",37,"Mediterranean and Black Sea",170252.415805329,496395.887749667,"Industrial",20098.0997659896,58598.9574845582
+"767",40,43,2016,"UKR","Ukraine","Trawl_Bottom","12-24m","GEO","Georgia",37,"Mediterranean and Black Sea",2509013.64212,11362374.7888774,"Industrial",252543.997484211,1143676.3443312
+"768",40,43,2016,"UKR","Ukraine","Trawl_Bottom","24-50m","GEO","Georgia",37,"Mediterranean and Black Sea",692464.570412794,3135910.40118897,"Industrial",81744.637541489,370190.577338802
+"769",40,43,2016,"UKR","Ukraine","Trawl_Midwater_or_Unsp","12-24m","GEO","Georgia",37,"Mediterranean and Black Sea",312485.673396355,1415129.54639977,"Industrial",31453.1494732648,142439.429824639
+"770",40,43,2016,"UKR","Ukraine","Trawl_Midwater_or_Unsp","24-50m","GEO","Georgia",37,"Mediterranean and Black Sea",754504.318822348,3416864.98087049,"Industrial",89068.3577195206,403356.938858203
+"771",-62,-63,2017,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",771338.330428755,3572742.53571997,"Industrial",147584.453870106,683592.705239524
+"772",-62,-63,2017,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",991598.251437278,4592958.90207642,"Industrial",189728.009906595,878796.378281892
+"773",-62,-61,2017,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",4137.9592295743,19166.5088682387,"Industrial",609.426943295951,2822.78927006903
+"774",-62,-61,2017,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",5284.40841905921,24476.7179201312,"Industrial",778.272740566841,3604.86185493842
+"775",-61,-64,2017,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",327363.452489126,1516306.50936006,"Industrial",65231.7641594038,302145.361248687
+"776",-61,-64,2017,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",430368.377691821,1993412.42143857,"Industrial",85756.9417166097,397215.412896546
+"777",-61,-63,2017,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",407158.04205875,1885905.05390179,"Industrial",81652.1661925152,378202.6067958
+"778",-61,-63,2017,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",520557.851444298,2411158.76754659,"Industrial",104393.556821396,483537.879808958
+"779",-61,-62,2017,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",6468.88258378647,29963.0538946836,"Industrial",1078.72748640664,4996.53060543873
+"780",-61,-62,2017,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",8217.70323905904,38063.3721285317,"Industrial",1370.35450006839,6347.31040617182
+"781",-60,-64,2017,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",942266.851448992,4364462.0361333,"Industrial",184676.917399446,855400.350442701
+"782",-60,-64,2017,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1233625.30436828,5713997.89714475,"Industrial",241780.890505008,1119898.8015432
+"783",-60,-63,2017,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",493988.71635286,2288093.86161134,"Industrial",99716.9077102246,461876.226880558
+"784",-60,-63,2017,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",632183.504422413,2928194.81092687,"Industrial",127613.004264224,591087.45210727
+"785",-60,-62,2017,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",10898.3053876118,50479.5855327756,"Industrial",1883.90323858654,8726.0038405422
+"786",-60,-62,2017,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",13363.8824296541,61899.8295757534,"Industrial",2310.10790153975,10700.1304568206
+"787",-59,-63,2017,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1854952.75820756,8591908.84150072,"Industrial",369775.054949427,1712751.73986447
+"788",-59,-63,2017,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2384644.76478816,11045375.8715775,"Industrial",475366.364470905,2201837.4601606
+"789",-59,-62,2017,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",35280.5403327613,163415.04390165,"Industrial",6282.14089809425,29098.0897961228
+"790",-59,-62,2017,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",45219.7854991299,209452.382612791,"Industrial",8051.94765181476,37295.613009454
+"791",-58,-63,2017,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1528703.37959602,7080762.58280287,"Industrial",302562.428107999,1401431.2707775
+"792",-58,-63,2017,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1965233.07396258,9102713.45136834,"Industrial",388960.800762669,1801617.71143933
+"793",-57,-63,2017,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",1714043.74109197,7939235.92320361,"Industrial",337188.32116777,1561814.07050582
+"794",-57,-63,2017,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2223789.67932314,10300315.2629489,"Industrial",437466.028797774,2026287.8523741
+"795",-56,-63,2017,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",167118.400959357,774071.50151233,"Industrial",32077.9097969102,148580.860391969
+"796",-56,-63,2017,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",216098.600048235,1000941.64887762,"Industrial",41479.5220621559,192127.950844117
+"797",-56,-62,2017,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",190968.288133408,884541.191682518,"Industrial",35207.3474596776,163076.023681
+"798",-56,-62,2017,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",245871.873936434,1138847.72439818,"Industrial",45329.4972733628,209960.553809538
+"799",-55,-63,2017,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",147570.269377419,683527.004446015,"Industrial",26465.2440146653,122583.695480095
+"800",-55,-63,2017,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",190501.680731132,882379.924638176,"Industrial",34164.5609716882,158245.967278587
+"801",-52,-60,2017,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",2222.30162667198,10293.4227894487,"Industrial",322.807773324417,1495.20517407208
+"802",-52,-60,2017,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",3125.8707292912,14478.6416999307,"Industrial",454.058691993841,2103.14299005216
+"803",-51,-60,2017,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",32678.9683718856,151364.888428123,"Industrial",4872.28965408114,22567.8354190021
+"804",-51,-60,2017,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",42354.8966627285,196182.576352506,"Industrial",6314.92776825319,29249.9544721138
+"805",-51,-45,2017,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",41,"Atlantic, Southwest",26929.6762368056,124734.887362491,"Industrial",3090.32685471019,14314.006924774
+"806",-49,-52,2017,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",13646.1773876977,63207.3844637113,"Industrial",1468.86861312827,6803.61543888307
+"807",-49,-52,2017,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",17547.9797154363,81280.0441415135,"Industrial",1888.85692274917,8748.94868513009
+"808",-48,-52,2017,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",25372.8868843626,117524.034071255,"Industrial",2802.83018250911,12982.3583483577
+"809",-48,-52,2017,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",32623.315885418,151107.11308133,"Industrial",3603.75288921229,16692.1320095109
+"810",-47,-60,2017,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",19329.9759020969,89534.0272814857,"Industrial",3026.73435109016,14019.4544130248
+"811",-47,-60,2017,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",24864.4546908781,115169.039832628,"Industrial",3893.33641775733,18033.4466431317
+"812",-46,-60,2017,"UKR","Ukraine","Trawl_Bottom","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",17597.4048291523,81508.9750777055,"Industrial",2880.66995337906,13342.9024175254
+"813",-46,-60,2017,"UKR","Ukraine","Trawl_Midwater_or_Unsp","Over 50m","High seas","High seas",48,"Atlantic, Antarctic",22294.9735760711,103267.525138684,"Industrial",3649.65522561442,16904.7458824163
+"814",30,46,2017,"UKR","Ukraine","Trawl_Bottom","12-24m","High seas","High seas",27,"Atlantic, Northeast",20074575.6704474,92982920.1466882,"Industrial",2182961.39614073,10111203.7690275
+"815",30,46,2017,"UKR","Ukraine","Trawl_Midwater_or_Unsp","12-24m","High seas","High seas",27,"Atlantic, Northeast",2457514.42668086,11382899.0184731,"Industrial",267236.489177739,1237805.94625845
+"816",36,45,2017,"UKR","Ukraine","Trawl_Bottom","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",1721513.31100287,7973834.03546046,"Industrial",223940.830234664,1037265.87685471
+"817",36,45,2017,"UKR","Ukraine","Trawl_Midwater_or_Unsp","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",2076589.85109149,9618504.09549203,"Industrial",270130.502237825,1251210.652275
+"818",37,45,2017,"UKR","Ukraine","Trawl_Bottom","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",3623368.87195452,16782990.7846532,"Industrial",480222.935561484,2224332.48916222
+"819",37,45,2017,"UKR","Ukraine","Trawl_Midwater_or_Unsp","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",4321051.40342345,20014568.8850469,"Industrial",572690.240214142,2652629.46269949
+"820",38,44,2017,"UKR","Ukraine","Trawl_Bottom","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",4163580.54599445,19285183.5968036,"Industrial",474547.684989926,2198045.43934505
+"821",38,44,2017,"UKR","Ukraine","Trawl_Midwater_or_Unsp","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",4955851.84936308,22954885.0413073,"Industrial",564847.490348378,2616302.82763281
+"822",39,44,2017,"UKR","Ukraine","Trawl_Bottom","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",2875110.64210637,13317152.384019,"Industrial",353205.446108468,1636003.3870717
+"823",39,44,2017,"UKR","Ukraine","Trawl_Midwater_or_Unsp","24-50m","RUS","Russia",37,"Mediterranean and Black Sea",3457575.81315758,16015058.1020369,"Industrial",424760.908208204,1967439.3251311
