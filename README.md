@@ -24,8 +24,7 @@ This app has two tabs that allow you to visualise and download fishing effort da
  - The ‘Time series’ tab gives you the same options but allows you to explore trends in fishing effort. 
  
 ## How should I cite data from this site?
-You can download the data used to create the plots shown in this interactive tool using the 'Download' button included under each tab. As a condition of this tool to access data, you must cite its use: Clawson, S.G., Novaglio, C., & Blanchard J.L. (2025). Global Fishing Effort Model Data and Shiny App: [10.5281/zenodo.15110744](https://doi.org/10.5281/zenodo.15110744)
-
+You can download the data used to create the plots shown in this interactive tool using the 'Download' button included under each tab. As a condition of this tool to access data, you must cite its use: Clawson, S.G., Novaglio, C., & Blanchard J.L. (2025). Global Fishing Effort Model Data and Shiny App: [10.5281/zenodo.15110746](https://zenodo.org/records/15110746)
 
 ## How can I contact you?
 If you have any ideas on how to improve this app or if you found any issues, you can “create an issue” in our GitHub repository.
