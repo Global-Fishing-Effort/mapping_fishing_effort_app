@@ -1,3 +1,6 @@
+[![image](https://github.com/user-attachments/assets/7890abd7-61ea-4d13-ab69-a53ed1770d11)](https://doi.org/10.5281/zenodo.15110746)
+
+
 # Global Fishing Effort Model Data and Shiny App
 
 ## Background
