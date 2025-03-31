@@ -1,7 +1,7 @@
 [![image](https://github.com/user-attachments/assets/7890abd7-61ea-4d13-ab69-a53ed1770d11)](https://doi.org/10.5281/zenodo.15110746)
 
 
-# Global Fishing Effort Model Data and Shiny App
+# [Global Fishing Effort Explorer and Model Data](https://data.mapping-global-fishing.cloud.edu.au/shiny/mapping_fishing_effort_app/)
 
 ## Background
 Industrial fishing exerts significant pressure on marine ecosystems, influencing fish stock dynamics, biodiversity, and food security on a global scale. Effective fisheries management and marine conservation efforts rely on accurate assessments of fishing effort—the amount of time and resources expended in fishing activities—at appropriate spatial and temporal scales. However, existing datasets on global fishing effort are fraught with limitations, including a lack of spatial resolution in country-level statistics and incomplete coverage in vessel tracking systems. This study aims to address these gaps by developing a novel approach to remapping global industrial fishing effort, integrating FAO country-level fishing effort data, national logbooks, and AIS-derived fishing patterns from the Global Fishing Watch project into a statistically driven spatial allocation framework. 
