@@ -321,7 +321,7 @@ server <- function(input, output, session) {
     if ("All" %in% input$flag_country) {
       # If "All" flag countries are selected, show all locations
       if (input$location_type == "eez") {
-        location_choices <- sort(unique(data$eez_country_name))
+        location_choices <- sort(unique(data$eez_sovereign_name))
         location_label <- "Select EEZ (Fishing Location):"
         input_id <- "location_selection"
       } else {
@@ -334,7 +334,7 @@ server <- function(input, output, session) {
       if (input$location_type == "eez") {
         location_choices <- data %>%
           filter(flag_country_name %in% input$flag_country) %>%
-          pull(eez_country_name) %>%
+          pull(eez_sovereign_name) %>%
           unique() %>%
           sort()
         
@@ -412,7 +412,7 @@ server <- function(input, output, session) {
     if ("All" %in% input$map_flag_country) {
       # If "All" flag countries are selected, show all locations
       if (input$map_location_type == "eez") {
-        location_choices <- sort(unique(data$eez_country_name))
+        location_choices <- sort(unique(data$eez_sovereign_name))
         location_label <- "Select EEZ (Fishing Location):"
         input_id <- "map_location_selection"
       } else {
@@ -425,7 +425,7 @@ server <- function(input, output, session) {
       if (input$map_location_type == "eez") {
         location_choices <- data %>%
           filter(flag_country_name %in% input$map_flag_country) %>%
-          pull(eez_country_name) %>%
+          pull(eez_sovereign_name) %>%
           unique() %>%
           sort()
         
@@ -509,7 +509,7 @@ server <- function(input, output, session) {
       # Filter by selected location (EEZ or FAO area)
       if (input$location_type == "eez") {
         filtered <- filtered %>% 
-          filter(eez_country_name %in% input$location_selection)
+          filter(eez_sovereign_name %in% input$location_selection)
       } else {
         filtered <- filtered %>% 
           filter(fao_major_fishing_area %in% input$location_selection)
@@ -637,7 +637,7 @@ server <- function(input, output, session) {
     
     # Group by location and selected variable, then summarize
     if (input$location_type == "eez") {
-      location_col <- "eez_country_name"
+      location_col <- "eez_sovereign_name"
     } else {
       location_col <- "fao_major_fishing_area"
     }
@@ -670,7 +670,7 @@ server <- function(input, output, session) {
       # Filter by selected location (EEZ or FAO area)
       if (input$map_location_type == "eez") {
         filtered <- filtered %>% 
-          filter(eez_country_name %in% input$map_location_selection)
+          filter(eez_sovereign_name %in% input$map_location_selection)
       } else {
         filtered <- filtered %>% 
           filter(fao_major_fishing_area %in% input$map_location_selection)
@@ -1105,7 +1105,7 @@ server <- function(input, output, session) {
       data_to_download <- filtered_data()
       
       # For the download, include all variables from the filtered dataset
-      # This includes year, flag_country_name, gear, length_category, eez_country_name, fao_major_fishing_area, and fishing hours
+      # This includes year, flag_country_name, gear, length_category, eez_sovereign_name, fao_major_fishing_area, and fishing hours
       write.csv(data_to_download, file, row.names = FALSE)
     }
   )
@@ -1124,7 +1124,7 @@ server <- function(input, output, session) {
       data_to_download <- filtered_data_map()
       
       # For the download, include all variables from the filtered dataset
-      # This includes year, flag_country_name, gear, length_category, eez_country_name, fao_major_fishing_area, and fishing hours
+      # This includes year, flag_country_name, gear, length_category, eez_sovereign_name, fao_major_fishing_area, and fishing hours
       write.csv(data_to_download, file, row.names = FALSE)
     }
   )
