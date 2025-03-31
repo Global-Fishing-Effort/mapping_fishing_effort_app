@@ -25,17 +25,17 @@ for(file in all_files){
   
 }
 
-
-all_files <- list.files(file.path(data_dir, "prep/random_forest/zenodo_data/mapped_by_flag_country/"), full.names = TRUE)
-
-for(file in all_files){
-  
-  #  file <- all_files[1]
-  
-  data <- read.csv(file)
-  
-  file_name <- basename(file)
-  
-  write.csv(data, here(glue("mapped_by_flag_country/{file_name}")))
-  
-}
+# can't save as csv.. files are too large for github. We will just save as a zip file and put on zenodo?
+# all_files <- list.files(file.path(data_dir, "prep/random_forest/zenodo_data/mapped_by_flag_country/"), full.names = TRUE)
+# 
+# for(file in all_files){
+#   
+#   #  file <- all_files[1]
+#   
+#   data <- read.csv(file)
+#   
+#   file_name <- basename(file)
+#   
+#   write.csv(data, here(glue("mapped_by_flag_country/{file_name}")))
+#   
+# }
