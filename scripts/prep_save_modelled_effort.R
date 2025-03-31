@@ -8,7 +8,7 @@ library(here)
 data_dir <- file.path("/homevol/fishingeffort/data_storage")
 
 all_files <- list.files(file.path(data_dir, "prep/random_forest/predictions/"), full.names = TRUE)
-all_files <- all_files[-101]
+all_files <- all_files[-117]
 
 for(file in all_files){
   

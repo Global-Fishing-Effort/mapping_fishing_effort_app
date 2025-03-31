@@ -757,6 +757,8 @@ server <- function(input, output, session) {
       return(NULL)
     }
     
+
+    
     # Format flag country for display
     flag_country_text <- if("All" %in% input$flag_country) "All countries" else paste(input$flag_country, collapse = ", ")
     
@@ -766,10 +768,21 @@ server <- function(input, output, session) {
     # Format effort type for display
     effort_type_text <- if(input$effort_type == "nominal") "Nominal" else "Effective"
     
+    
+    # If a specific flag is selected (not "All"), don't say we will gapfill
+    if (!("All" %in% input$flag_country)) {
+      HTML(paste0("<p style='text-align: center; font-style: italic; color: #666;'>",
+                  "Displaying approximately <b>", time_series_percentage(), "%</b> of known total ", tolower(effort_type_text), " fishing effort (average across years) for the selection: ", 
+                  flag_country_text, ", ", sector_text, 
+                  "</p>"))
+    }else{
+    
     HTML(paste0("<p style='text-align: center; font-style: italic; color: #666;'>",
                 "Displaying approximately <b>", time_series_percentage(), "%</b> of known total ", tolower(effort_type_text), " fishing effort (average across years) for the selection: ", 
                 flag_country_text, ", ", sector_text, ".<br>Any remaining missing percentage will be estimated in future iterations of the model.",
                 "</p>"))
+      
+    }
   })
   
   # HTML output for map effort percentage
@@ -879,6 +892,7 @@ server <- function(input, output, session) {
         missing_text <- paste(missing_categories, collapse = ", ")
         category_type <- if (input$map_group_var == "gear") "gear type" else "vessel length category"
         
+        
         output_html <- paste0(output_html, 
                               "<p style='text-align: center; font-style: italic; color: #d62728;'>",
                               "We are missing effort predictions for ", category_type, " <b>", missing_text, 
@@ -917,11 +931,23 @@ server <- function(input, output, session) {
           0
         }
         
+        # remove "any remaining will be estiamted in future" if it is 100%.
+        
+        if (!("All" %in% input$map_flag_country)) {
+          return(HTML(paste0("<p style='text-align: center; font-style: italic; color: #666;'>",
+                             "Displaying approximately <b>", percentage, "%</b> of known total fishing effort for the selection: ", 
+                             flag_country_text, ", ", sector_text, ", ", category_text, ", ", input$map_year, 
+                             "</p>")))
+        }else{
+        
+        
         return(HTML(paste0("<p style='text-align: center; font-style: italic; color: #666;'>",
                            "Displaying approximately <b>", percentage, "%</b> of known total fishing effort for the selection: ", 
                            flag_country_text, ", ", sector_text, ", ", category_text, ", ", input$map_year, 
                            ".<br>Any remaining missing percentage will be estimated in future iterations of the model.",
                            "</p>")))
+          
+        }
       }
     }
   })
