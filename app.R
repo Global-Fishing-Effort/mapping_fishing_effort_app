@@ -257,7 +257,7 @@ ui <- fluidPage(
                          ),
                          
                          h3("How should I cite data from this site?", style = "margin-top: 30px;"),
-                         p("You can download the data used to create the plots shown in this interactive tool using the 'Download' button included under each tab. As a condition of this tool to access data, you must cite its use: Clawson, S.G., Novaglio, C., & Blanchard J.L. (2025). Shiny app to explore spatially explicit fishing effort."),
+                         p("You can download the data used to create the plots shown in this interactive tool using the 'Download' button included under each tab. Additionally, all model data is available via zenodo and our GitHub repository:", tags$a(href = "https://zenodo.org/records/15110746", "10.5281/zenodo.15110746."), "As a condition of this tool to access data, you must cite its use: Clawson, S.G., Novaglio, C., & Blanchard J.L. (2025). Global Fishing Effort Model Data and Shiny App:", tags$a(href = "https://zenodo.org/records/15110746", "10.5281/zenodo.15110746.")),
                          
                          h3("How can I contact you?", style = "margin-top: 30px;"),
                          p("If you have any ideas on how to improve this app or if you found any issues, you can \"create an issue\" in our", tags$a(href = "https://github.com/Global-Fishing-Effort/mapping_fishing_effort_app",
