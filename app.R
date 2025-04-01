@@ -377,15 +377,6 @@ ui <- fluidPage(
                            (FAO). We would also like to acknowledge the use of 
                            computing facilities provided by Digital Research 
                            Services, IT Services at the University of Tasmania."),
-                         br(),
-                         br(),
-                         fluidRow(
-                           column(4, img(src = "IMAS_logo.png", height = 150, width = 300,
-                                         style = "display: block; margin-left: auto; margin-right: auto")),
-                           column(8, br(),
-                                  img(src = "fao_logo.png", height = 125, width = 350,
-                                      style = "display: block; margin-left: auto; margin-right: auto"))
-                         ),
                          br()
                        )
               )
