@@ -1,4 +1,5 @@
-[![image](https://github.com/user-attachments/assets/7890abd7-61ea-4d13-ab69-a53ed1770d11)](https://doi.org/10.5281/zenodo.15110746)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15117266.svg)](https://doi.org/10.5281/zenodo.15117266)
+
 
 
 # [Global Fishing Effort Explorer and Model Data](https://data.mapping-global-fishing.cloud.edu.au/shiny/mapping_fishing_effort_app/)
