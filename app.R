@@ -358,8 +358,8 @@ ui <- fluidPage(
                            cite its use: Clawson, S.G., Novaglio, C., & 
                            Blanchard J.L. (2025). Global Fishing Effort Model 
                            Data and Shiny App:", 
-                           tags$a(href = "https://zenodo.org/records/15110746",
-                                  "10.5281/zenodo.15110746.")),
+                           tags$a(href = "https://zenodo.org/records/15117266",
+                                  "10.5281/zenodo.15110744.")),
                          
                          h3("How can I contact you?", style = "margin-top: 30px;"),
                          p("If you have any ideas on how to improve this app or 
