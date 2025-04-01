@@ -39,18 +39,14 @@ data <- lapply(data_files, read_data_file) %>%
 
 # UI
 ui <- fluidPage(
-  # Removed shinythemes dependency
-  titlePanel(title = span(img(src = "IMAS_logo.png", 
-                              height = 100, width = 300, 
-                              style = "display: block; margin-left: auto; 
-                              margin-right:auto"),
-                          h1("Global Fishing Effort Explorer",
-                             style = "color: #095c9e; background-color:#f3f3f3; 
-                             border:1.5px solid #c9d5ea; 
-                             padding-left: 15px; padding-bottom: 10px; 
-                             padding-top: 10px;
-                             text-align: center; font-weight: bold")),
-             windowTitle = "Global Fishing Effort Explorer"),
+  titlePanel(
+    div(
+      style = "display: flex; justify-content: space-between; align-items: center;",
+      img(src = "fishing_effort_logo.png", height = 250, width = 500),
+      img(src = "IMAS_logo.png", height = 200, width = 400)
+    ),
+    windowTitle = "Global Fishing Effort Mapper"
+  ),
   
   # Create a tabsetPanel at the top level
   tabsetPanel(id = "tabset",
@@ -229,13 +225,16 @@ ui <- fluidPage(
                          mainPanel(
                            conditionalPanel(
                              condition = "input.sector === 'industrial'",
-                             withSpinner(plotlyOutput("timeSeries", height = "500px"), caption = "This takes a few seconds to load"),
+                             withSpinner(plotlyOutput("timeSeries", height = 
+                                                        "500px"), caption = 
+                                           "This takes a few seconds to load"),
                              htmlOutput("timeSeriesEffortPercentage")
                            ),
                            conditionalPanel(
                              condition = "input.sector === 'artisanal'",
                              br(),
-                             h3("We have not modelled artisanal fishing effort for this project", style = "text-align: center; margin-top: 200px;")
+                             h3("We have not modelled artisanal fishing effort 
+                                for this project", style = "text-align: center; margin-top: 200px;")
                            )
                          )
                        )
@@ -246,26 +245,138 @@ ui <- fluidPage(
                        div(
                          style = "max-width: 1000px; margin: 0 auto; padding: 20px;",
                          h2("About this website", style = "text-align: center; margin-bottom: 20px;"),
-                         p("This app provides an interactive platform for exploring and downloading global industrial fishing effort data, allowing users to filter by year, country, gear type, vessel length category, Exclusive Economic Zone (EEZ) and FAO statistical area. Built on a refined dataset integrating country-level fishing effort data, AIS-derived fishing patterns, and environmental and governance variables, the app offers spatially explicit insights into industrial fishing activity. Effort estimates are provided as hours fished, with a spatial resolution of 1° cell, and span the years 1950-2017. Users can visualize maps and trends, compare regional differences, and access data to support research, policy-making, and marine conservation efforts."),
-                         p("The app was developed by Gage Clawson, Camilla Novaglio & Julia Blanchard from the Institute for Marine & Antarctic Studies (IMAS), University of Tasmania."),
+                         p("This app provides an interactive platform for
+                         exploring and downloading mapped global industrial 
+                         fishing effort data. 
+                          Users can filter by ", strong("year, country, gear 
+                                                        type, vessel length, 
+                                                        Exclusive Economic Zone 
+                                                        (EEZ), and FAO 
+                                                        statistical area"), 
+                           " using the selection sidebar in each tab."),
+                         
+                         p("This latest version of our mapping methodology 
+                           integrates country-level fishing effort estimates (", 
+                           em(tags$a(href = "https://doi.org/10.1073/pnas.1820344116", "Rousseau et al. 2019")), 
+                           ") with a statistical spatial allocation model. 
+                            This model is built using AIS-derived fishing activity 
+                            from", tags$a(href = "https://globalfishingwatch.org/datasets-and-code/", "Global 
+                           Fishing Watch"), "combined with environmental, economic, and governance variables."),
+                         
+                         p("For each fishing country, we trained a ", 
+                           strong("two-stage hurdle random forest model"), 
+                           " to predict the spatial distribution of fishing effort:"),
+                         
+                         tags$ul(
+                           tags$li("The first stage predicts whether fishing 
+                                   occurs in each grid cell globally from 1950-2017."),
+                           tags$li("The second stage estimates the intensity 
+                                   of fishing effort in each cell globally from 1950-2017.")
+                         ),
+                         
+                         p("By multiplying the predictions from both stages, we
+                         obtain the estimated fishing intensity 
+                             (the proportion of a country's total fishing effort
+                             ) in each cell where fishing is predicted to occur. 
+                             These estimates are then scaled to ", strong("kW days of fishing effort"), 
+                           "using total fishing effort values from ", 
+                           em(tags$a(href = "https://doi.org/10.1073/pnas.1820344116", 
+                                     "Rousseau et al. 2019")), " (Figure 1)."),
+                         # Adding Figure 1 below the text
+                         tags$hr(),  # Horizontal line for separation
+                         img(src = "flowchart.jpg", height = "auto", width = "100%"),
+                         p(strong("Figure 1: "), "Flowchart of methodology,
+                           showing data integration (green), statistical
+                           modelling approach (blue) and framework to ensure
+                           possibilities for future updates (orange).  "),
+                         
+                         p("Mapped effort estimates are provided as nominal 
+                           fishing effort (kilowatt days) or effective fishing 
+                           effort (kilowatt days), with a spatial resolution of 
+                           1° cell, spanning the years 1950-2017 for 116 
+                           countries, covering 90% of the world’s total 
+                           industrial fishing effort for 2017. To estimate 
+                           effective effort, we have assumed a year-on-year 
+                           increase in technical efficiency of 3.5%, as in 
+                           Rousseau et al. 2019."),
+                         
+                         p("This app was created, and is under continuous 
+                           development by Gage Clawson, Camilla Novaglio & 
+                           Julia Blanchard from the Institute for Marine & 
+                           Antarctic Studies (IMAS), University of Tasmania. "),
+                         
+                         
+                         h3("Caveats and limitations", style = "margin-top: 30px"),
+                         p("This data is not comprehensive. Currently, the model
+                           maps country-level fishing effort for approximately 
+                           90% of the country-level global industrial fishing 
+                           effort data in 2017 (the most recent year of effort 
+                           data). Future iterations of the model are planned to 
+                           estimate the remaining 10%, as well as coastal 
+                           artisanal effort, that are not well captured by 
+                           the AIS dataset. Estimates in Southeast Asia, aside 
+                           from China, are likely too concentrated (for example,
+                           Indonesia). This is an artifact of insufficient AIS 
+                           data in this region. "),
+                         p("Additionally, users should be aware that historical 
+                           predictions (1950-2014) may not capture:"),
+                         tags$ul(
+                           tags$li("Technological changes in fishing capabilities"),
+                           tags$li("Evolution of fishing strategies and practices"),
+                           tags$li("Changes in management regulations"),
+                           tags$li("Shifts in target species or fishing grounds 
+                                   due to socio-economic factors")
+                         ),
+                         
                          
                          h3("How should I use this tool?", style = "margin-top: 30px;"),
-                         p("This app has two tabs that allow you to visualise and download fishing effort data in different ways:"),
+                         p("This app has two tabs that allow you to visualise 
+                           and download fishing effort data:"),
                          tags$ul(
-                           tags$li(strong("The 'Map' tab"), " allows you to explore spatially explicit industrial effort data globally and for a selected region (EEZ or FAO statistical area). You can also specify the year (between 1950 and 2017), flag country (e.g. Angola, Albania, Argentina), gear type (e.g. bottom trawling, longline), and vessel length category (6-12m, 12-24m, 24-50m, over 50m) you are interested in exploring."),
-                           tags$li(strong("The 'Time series' tab"), " gives you the same options but allows you to explore trends in fishing effort.")
+                           tags$li(strong("The 'Map' tab"), " 
+                                   allows you to explore spatially explicit 
+                                   industrial effort data globally and for a 
+                                   selected region (EEZ or FAO statistical area). 
+                                   You can also specify the year (between 1950 
+                                   and 2017), flag country (e.g. Angola, Albania
+                                   , Argentina), gear type (e.g. bottom trawling, longline), 
+                                   and vessel length category (less than 6m, 
+                                   6-12m, 12-24m, 24-50m, over 50m) you are 
+                                   interested in exploring."),
+                           tags$li(strong("The 'Time series' tab"), " gives you 
+                                   the same options but allows you to explore 
+                                   trends in fishing effort.")
                          ),
                          
                          h3("How should I cite data from this site?", style = "margin-top: 30px;"),
-                         p("You can download the data used to create the plots shown in this interactive tool using the 'Download' button included under each tab. Additionally, all model data is available via zenodo and our GitHub repository:", tags$a(href = "https://zenodo.org/records/15110746", "10.5281/zenodo.15110746."), "As a condition of this tool to access data, you must cite its use: Clawson, S.G., Novaglio, C., & Blanchard J.L. (2025). Global Fishing Effort Model Data and Shiny App:", tags$a(href = "https://zenodo.org/records/15110746", "10.5281/zenodo.15110746.")),
+                         p("You can download the data used to create the plots 
+                           shown in this interactive tool using the 'Download' 
+                           button included under each tab. Additionally, all 
+                           model data is available via zenodo and our GitHub 
+                           repository.
+                           As a condition of this tool to access data, you must 
+                           cite its use: Clawson, S.G., Novaglio, C., & 
+                           Blanchard J.L. (2025). Global Fishing Effort Model 
+                           Data and Shiny App:", 
+                           tags$a(href = "https://zenodo.org/records/15110746",
+                                  "10.5281/zenodo.15110746.")),
                          
                          h3("How can I contact you?", style = "margin-top: 30px;"),
-                         p("If you have any ideas on how to improve this app or if you found any issues, you can \"create an issue\" in our", tags$a(href = "https://github.com/Global-Fishing-Effort/mapping_fishing_effort_app",
-                                                                                                                                                    "GitHub repository.")),
-                         p("For general enquiry we can contact Julia Blanchard at ", tags$a("julia.blanchard@utas.edu.au", href = "mailto:julia.blanchard@utas.edu.au")),
+                         p("If you have any ideas on how to improve this app or 
+                           if you found any issues, you can \"create an issue\" 
+                           in our", 
+                           tags$a(href = "https://github.com/Global-Fishing-Effort/mapping_fishing_effort_app",
+                                  "GitHub repository.")),
+                         p("For general enquiry we can contact Julia Blanchard 
+                           at ", tags$a("julia.blanchard@utas.edu.au", 
+                                        href = "mailto:julia.blanchard@utas.edu.au")),
                          
                          h3("Acknowledgments", style = "margin-top: 30px;"),
-                         p("The development of this app was funded by the Food and Agriculture Organization of the United Nation (FAO). We would also like to acknowledge the use of computing facilities provided by Digital Research Services, IT Services at the University of Tasmania."),
+                         p("The development of this app was funded by the Food 
+                           and Agriculture Organization of the United Nation 
+                           (FAO). We would also like to acknowledge the use of 
+                           computing facilities provided by Digital Research 
+                           Services, IT Services at the University of Tasmania."),
                          br(),
                          br(),
                          fluidRow(
