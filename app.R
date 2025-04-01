@@ -868,7 +868,7 @@ server <- function(input, output, session) {
       return(NULL)
     }
     
-
+    
     
     # Format flag country for display
     flag_country_text <- if("All" %in% input$flag_country) "All countries" else paste(input$flag_country, collapse = ", ")
@@ -887,11 +887,11 @@ server <- function(input, output, session) {
                   flag_country_text, ", ", sector_text, 
                   "</p>"))
     }else{
-    
-    HTML(paste0("<p style='text-align: center; font-style: italic; color: #666;'>",
-                "Displaying approximately <b>", time_series_percentage(), "%</b> of known total ", tolower(effort_type_text), " fishing effort (average across years) for the selection: ", 
-                flag_country_text, ", ", sector_text, ".<br>Any remaining missing percentage will be estimated in future iterations of the model.",
-                "</p>"))
+      
+      HTML(paste0("<p style='text-align: center; font-style: italic; color: #666;'>",
+                  "Displaying approximately <b>", time_series_percentage(), "%</b> of known total ", tolower(effort_type_text), " fishing effort (average across years) for the selection: ", 
+                  flag_country_text, ", ", sector_text, ".<br>Any remaining missing percentage will be estimated in future iterations of the model.",
+                  "</p>"))
       
     }
   })
@@ -980,8 +980,8 @@ server <- function(input, output, session) {
           unique()
       }
       
-      # Find categories with known effort but no modelled predictions
-      missing_categories <- setdiff(known_categories, modelled_categories)
+      # # Find categories with known effort but no modelled predictions
+      # missing_categories <- setdiff(known_categories, modelled_categories)
       
       # Calculate percentage of known effort that is modelled
       total_hours <- sum(total_filtered[[effort_cols$total_hours]], na.rm = TRUE)
@@ -997,19 +997,6 @@ server <- function(input, output, session) {
                             flag_country_text, ", ", sector_text, ", ", category_text, ", ", input$map_year, 
                             ".<br>Any remaining missing percentage will be estimated in future iterations of the model.",
                             "</p>")
-      
-      # Add message about missing categories if any
-      if (length(missing_categories) > 0) {
-        missing_text <- paste(missing_categories, collapse = ", ")
-        category_type <- if (input$map_group_var == "gear") "gear type" else "vessel length category"
-        
-        
-        output_html <- paste0(output_html, 
-                              "<p style='text-align: center; font-style: italic; color: #d62728;'>",
-                              "We are missing effort predictions for ", category_type, " <b>", missing_text, 
-                              "</b> due to a lack of data.",
-                              "</p>")
-      }
       
       return(HTML(output_html))
       
@@ -1050,36 +1037,34 @@ server <- function(input, output, session) {
                              flag_country_text, ", ", sector_text, ", ", category_text, ", ", input$map_year, 
                              "</p>")))
         }else{
-        
-        
-        return(HTML(paste0("<p style='text-align: center; font-style: italic; color: #666;'>",
-                           "Displaying approximately <b>", percentage, "%</b> of known total fishing effort for the selection: ", 
-                           flag_country_text, ", ", sector_text, ", ", category_text, ", ", input$map_year, 
-                           ".<br>Any remaining missing percentage will be estimated in future iterations of the model.",
-                           "</p>")))
+          
+          
+          return(HTML(paste0("<p style='text-align: center; font-style: italic; color: #666;'>",
+                             "Displaying approximately <b>", percentage, "%</b> of known total fishing effort for the selection: ", 
+                             flag_country_text, ", ", sector_text, ", ", category_text, ", ", input$map_year, 
+                             ".<br>Any remaining missing percentage will be estimated in future iterations of the model.",
+                             "</p>")))
           
         }
       }
     }
   })
   
-  # Map plot with progress indicator
+  # Map plot 
   output$map <- renderPlot({
     req(filtered_data_map(), input$map_effort_type)
     
     # Get column names based on effort type
     effort_cols <- get_effort_columns(input$map_effort_type)
     
-    # Create a progress object
-    progress <- shiny::Progress$new()
-    progress$set(message = "Rendering map...", value = 0)
-    on.exit(progress$close())
+    # # Create a progress object
+    # progress <- shiny::Progress$new()
+    # progress$set(message = "Rendering map...", value = 0)
+    # on.exit(progress$close())
     
     
     # Try to create map data
     tryCatch({
-      # Update progress
-      progress$set(value = 0.1, detail = "Filtering data...")
       
       # Filter out data with missing coordinates
       valid_data <- filtered_data_map() %>%
@@ -1094,8 +1079,6 @@ server <- function(input, output, session) {
         )
       }
       
-      # Update progress
-      progress$set(value = 0.3, detail = "Creating raster grid...")
       
       # Round coordinates to create 1x1 degree grid cells
       raster_data <- valid_data %>%
@@ -1137,8 +1120,6 @@ server <- function(input, output, session) {
       }
       
       
-      # Update progress
-      progress$set(value = 0.7, detail = "Generating plot...")
       
       # Create the base map
       p <- ggplot() +
@@ -1168,11 +1149,13 @@ server <- function(input, output, session) {
           geom_tile(data = raster_data, 
                     aes(x = lon_bin, y = lat_bin, fill = total_effort),
                     alpha = 0.7) +
-          # Set fill scale (log scale for better visualization)
-          scale_fill_viridis_c(name = "kW days (Thousands of days)",
+          # Set fill scale (log scale for better visualization) with consistent max value across years
+          scale_fill_viridis_c(name = "kW days (Thousands)",
                                trans = "log10",
-                               labels = function(x) scales::comma(x / 1000),
-                               na.value = "transparent") +
+                               labels = function(x) scales::comma(x/1000),
+                               na.value = "transparent",
+                               limits = c(0.1, if(input$map_effort_type == "nominal") 1500000000 else 40000000000) # these values are taken scripts/calculate_max_effort.R
+          ) +
           # Move legend title above and adjust legend size
           guides(fill = guide_colorbar(title.position = "top", 
                                        title.hjust = 0.5, 
@@ -1191,11 +1174,13 @@ server <- function(input, output, session) {
                     alpha = 0.7) +
           # Add facet by the selected variable
           facet_wrap(as.formula(paste("~", input$map_group_var)), ncol = 3) +
-          # Set fill scale (log scale for better visualization)
-          scale_fill_viridis_c(name = "kW days (Thousands of days)",
+          # Set fill scale (log scale for better visualization) with consistent max value across years
+          scale_fill_viridis_c(name = "kW days (Thousands)",
                                trans = "log10",
-                               labels = function(x) scales::comma(x / 1000),
-                               na.value = "transparent") +
+                               labels = function(x) scales::comma(x/1000),
+                               na.value = "transparent",
+                               limits = c(0.1, if(input$map_effort_type == "nominal") 1500000000 else 40000000000)
+          ) +
           guides(fill = guide_colorbar(title.position = "top", 
                                        title.hjust = 0.5, 
                                        barwidth = 15,  # Increase legend length
