@@ -10,6 +10,7 @@ library(htmltools)
 library(scales)
 library(rnaturalearthdata)
 library(shinycssloaders)  # For loading spinners
+library(tidyr)
 
 options(shiny.sanitize.errors = FALSE)
 
@@ -693,6 +694,18 @@ server <- function(input, output, session) {
   output$timeSeries <- renderPlotly({
     req(aggregated_data(), input$effort_type)
     
+    # Ensure all year x group combinations are present
+    data_complete <- aggregated_data() %>%
+      complete(year = full_seq(year, 1), !!sym(input$group_var), fill = list(total_effort = 0))
+    
+    group_order <- data_complete %>%
+      group_by(!!sym(input$group_var)) %>%
+      summarise(total = sum(total_effort, na.rm = TRUE)) %>%
+      arrange(desc(total)) %>%
+      pull(!!sym(input$group_var))
+    
+    data_complete[[input$group_var]] <- factor(data_complete[[input$group_var]], levels = group_order)
+    
     # Get effort type label
     effort_type_label <- if(input$effort_type == "nominal") "Nominal" else "Effective"
     
@@ -700,14 +713,13 @@ server <- function(input, output, session) {
     legend_label <- if(input$group_var == "gear") "Gear Type" else "Vessel Length"
     
     # Create a more basic ggplot object with geom_area
-    p <- ggplot(aggregated_data(), aes(x = year, y = total_effort, fill = !!sym(input$group_var))) +
+    p <- ggplot(data_complete, aes(x = year, y = total_effort, fill = !!sym(input$group_var))) +
       geom_area(stat = "identity", alpha = 0.85, position = "stack") +
-      # scale_x_continuous(breaks = unique(aggregated_data()$year)) +
       scale_x_continuous(
-        breaks = unique(aggregated_data()$year),  # Keep all ticks
-        labels = ifelse(unique(aggregated_data()$year) %% 2 == 0 | 
-                          unique(aggregated_data()$year) %in% c(1950, 2017), 
-                        unique(aggregated_data()$year), "")  # Label every 2nd year + 1950 & 2017
+        breaks = unique(data_complete$year),  # Keep all ticks
+        labels = ifelse(unique(data_complete$year) %% 2 == 0 | 
+                          unique(data_complete$year) %in% c(1950, 2017), 
+                        unique(data_complete$year), "")  # Label every 2nd year + 1950 & 2017
       ) + 
       scale_fill_manual(values = mypal) +
       theme_bw() +
@@ -723,6 +735,29 @@ server <- function(input, output, session) {
             legend.position = "bottom",
             legend.title = element_text(size = 12, face = "bold"),
             legend.text = element_text(size = 12))
+    # p <- ggplot(aggregated_data(), aes(x = year, y = total_effort, fill = !!sym(input$group_var))) +
+    #   geom_area(stat = "identity", alpha = 0.85, position = "stack") +
+    #   # scale_x_continuous(breaks = unique(aggregated_data()$year)) +
+    #   scale_x_continuous(
+    #     breaks = unique(aggregated_data()$year),  # Keep all ticks
+    #     labels = ifelse(unique(aggregated_data()$year) %% 2 == 0 | 
+    #                       unique(aggregated_data()$year) %in% c(1950, 2017), 
+    #                     unique(aggregated_data()$year), "")  # Label every 2nd year + 1950 & 2017
+    #   ) + 
+    #   scale_fill_manual(values = mypal) +
+    #   theme_bw() +
+    #   labs(
+    #     title = paste(effort_type_label, "Fishing Effort Over Time"),
+    #     y = "kW days",
+    #     fill = legend_label
+    #   ) +
+    #   theme(axis.text.y = element_text(size = 12),
+    #         axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1, size = 10),
+    #         axis.title.y = element_text(size = 12),
+    #         axis.title.x = element_blank(),
+    #         legend.position = "bottom",
+    #         legend.title = element_text(size = 12, face = "bold"),
+    #         legend.text = element_text(size = 12))
     
     # Convert to plotly with custom tooltip
     ggplotly(p, tooltip = c("x", "y", "fill")) %>%
