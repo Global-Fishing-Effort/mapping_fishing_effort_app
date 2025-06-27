@@ -20,6 +20,8 @@ data_files <- list.files("rf_model_data", pattern = "model_preds_1950_2017_.*\\.
 # Read total effort data for percentage calculations
 total_effort_data <- qread("data/total_effort_data.qs")
 
+hours_to_days <- qs::qread("data/hours_to_days_conversion.qs")
+
 
 # Function to read and process each file
 read_data_file <- function(file_path) {
@@ -735,29 +737,6 @@ server <- function(input, output, session) {
             legend.position = "bottom",
             legend.title = element_text(size = 12, face = "bold"),
             legend.text = element_text(size = 12))
-    # p <- ggplot(aggregated_data(), aes(x = year, y = total_effort, fill = !!sym(input$group_var))) +
-    #   geom_area(stat = "identity", alpha = 0.85, position = "stack") +
-    #   # scale_x_continuous(breaks = unique(aggregated_data()$year)) +
-    #   scale_x_continuous(
-    #     breaks = unique(aggregated_data()$year),  # Keep all ticks
-    #     labels = ifelse(unique(aggregated_data()$year) %% 2 == 0 | 
-    #                       unique(aggregated_data()$year) %in% c(1950, 2017), 
-    #                     unique(aggregated_data()$year), "")  # Label every 2nd year + 1950 & 2017
-    #   ) + 
-    #   scale_fill_manual(values = mypal) +
-    #   theme_bw() +
-    #   labs(
-    #     title = paste(effort_type_label, "Fishing Effort Over Time"),
-    #     y = "kW days",
-    #     fill = legend_label
-    #   ) +
-    #   theme(axis.text.y = element_text(size = 12),
-    #         axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1, size = 10),
-    #         axis.title.y = element_text(size = 12),
-    #         axis.title.x = element_blank(),
-    #         legend.position = "bottom",
-    #         legend.title = element_text(size = 12, face = "bold"),
-    #         legend.text = element_text(size = 12))
     
     # Convert to plotly with custom tooltip
     ggplotly(p, tooltip = c("x", "y", "fill")) %>%
@@ -782,7 +761,7 @@ server <- function(input, output, session) {
     filtered_data() %>%
       group_by(!!sym(location_col), !!sym(input$group_var)) %>%
       summarize(
-        total_effort = sum(!!sym(effort_cols$days), na.rm = TRUE),
+        total_effort = sum(!!sym(effort_cols$hours), na.rm = TRUE),
         mean_lon = mean(lon, na.rm = TRUE),
         mean_lat = mean(lat, na.rm = TRUE),
         .groups = "drop"
@@ -1083,11 +1062,6 @@ server <- function(input, output, session) {
     # Get column names based on effort type
     effort_cols <- get_effort_columns(input$map_effort_type)
     
-    # # Create a progress object
-    # progress <- shiny::Progress$new()
-    # progress$set(message = "Rendering map...", value = 0)
-    # on.exit(progress$close())
-    
     
     # Try to create map data
     tryCatch({
@@ -1111,7 +1085,7 @@ server <- function(input, output, session) {
         mutate(
           lon_bin = floor(lon) + 0.5,  # Center of 1-degree cell
           lat_bin = floor(lat) + 0.5   # Center of 1-degree cell
-        )
+        ) 
       
       # Get the grouping variable based on the radio button selection
       group_var <- input$map_group_var
@@ -1123,26 +1097,35 @@ server <- function(input, output, session) {
         raster_data <- raster_data %>%
           group_by(lon_bin, lat_bin) %>%
           summarize(
-            total_effort = sum(!!sym(effort_cols$days), na.rm = TRUE),
+            total_effort = sum(!!sym(effort_cols$hours), na.rm = TRUE),
+            pixel_area_km2 = mean(pixel_area_km2, na.rm = TRUE),
             .groups = "drop"
-          )
+          ) %>%
+          mutate(effort_per_km2 = total_effort/pixel_area_km2)
+          
       } else if ((group_var == "gear" && input$map_gear != "All" && input$map_gear != "All_aggregated") || 
                  (group_var == "length_category" && input$map_length != "All" && input$map_length != "All_aggregated")) {
         # For specific category (not "All" and not "All_aggregated"), we don't need to group by the variable
         raster_data <- raster_data %>%
           group_by(lon_bin, lat_bin) %>%
           summarize(
-            total_effort = sum(!!sym(effort_cols$days), na.rm = TRUE),
+            total_effort = sum(!!sym(effort_cols$hours), na.rm = TRUE),
+            pixel_area_km2 = mean(pixel_area_km2, na.rm = TRUE),
             .groups = "drop"
-          )
+          ) %>%
+          mutate(effort_per_km2 = total_effort/pixel_area_km2)
+        
       } else {
         # For "All" (showing faceted panels), group by the selected variable
         raster_data <- raster_data %>%
           group_by(lon_bin, lat_bin, !!sym(group_var)) %>%
           summarize(
-            total_effort = sum(!!sym(effort_cols$days), na.rm = TRUE),
+            total_effort = sum(!!sym(effort_cols$hours), na.rm = TRUE),
+            pixel_area_km2 = mean(pixel_area_km2, na.rm = TRUE),
             .groups = "drop"
-          )
+          ) %>%
+          mutate(effort_per_km2 = total_effort/pixel_area_km2)
+        
       }
       
       
@@ -1170,51 +1153,72 @@ server <- function(input, output, session) {
           selected_item <- if(input$map_length == "All_aggregated") "All aggregated" else input$map_length
         }
         
+        breaks <- c(0.02, 0.2, 2, 20, 200, 2000)
+        labels <- c("<0.02", "0.02-0.2", "0.2-2", "2-20", "20-200", "200-2000", ">2000")
+        colors <- c("#FFFFFF", "#EFF3FE", "#CADBEE", "#A8C9E0", "#E8F4A2", "#F1B16D", "#C54B53")
+        names(colors) <- labels  # Ensures colors are mapped by name
+
+        raster_data$effort_bin <- cut(raster_data$effort_per_km2,
+                                      breaks = c(-Inf, breaks, Inf),
+                                      labels = labels,
+                                      right = TRUE)
+        raster_data$effort_bin <- factor(raster_data$effort_bin, levels = labels)
+
+        
         p <- p +
           # Add raster cells for fishing effort
           geom_tile(data = raster_data, 
-                    aes(x = lon_bin, y = lat_bin, fill = total_effort),
+                    aes(x = lon_bin, y = lat_bin, fill = effort_bin),
                     alpha = 0.7) +
-          # Set fill scale (log scale for better visualization) with consistent max value across years
-          scale_fill_viridis_c(name = "kW days (Thousands)",
-                               trans = "log10",
-                               labels = function(x) scales::comma(x/1000),
-                               na.value = "transparent",
-                               limits = c(0.1, if(input$map_effort_type == "nominal") 1500000000 else 40000000000) # these values are taken scripts/calculate_max_effort.R
-          ) +
-          # Move legend title above and adjust legend size
-          guides(fill = guide_colorbar(title.position = "top", 
-                                       title.hjust = 0.5, 
-                                       barwidth = 15,  # Increase legend length
-                                       barheight = 0.5)) +  # Reduce height for a sleeker look
+          scale_fill_manual(name = "Fishing Effort (kW hours/km²)",
+                            values = colors,
+                            na.value = "transparent",
+                            drop = FALSE) +
+        #  Move legend title above and adjust legend size
+          guides(fill = guide_legend(title.position = "top", 
+                                     title.hjust = 0.5, 
+                                     nrow = 1, 
+                                     label.position = "bottom")) +
           # Set labels
           labs(
             title = "Modelled Fishing Effort"
           )
+        
       } else {
-        # Otherwise, create a faceted map by the selected variable
+        
+        breaks <- c(0.02, 0.2, 2, 20, 200, 2000)
+        labels <- c("<0.02", "0.02-0.2", "0.2-2", "2-20", "20-200", "200-2000", ">2000")
+        colors <- c("#FFFFFF", "#EFF3FE", "#CADBEE", "#A8C9E0", "#E8F4A2", "#F1B16D", "#C54B53")
+        names(colors) <- labels  # Ensures colors are mapped by name
+        
+        raster_data$effort_bin <- cut(raster_data$effort_per_km2,
+                                      breaks = c(-Inf, breaks, Inf),
+                                      labels = labels,
+                                      right = TRUE)
+        raster_data$effort_bin <- factor(raster_data$effort_bin, levels = labels)
+        
+        
         p <- p +
           # Add raster cells for fishing effort
           geom_tile(data = raster_data, 
-                    aes(x = lon_bin, y = lat_bin, fill = total_effort),
+                    aes(x = lon_bin, y = lat_bin, fill = effort_bin),
                     alpha = 0.7) +
-          # Add facet by the selected variable
-          facet_wrap(as.formula(paste("~", input$map_group_var)), ncol = 3) +
-          # Set fill scale (log scale for better visualization) with consistent max value across years
-          scale_fill_viridis_c(name = "kW days (Thousands)",
-                               trans = "log10",
-                               labels = function(x) scales::comma(x/1000),
-                               na.value = "transparent",
-                               limits = c(0.1, if(input$map_effort_type == "nominal") 1500000000 else 40000000000)
-          ) +
-          guides(fill = guide_colorbar(title.position = "top", 
-                                       title.hjust = 0.5, 
-                                       barwidth = 15,  # Increase legend length
-                                       barheight = 0.5)) +  # Reduce height for a sleeker look
+          #   # Add facet by the selected variable
+            facet_wrap(as.formula(paste("~", input$map_group_var)), ncol = 3) +
+          scale_fill_manual(name = "Fishing Effort (kW hours/km²)",
+                            values = colors,
+                            na.value = "transparent",
+                            drop = FALSE) +
+          #  Move legend title above and adjust legend size
+          guides(fill = guide_legend(title.position = "top", 
+                                     title.hjust = 0.5, 
+                                     nrow = 1, 
+                                     label.position = "bottom")) +
           # Set labels
           labs(
             title = "Modelled Fishing Effort"
           )
+
       }
       
       # Add common theme elements
