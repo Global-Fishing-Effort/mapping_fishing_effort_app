@@ -19,6 +19,17 @@ for(file in all_files){
     next()
   }
   
+  
+  # also figure out color palette here? https://www.nature.com/articles/s41597-023-02824-6/figures/7
+  
+  # lowest: #FFFFFF
+  #EFF3FE
+  #CADBEE
+  #A8C9E0
+  #E8F4A2
+  #F1B16D
+  # highest: #C54B53
+  
   file_name <- basename(file)
   
   qs::qsave(data, here(glue("rf_model_data/{file_name}")))

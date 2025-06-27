@@ -44,8 +44,8 @@ min_effort_nominal <- data %>%
   ungroup() %>%
   pull(., nom_active_fishing_days) %>%
   min(., na.rm = TRUE)
-# ok the max nominal effort in a cell across all years is 1460531; we should set the limit of our map plots to 1.5 billion
-# min nominal is 0.52
+# ok the max nominal effort in a cell across all years is 1393294242; we should set the limit of our map plots to 1.5 billion
+# min nominal is 0.5231778
 
 max_effort_effective <- data %>%
   group_by(lon, lat, year) %>%
@@ -60,6 +60,6 @@ min_effort_effective <- data %>%
   ungroup() %>%
   pull(., eff_active_fishing_days) %>%
   min(., na.rm = TRUE)
-# ok the max nominal effort in a cell across all years is 35664829728; we should set the limit of our map plots to 40 billion
-# min effective in 0.98
+# ok the max effective effort in a cell across all years is 35665327590; we should set the limit of our map plots to 40 billion
+# min effective in 0.987423
   
