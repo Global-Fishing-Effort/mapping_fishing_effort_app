@@ -1063,6 +1063,11 @@ server <- function(input, output, session) {
     effort_cols <- get_effort_columns(input$map_effort_type)
     
     
+    # Create a progress object
+    progress <- shiny::Progress$new()
+    progress$set(message = "Rendering map...", value = 0)
+    on.exit(progress$close())
+    
     # Try to create map data
     tryCatch({
       
