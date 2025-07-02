@@ -29,7 +29,7 @@ for(file in all_files){
   #F1B16D
   # highest: #C54B53
   
-  file_name <- basename(file)
+  file_name <- str_replace(basename(file), "\\.csv", "\\.qs")
   
   qs::qsave(data, here(glue("rf_model_data/{file_name}")))
   
