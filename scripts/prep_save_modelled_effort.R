@@ -7,14 +7,13 @@ library(here)
 
 data_dir <- file.path("/homevol/fishingeffort/data_storage")
 
-all_files <- list.files(file.path(data_dir, "prep/random_forest/predictions/"), full.names = TRUE)
-all_files <- all_files[-117]
+all_files <- list.files(file.path(data_dir, "prep/random_forest/zenodo_data/mapped_by_flag_country/"), full.names = TRUE)
 
 for(file in all_files){
   
 #  file <- all_files[3]
   
-  data <- qs::qread(file)
+  data <- read.csv(file)
   if(nrow(data) == 0){
     next()
   }
