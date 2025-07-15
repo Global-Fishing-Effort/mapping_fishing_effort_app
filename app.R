@@ -20,9 +20,6 @@ data_files <- list.files("rf_model_data", pattern = "model_preds_1950_2017_.*\\.
 # Read total effort data for percentage calculations
 total_effort_data <- qread("data/total_effort_data.qs")
 
-hours_to_days <- qs::qread("data/hours_to_days_conversion.qs")
-
-
 # Function to read and process each file
 read_data_file <- function(file_path) {
   # Extract the flag country code from the filename
@@ -1031,7 +1028,7 @@ server <- function(input, output, session) {
         percentage <- if (filtered_hours > 0) {
           round((filtered_hours / total_hours) * 100, 1)
         } else {
-          0
+          
         }
         
         # remove "any remaining will be estiamted in future" if it is 100%.

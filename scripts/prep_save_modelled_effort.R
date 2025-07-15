@@ -1,6 +1,6 @@
 library(qs)
 library(tidyverse)
-library(glue)
+library(glue) 
 library(here)
 
 ### read in all prediction data and save to rf_model_data folder
@@ -11,27 +11,19 @@ all_files <- list.files(file.path(data_dir, "prep/random_forest/zenodo_data/mapp
 
 for(file in all_files){
   
-#  file <- all_files[3]
+#  file <- all_files[118]
   
-  data <- read.csv(file)
+  data <- read.csv(file) %>%
+    dplyr::select(-data_type, -pixel_area_m2, -nom_hours_km2, -nom_days_km2, -eff_hours_km2, -eff_days_km2, -pixel_id)
+  
   if(nrow(data) == 0){
     next()
   }
   
-  
-  # also figure out color palette here? https://www.nature.com/articles/s41597-023-02824-6/figures/7
-  
-  # lowest: #FFFFFF
-  #EFF3FE
-  #CADBEE
-  #A8C9E0
-  #E8F4A2
-  #F1B16D
-  # highest: #C54B53
-  
   file_name <- str_replace(basename(file), "\\.csv", "\\.qs")
   
   qs::qsave(data, here(glue("rf_model_data/{file_name}")))
+  
   
 }
 

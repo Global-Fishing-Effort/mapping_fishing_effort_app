@@ -16,7 +16,15 @@ hist_fish_data <- qs::qread(here("data/rousseau_gear_fix.qs")) %>%
   ) %>%
   dplyr::select(flag_fin, year, gear, length_category, total_nominal_fishing_hours, total_effective_fishing_hours) %>%
   filter(total_nominal_fishing_hours > 0) %>%
-  mutate(flag_country_name = countrycode(flag_fin, origin = "iso3c", destination = "country.name"))
+  mutate(flag_country_name = countrycode(flag_fin, origin = "iso3c", destination = "country.name")) %>%
+  mutate(flag_country_name = case_when(
+    flag_fin == "RAA" ~ "Azores",
+    flag_fin == "RAM" ~ "Madeira", 
+    TRUE ~ flag_country_name
+  ))
+
+test <- hist_fish_data %>%
+  filter(flag_fin == "SVN")
 
 qs::qsave(hist_fish_data, here("data/total_effort_data.qs"))
 
