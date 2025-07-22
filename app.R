@@ -17,9 +17,6 @@ options(shiny.sanitize.errors = FALSE)
 # Read all data files
 data_files <- list.files("rf_model_data", pattern = "model_preds_1950_2017_.*\\.qs$", full.names = TRUE)
 
-# Read total effort data for percentage calculations
-total_effort_data <- qread("data/total_effort_data.qs")
-
 # Function to read and process each file
 read_data_file <- function(file_path) {
   # Extract the flag country code from the filename
@@ -36,6 +33,8 @@ read_data_file <- function(file_path) {
 # Read and combine all data files
 data <- lapply(data_files, read_data_file) %>%
   bind_rows()
+
+data_timeseries <- qs::qread("timeseries_data/all_timeseries_data_grouped.qs")
 
 # UI
 ui <- fluidPage(
@@ -144,9 +143,7 @@ ui <- fluidPage(
                          mainPanel(
                            conditionalPanel(
                              condition = "input.map_sector === 'industrial'",
-                             plotOutput("map", height = "600px"),
-                             br(),
-                             htmlOutput("mapEffortPercentage")
+                             plotOutput("map", height = "600px")
                            ),
                            conditionalPanel(
                              condition = "input.map_sector === 'artisanal'",
@@ -227,8 +224,7 @@ ui <- fluidPage(
                              condition = "input.sector === 'industrial'",
                              withSpinner(plotlyOutput("timeSeries", height = 
                                                         "500px"), caption = 
-                                           "This takes a few seconds to load"),
-                             htmlOutput("timeSeriesEffortPercentage")
+                                           "This takes a few seconds to load")
                            ),
                            conditionalPanel(
                              condition = "input.sector === 'artisanal'",
@@ -598,7 +594,8 @@ server <- function(input, output, session) {
     req(input$flag_country, input$location_selection, input$location_type)
     
     # Start with all data
-    filtered <- data
+   # filtered <- data
+    filtered <- data_timeseries
     
     # Filter by selected flag country if "All" is not selected
     if (!("All" %in% input$flag_country)) {
@@ -618,58 +615,10 @@ server <- function(input, output, session) {
       }
     }
     
-    # # Filter by year range
-    # filtered <- filtered %>% 
-    #   filter(year >= input$year_range[1], year <= input$year_range[2])
-    
     return(filtered)
   })
   
-  # Calculate percentage of total effort for time series
-  time_series_percentage <- reactive({
-    req(filtered_data(), input$flag_country, input$group_var, input$effort_type)
-    
-    # Get column names based on effort type
-    effort_cols <- get_effort_columns(input$effort_type)
-    
-    # Get unique years in the filtered data
-    years <- unique(filtered_data()$year)
-    
-    # Calculate percentage for each year
-    yearly_percentages <- sapply(years, function(yr) {
-      # Get filtered data for this year
-      filtered_year <- filtered_data() %>% 
-        filter(year == yr)
-      
-      # Get total fishing hours from filtered data for this year
-      filtered_hours <- sum(filtered_year[[effort_cols$hours]], na.rm = TRUE)
-      
-      # Get total fishing hours from total_effort_data for this year
-      total_filtered <- total_effort_data %>%
-        filter(year == yr)
-      
-      # Filter by selected flag country if "All" is not selected
-      if (!("All" %in% input$flag_country)) {
-        total_filtered <- total_filtered %>% 
-          filter(flag_country_name %in% input$flag_country)
-      }
-      
-      # Get total hours for this year
-      total_hours <- sum(total_filtered[[effort_cols$total_hours]], na.rm = TRUE)
-      
-      # Calculate percentage for this year
-      if (total_hours > 0) {
-        return((filtered_hours / total_hours) * 100)
-      } else {
-        return(0)
-      }
-    })
-    
-    # Calculate average percentage across all years
-    avg_percentage <- mean(yearly_percentages, na.rm = TRUE)
-    
-    return(round(avg_percentage, 1))
-  })
+
   
   # Aggregated data for plotting
   aggregated_data <- reactive({
@@ -806,251 +755,6 @@ server <- function(input, output, session) {
     return(filtered)
   })
   
-  # Calculate percentage of total effort for map
-  map_percentage <- reactive({
-    req(filtered_data_map(), input$map_flag_country, input$map_year, input$map_group_var, input$map_effort_type)
-    
-    # Get column names based on effort type
-    effort_cols <- get_effort_columns(input$map_effort_type)
-    
-    # Get total fishing hours from filtered data
-    filtered_hours <- sum(filtered_data_map()[[effort_cols$hours]], na.rm = TRUE)
-    
-    # Get total fishing hours from total_effort_data based on selected filters
-    total_filtered <- total_effort_data %>%
-      filter(year == input$map_year)
-    
-    # Filter by selected flag country if "All" is not selected
-    if (!("All" %in% input$map_flag_country)) {
-      total_filtered <- total_filtered %>% 
-        filter(flag_country_name %in% input$map_flag_country)
-    }
-    
-    # Filter by selected gear type or vessel length category if a specific category is selected
-    if (input$map_group_var == "gear" && !is.null(input$map_gear) && input$map_gear != "All" && input$map_gear != "All_aggregated") {
-      # Check if the exact gear type exists in the data
-      if (input$map_gear %in% unique(total_filtered$gear)) {
-        total_filtered <- total_filtered %>% 
-          filter(gear == input$map_gear)
-      } else {
-        # Try a more flexible match - check if the gear type contains the selected gear type
-        # This handles cases where UI shows "Seine_Purse_Seine" but data has "Purse_Seine" or similar
-        potential_matches <- grep(input$map_gear, unique(total_filtered$gear), value = TRUE)
-        
-        if (length(potential_matches) > 0) {
-          total_filtered <- total_filtered %>% 
-            filter(gear %in% potential_matches)
-        }
-        # If no matches found, keep all rows (don't filter)
-      }
-    } else if (input$map_group_var == "length_category" && !is.null(input$map_length) && input$map_length != "All" && input$map_length != "All_aggregated") {
-      total_filtered <- total_filtered %>% 
-        filter(length_category == input$map_length)
-    }
-    
-    # Get total hours
-    total_hours <- sum(total_filtered[[effort_cols$total_hours]], na.rm = TRUE)
-    
-    # Calculate percentage
-    if (total_hours > 0) {
-      percentage <- (filtered_hours / total_hours) * 100
-    } else {
-      percentage <- 0
-    }
-    
-    return(round(percentage, 1))
-  })
-  
-  # HTML output for time series effort percentage
-  output$timeSeriesEffortPercentage <- renderUI({
-    req(time_series_percentage(), input$flag_country, input$location_selection, input$sector, input$effort_type)
-    
-    # If a specific EEZ is selected (not "All"), don't display percentage information
-    if (!("All" %in% input$location_selection)) {
-      return(NULL)
-    }
-    
-    
-    
-    # Format flag country for display
-    flag_country_text <- if("All" %in% input$flag_country) "All countries" else paste(input$flag_country, collapse = ", ")
-    
-    # Format sector for display
-    sector_text <- if(input$sector == "industrial") "Industrial fishing" else "Artisanal fishing"
-    
-    # Format effort type for display
-    effort_type_text <- if(input$effort_type == "nominal") "Nominal" else "Effective"
-    
-    
-    # If a specific flag is selected (not "All"), don't say we will gapfill
-    if (!("All" %in% input$flag_country)) {
-      HTML(paste0("<p style='text-align: center; font-style: italic; color: #666;'>",
-                  "Displaying approximately <b>", time_series_percentage(), "%</b> of known total ", tolower(effort_type_text), " fishing effort (average across years) for the selection: ", 
-                  flag_country_text, ", ", sector_text, 
-                  "</p>"))
-    }else{
-      
-      HTML(paste0("<p style='text-align: center; font-style: italic; color: #666;'>",
-                  "Displaying approximately <b>", time_series_percentage(), "%</b> of known total ", tolower(effort_type_text), " fishing effort (average across years) for the selection: ", 
-                  flag_country_text, ", ", sector_text, ".<br>Any remaining missing percentage will be estimated in future iterations of the model.",
-                  "</p>"))
-      
-    }
-  })
-  
-  # HTML output for map effort percentage
-  output$mapEffortPercentage <- renderUI({
-    req(input$map_flag_country, input$map_year, input$map_group_var, input$map_location_selection, input$map_sector, input$map_effort_type)
-    
-    # If a specific EEZ is selected (not "All"), don't display percentage information
-    if (!("All" %in% input$map_location_selection)) {
-      return(NULL)
-    }
-    
-    # Format flag country for display
-    flag_country_text <- if("All" %in% input$map_flag_country) "All countries" else paste(input$map_flag_country, collapse = ", ")
-    
-    # Format sector for display
-    sector_text <- if(input$map_sector == "industrial") "Industrial fishing" else "Artisanal fishing"
-    
-    # Format effort type for display
-    effort_type_text <- if(input$map_effort_type == "nominal") "Nominal"
-    
-    # Get gear type or vessel length category text
-    category_text <- ""
-    if(input$map_group_var == "gear") {
-      if(input$map_gear == "All_aggregated") {
-        category_text <- "All gear types (aggregated)"
-      } else if(input$map_gear == "All") {
-        category_text <- "All gear types"
-      } else {
-        category_text <- input$map_gear
-      }
-    } else { # length_category
-      if(input$map_length == "All_aggregated") {
-        category_text <- "All vessel length categories (aggregated)"
-      } else if(input$map_length == "All") {
-        category_text <- "All vessel length categories"
-      } else {
-        category_text <- input$map_length
-      }
-    }
-    
-    # Get column names based on effort type
-    effort_cols <- get_effort_columns(input$map_effort_type)
-    
-    # Get filtered data for this selection
-    filtered_hours <- sum(filtered_data_map()[[effort_cols$hours]], na.rm = TRUE)
-    
-    # Get total fishing hours from total_effort_data based on selected filters
-    total_filtered <- total_effort_data %>%
-      filter(year == input$map_year)
-    
-    # Filter by selected flag country if "All" is not selected
-    if (!("All" %in% input$map_flag_country)) {
-      total_filtered <- total_filtered %>% 
-        filter(flag_country_name %in% input$map_flag_country)
-    }
-    
-    # Check if "All" is selected for gear type or vessel length category
-    if ((input$map_group_var == "gear" && input$map_gear == "All") || 
-        (input$map_group_var == "length_category" && input$map_length == "All")) {
-      
-      # Get the categories with known effort in total_effort_data
-      if (input$map_group_var == "gear") {
-        known_categories <- total_filtered %>%
-          filter(!!sym(effort_cols$total_hours) > 0) %>%
-          pull(gear) %>%
-          unique()
-      } else { # length_category
-        known_categories <- total_filtered %>%
-          filter(!!sym(effort_cols$total_hours) > 0) %>%
-          pull(length_category) %>%
-          unique()
-      }
-      
-      # Get the categories with modelled predictions in filtered_data_map
-      if (input$map_group_var == "gear") {
-        modelled_categories <- filtered_data_map() %>%
-          filter(!!sym(effort_cols$hours) > 0) %>%
-          pull(gear) %>%
-          unique()
-      } else { # length_category
-        modelled_categories <- filtered_data_map() %>%
-          filter(!!sym(effort_cols$hours) > 0) %>%
-          pull(length_category) %>%
-          unique()
-      }
-      
-      # # Find categories with known effort but no modelled predictions
-      # missing_categories <- setdiff(known_categories, modelled_categories)
-      
-      # Calculate percentage of known effort that is modelled
-      total_hours <- sum(total_filtered[[effort_cols$total_hours]], na.rm = TRUE)
-      percentage <- if (filtered_hours > 0 && total_hours > 0) {
-        round((filtered_hours / total_hours) * 100, 1)
-      } else {
-        0
-      }
-      
-      # Create the HTML output
-      output_html <- paste0("<p style='text-align: center; font-style: italic; color: #666;'>",
-                            "Displaying approximately <b>", percentage, "%</b> of known total fishing effort for the selection: ", 
-                            flag_country_text, ", ", sector_text, ", ", category_text, ", ", input$map_year, 
-                            ".<br>Any remaining missing percentage will be estimated in future iterations of the model.",
-                            "</p>")
-      
-      return(HTML(output_html))
-      
-    } else {
-      # For specific category or "All_aggregated" selection
-      
-      # Filter total_filtered by selected gear type or vessel length category
-      if (input$map_group_var == "gear" && !is.null(input$map_gear) && input$map_gear != "All" && input$map_gear != "All_aggregated") {
-        total_filtered <- total_filtered %>% 
-          filter(gear == input$map_gear)
-      } else if (input$map_group_var == "length_category" && !is.null(input$map_length) && input$map_length != "All" && input$map_length != "All_aggregated") {
-        total_filtered <- total_filtered %>% 
-          filter(length_category == input$map_length)
-      }
-      
-      # Get total hours
-      total_hours <- sum(total_filtered[[effort_cols$total_hours]], na.rm = TRUE)
-      
-      # Check if there is known fishing effort for this selection
-      if (total_hours == 0 || is.na(total_hours)) {
-        # No known fishing effort
-        return(HTML(paste0("<p style='text-align: center; font-style: italic; color: #666;'>",
-                           "There is no known fishing effort for this category.",
-                           "</p>")))
-      } else {
-        # There is known fishing effort, calculate percentage
-        percentage <- if (filtered_hours > 0) {
-          round((filtered_hours / total_hours) * 100, 1)
-        } else {
-          
-        }
-        
-        # remove "any remaining will be estiamted in future" if it is 100%.
-        
-        if (!("All" %in% input$map_flag_country)) {
-          return(HTML(paste0("<p style='text-align: center; font-style: italic; color: #666;'>",
-                             "Displaying approximately <b>", percentage, "%</b> of known total fishing effort for the selection: ", 
-                             flag_country_text, ", ", sector_text, ", ", category_text, ", ", input$map_year, 
-                             "</p>")))
-        }else{
-          
-          
-          return(HTML(paste0("<p style='text-align: center; font-style: italic; color: #666;'>",
-                             "Displaying approximately <b>", percentage, "%</b> of known total fishing effort for the selection: ", 
-                             flag_country_text, ", ", sector_text, ", ", category_text, ", ", input$map_year, 
-                             ".<br>Any remaining missing percentage will be estimated in future iterations of the model.",
-                             "</p>")))
-          
-        }
-      }
-    }
-  })
   
   # Map plot 
   output$map <- renderPlot({
