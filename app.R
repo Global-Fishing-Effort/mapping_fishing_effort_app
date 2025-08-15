@@ -165,8 +165,6 @@ ui <- fluidPage(
                                                     "Vessel Length Category" = "length_category"),
                                         selected = "gear"),
                            
-                           uiOutput("gear_selector"),
-                           uiOutput("length_selector"),
                            
                            selectInput("flag_country", "Select Flag Country (Fishing Fleet):",
                                        choices = c("All" = "All", setNames(as.list(unique(data$flag_country_name)), unique(data$flag_country_name))),
@@ -659,33 +657,6 @@ server <- function(input, output, session) {
   })
   
   
-  # Dynamic UI for gear selector (Time Series tab)
-  output$gear_selector <- renderUI({
-    if (input$sector == "industrial" && input$group_var == "gear") {
-      current_dataset <- current_data()
-      gear_choices <- c("All aggregated" = "All_aggregated", "All" = "All", 
-                        setNames(as.list(unique(current_dataset$gear)), unique(current_dataset$gear)))
-      selectInput("gear", "Select Gear Type:",
-                  choices = gear_choices,
-                  selected = "All_aggregated")
-    } else {
-      return(NULL)
-    }
-  })
-  
-  # Dynamic UI for length selector (Time Series tab)
-  output$length_selector <- renderUI({
-    if (input$group_var == "length_category") {
-      current_dataset <- current_data()
-      length_choices <- c("All aggregated" = "All_aggregated", "All" = "All", 
-                          setNames(as.list(unique(current_dataset$length_category)), unique(current_dataset$length_category)))
-      selectInput("length", "Select Vessel Length Category:",
-                  choices = length_choices,
-                  selected = "All_aggregated")
-    } else {
-      return(NULL)
-    }
-  })
   
   # Dynamic UI for gear selector (Map tab)
   output$map_gear_selector <- renderUI({
