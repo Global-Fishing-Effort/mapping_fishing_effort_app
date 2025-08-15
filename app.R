@@ -14,8 +14,11 @@ library(tidyr)
 
 options(shiny.sanitize.errors = FALSE)
 
-# Read all data files
-data_files <- list.files("rf_model_data_ind", pattern = "model_preds_1950_2017_.*\\.qs$", full.names = TRUE)
+# Read all industrial data files
+data_files_ind <- list.files("rf_model_data_ind", pattern = "model_preds_1950_2017_.*\\.qs$", full.names = TRUE)
+
+# Read all artisanal data files
+data_files_art <- list.files("rf_model_data_art", pattern = "model_preds_1950_2017_.*\\.qs$", full.names = TRUE)
 
 # Function to read and process each file
 read_data_file <- function(file_path) {
@@ -30,11 +33,23 @@ read_data_file <- function(file_path) {
   return(df)
 }
 
-# Read and combine all data files
-data <- lapply(data_files, read_data_file) %>%
+# Read and combine all industrial data files
+data_industrial <- lapply(data_files_ind, read_data_file) %>%
   bind_rows()
 
-data_timeseries <- qs::qread("timeseries_data/all_timeseries_data_grouped_ind.qs")
+# Read and combine all artisanal data files
+data_artisanal <- lapply(data_files_art, read_data_file) %>%
+  bind_rows()
+
+# For backward compatibility, keep 'data' as industrial data initially
+data <- data_industrial
+
+# Read timeseries data for both sectors
+data_timeseries_ind <- qs::qread("timeseries_data/all_timeseries_data_grouped_ind.qs")
+data_timeseries_art <- qs::qread("timeseries_data/all_timeseries_data_grouped_art.qs")
+
+# For backward compatibility, keep 'data_timeseries' as industrial data initially
+data_timeseries <- data_timeseries_ind
 
 # UI
 ui <- fluidPage(
@@ -68,23 +83,8 @@ ui <- fluidPage(
                                                     "Vessel Length Category" = "length_category"),
                                         selected = "gear"),
                            
-                           conditionalPanel(
-                             condition = "input.map_group_var === 'gear'",
-                             selectInput("map_gear", "Select Gear Type:",
-                                         choices = c("All aggregated" = "All_aggregated", 
-                                                     "All" = "All", 
-                                                     setNames(as.list(unique(data$gear)), unique(data$gear))),
-                                         selected = "All_aggregated")
-                           ),
-                           
-                           conditionalPanel(
-                             condition = "input.map_group_var === 'length_category'",
-                             selectInput("map_length", "Select Vessel Length Category:",
-                                         choices = c("All aggregated" = "All_aggregated", 
-                                                     "All" = "All", 
-                                                     setNames(as.list(unique(data$length_category)), unique(data$length_category))),
-                                         selected = "All_aggregated")
-                           ),
+                           uiOutput("map_gear_selector"),
+                           uiOutput("map_length_selector"),
                            
                            selectInput("map_flag_country", "Select Flag Country (Fishing Fleet):",
                                        choices = c("All" = "All", setNames(as.list(unique(data$flag_country_name)), unique(data$flag_country_name))),
@@ -141,15 +141,7 @@ ui <- fluidPage(
                          ),
                          
                          mainPanel(
-                           conditionalPanel(
-                             condition = "input.map_sector === 'industrial'",
-                             plotOutput("map", height = "600px")
-                           ),
-                           conditionalPanel(
-                             condition = "input.map_sector === 'artisanal'"
-                             # br(),
-                            # h3("We have not modelled artisanal fishing effort for this project", style = "text-align: center; margin-top: 200px;")
-                           )
+                           plotOutput("map", height = "600px")
                          )
                        )
               ),
@@ -172,6 +164,9 @@ ui <- fluidPage(
                                         choices = c("Gear Type" = "gear", 
                                                     "Vessel Length Category" = "length_category"),
                                         selected = "gear"),
+                           
+                           uiOutput("gear_selector"),
+                           uiOutput("length_selector"),
                            
                            selectInput("flag_country", "Select Flag Country (Fishing Fleet):",
                                        choices = c("All" = "All", setNames(as.list(unique(data$flag_country_name)), unique(data$flag_country_name))),
@@ -220,18 +215,9 @@ ui <- fluidPage(
                          ),
                          
                          mainPanel(
-                           conditionalPanel(
-                             condition = "input.sector === 'industrial'",
-                             withSpinner(plotlyOutput("timeSeries", height = 
-                                                        "500px"), caption = 
-                                           "This takes a few seconds to load")
-                           ),
-                           conditionalPanel(
-                             condition = "input.sector === 'artisanal'"
-                             # br(),
-                             # h3("We have not modelled artisanal fishing effort 
-                             #    for this project", style = "text-align: center; margin-top: 200px;")
-                           )
+                           withSpinner(plotlyOutput("timeSeries", height = 
+                                                      "500px"), caption = 
+                                         "This takes a few seconds to load")
                          )
                        )
               ),
@@ -394,6 +380,89 @@ server <- function(input, output, session) {
     previous_flag_selections(input$flag_country)
   })
   
+  # Reactive function to get the current dataset based on sector selection
+  current_data <- reactive({
+    if (input$sector == "industrial") {
+      return(data_industrial)
+    } else {
+      return(data_artisanal)
+    }
+  })
+  
+  # Reactive function to get the current timeseries dataset based on sector selection
+  current_timeseries_data <- reactive({
+    if (input$sector == "industrial") {
+      return(data_timeseries_ind)
+    } else {
+      return(data_timeseries_art)
+    }
+  })
+  
+  # Reactive function to get the current map dataset based on sector selection
+  current_map_data <- reactive({
+    if (input$map_sector == "industrial") {
+      return(data_industrial)
+    } else {
+      return(data_artisanal)
+    }
+  })
+  
+  # Update UI choices when sector changes (Time Series tab)
+  observeEvent(input$sector, {
+    current_dataset <- current_data()
+    
+    # Update flag country choices
+    flag_choices <- c("All" = "All", setNames(as.list(unique(current_dataset$flag_country_name)), unique(current_dataset$flag_country_name)))
+    updateSelectInput(session, "flag_country", choices = flag_choices, selected = "All")
+    
+    # Update group variable choices based on sector
+    if (input$sector == "industrial") {
+      updateRadioButtons(session, "group_var", 
+                         choices = c("Gear Type" = "gear", "Vessel Length Category" = "length_category"),
+                         selected = "gear")
+    } else {
+      # For artisanal, only vessel length category is available
+      updateRadioButtons(session, "group_var", 
+                         choices = c("Vessel Length Category" = "length_category"),
+                         selected = "length_category")
+    }
+  })
+  
+  # Update UI choices when sector changes (Map tab)
+  observeEvent(input$map_sector, {
+    current_dataset <- current_map_data()
+    
+    # Update flag country choices
+    flag_choices <- c("All" = "All", setNames(as.list(unique(current_dataset$flag_country_name)), unique(current_dataset$flag_country_name)))
+    updateSelectInput(session, "map_flag_country", choices = flag_choices, selected = "All")
+    
+    # Update group variable choices based on sector
+    if (input$map_sector == "industrial") {
+      updateRadioButtons(session, "map_group_var", 
+                         choices = c("Gear Type" = "gear", "Vessel Length Category" = "length_category"),
+                         selected = "gear")
+    } else {
+      # For artisanal, only vessel length category is available
+      updateRadioButtons(session, "map_group_var", 
+                         choices = c("Vessel Length Category" = "length_category"),
+                         selected = "length_category")
+    }
+    
+    # Update gear choices if gear is selected
+    if (input$map_sector == "industrial" && !is.null(input$map_group_var) && input$map_group_var == "gear") {
+      gear_choices <- c("All aggregated" = "All_aggregated", "All" = "All", 
+                        setNames(as.list(unique(current_dataset$gear)), unique(current_dataset$gear)))
+      updateSelectInput(session, "map_gear", choices = gear_choices, selected = "All_aggregated")
+    }
+    
+    # Update length choices
+    if (!is.null(input$map_group_var) && input$map_group_var == "length_category") {
+      length_choices <- c("All aggregated" = "All_aggregated", "All" = "All", 
+                          setNames(as.list(unique(current_dataset$length_category)), unique(current_dataset$length_category)))
+      updateSelectInput(session, "map_length", choices = length_choices, selected = "All_aggregated")
+    }
+  })
+  
   # Helper function to get the appropriate column names based on effort type
   get_effort_columns <- function(effort_type) {
     if (effort_type == "nominal") {
@@ -415,22 +484,25 @@ server <- function(input, output, session) {
   output$location_selector <- renderUI({
     req(input$flag_country, input$location_type)
     
+    # Use the current dataset based on sector selection
+    current_dataset <- current_data()
+    
     # Get location choices based on flag country selection
     if ("All" %in% input$flag_country) {
       # If "All" flag countries are selected, show all locations
       if (input$location_type == "eez") {
-        location_choices <- sort(unique(data$eez_sovereign_name))
+        location_choices <- sort(unique(current_dataset$eez_sovereign_name))
         location_label <- "Select EEZ (Fishing Location):"
         input_id <- "location_selection"
       } else {
-        location_choices <- sort(unique(data$fao_major_fishing_area))
+        location_choices <- sort(unique(current_dataset$fao_major_fishing_area))
         location_label <- "Select FAO Area (Fishing Location):"
         input_id <- "location_selection"
       }
     } else {
       # Otherwise, filter locations based on selected flag countries
       if (input$location_type == "eez") {
-        location_choices <- data %>%
+        location_choices <- current_dataset %>%
           filter(flag_country_name %in% input$flag_country) %>%
           pull(eez_sovereign_name) %>%
           unique() %>%
@@ -439,7 +511,7 @@ server <- function(input, output, session) {
         location_label <- "Select EEZ (Fishing Location):"
         input_id <- "location_selection"
       } else {
-        location_choices <- data %>%
+        location_choices <- current_dataset %>%
           filter(flag_country_name %in% input$flag_country) %>%
           pull(fao_major_fishing_area) %>%
           unique() %>% 
@@ -506,22 +578,25 @@ server <- function(input, output, session) {
   output$map_location_selector <- renderUI({
     req(input$map_flag_country, input$map_location_type)
     
+    # Use the current map dataset based on sector selection
+    current_dataset <- current_map_data()
+    
     # Get location choices based on flag country selection
     if ("All" %in% input$map_flag_country) {
       # If "All" flag countries are selected, show all locations
       if (input$map_location_type == "eez") {
-        location_choices <- sort(unique(data$eez_sovereign_name))
+        location_choices <- sort(unique(current_dataset$eez_sovereign_name))
         location_label <- "Select EEZ (Fishing Location):"
         input_id <- "map_location_selection"
       } else {
-        location_choices <- sort(unique(data$fao_major_fishing_area))
+        location_choices <- sort(unique(current_dataset$fao_major_fishing_area))
         location_label <- "Select FAO Area (Fishing Location):"
         input_id <- "map_location_selection"
       }
     } else {
       # Otherwise, filter locations based on selected flag countries
       if (input$map_location_type == "eez") {
-        location_choices <- data %>%
+        location_choices <- current_dataset %>%
           filter(flag_country_name %in% input$map_flag_country) %>%
           pull(eez_sovereign_name) %>%
           unique() %>%
@@ -530,7 +605,7 @@ server <- function(input, output, session) {
         location_label <- "Select EEZ (Fishing Location):"
         input_id <- "map_location_selection"
       } else {
-        location_choices <- data %>%
+        location_choices <- current_dataset %>%
           filter(flag_country_name %in% input$map_flag_country) %>%
           pull(fao_major_fishing_area) %>%
           unique() %>% 
@@ -584,6 +659,69 @@ server <- function(input, output, session) {
   })
   
   
+  # Dynamic UI for gear selector (Time Series tab)
+  output$gear_selector <- renderUI({
+    if (input$sector == "industrial" && input$group_var == "gear") {
+      current_dataset <- current_data()
+      gear_choices <- c("All aggregated" = "All_aggregated", "All" = "All", 
+                        setNames(as.list(unique(current_dataset$gear)), unique(current_dataset$gear)))
+      selectInput("gear", "Select Gear Type:",
+                  choices = gear_choices,
+                  selected = "All_aggregated")
+    } else {
+      return(NULL)
+    }
+  })
+  
+  # Dynamic UI for length selector (Time Series tab)
+  output$length_selector <- renderUI({
+    if (input$group_var == "length_category") {
+      current_dataset <- current_data()
+      length_choices <- c("All aggregated" = "All_aggregated", "All" = "All", 
+                          setNames(as.list(unique(current_dataset$length_category)), unique(current_dataset$length_category)))
+      selectInput("length", "Select Vessel Length Category:",
+                  choices = length_choices,
+                  selected = "All_aggregated")
+    } else {
+      return(NULL)
+    }
+  })
+  
+  # Dynamic UI for gear selector (Map tab)
+  output$map_gear_selector <- renderUI({
+    # Use default values if inputs are not available yet
+    sector <- if(is.null(input$map_sector)) "industrial" else input$map_sector
+    group_var <- if(is.null(input$map_group_var)) "gear" else input$map_group_var
+    
+    if (sector == "industrial" && group_var == "gear") {
+      current_dataset <- current_map_data()
+      gear_choices <- c("All aggregated" = "All_aggregated", "All" = "All", 
+                        setNames(as.list(unique(current_dataset$gear)), unique(current_dataset$gear)))
+      selectInput("map_gear", "Select Gear Type:",
+                  choices = gear_choices,
+                  selected = "All_aggregated")
+    } else {
+      return(NULL)
+    }
+  })
+  
+  # Dynamic UI for length selector (Map tab)
+  output$map_length_selector <- renderUI({
+    # Use default value if input is not available yet
+    group_var <- if(is.null(input$map_group_var)) "gear" else input$map_group_var
+    
+    if (group_var == "length_category") {
+      current_dataset <- current_map_data()
+      length_choices <- c("All aggregated" = "All_aggregated", "All" = "All", 
+                          setNames(as.list(unique(current_dataset$length_category)), unique(current_dataset$length_category)))
+      selectInput("map_length", "Select Vessel Length Category:",
+                  choices = length_choices,
+                  selected = "All_aggregated")
+    } else {
+      return(NULL)
+    }
+  })
+  
   # Store the location selections when they change
   observeEvent(input$location_selection, {
     previous_location_selections(input$location_selection)
@@ -593,9 +731,8 @@ server <- function(input, output, session) {
   filtered_data <- reactive({
     req(input$flag_country, input$location_selection, input$location_type)
     
-    # Start with all data
-   # filtered <- data
-    filtered <- data_timeseries
+    # Use the current timeseries dataset based on sector selection
+    filtered <- current_timeseries_data()
     
     # Filter by selected flag country if "All" is not selected
     if (!("All" %in% input$flag_country)) {
@@ -618,7 +755,7 @@ server <- function(input, output, session) {
     return(filtered)
   })
   
-
+  
   
   # Aggregated data for plotting
   aggregated_data <- reactive({
@@ -718,8 +855,8 @@ server <- function(input, output, session) {
   filtered_data_map <- reactive({
     req(input$map_flag_country, input$map_location_selection, input$map_location_type, input$map_year, input$map_group_var)
     
-    # Start with all data
-    filtered <- data
+    # Use the current map dataset based on sector selection
+    filtered <- current_map_data()
     
     # Filter by selected flag country if "All" is not selected
     if (!("All" %in% input$map_flag_country)) {
@@ -740,7 +877,8 @@ server <- function(input, output, session) {
     }
     
     # Filter by selected gear type or vessel length category if a specific category is selected
-    if (input$map_group_var == "gear" && !is.null(input$map_gear) && input$map_gear != "All" && input$map_gear != "All_aggregated") {
+    # Note: For artisanal data, gear filtering is not applicable since artisanal data doesn't have gear column
+    if (input$map_sector == "industrial" && input$map_group_var == "gear" && !is.null(input$map_gear) && input$map_gear != "All" && input$map_gear != "All_aggregated") {
       filtered <- filtered %>% 
         filter(gear == input$map_gear)
     } else if (input$map_group_var == "length_category" && !is.null(input$map_length) && input$map_length != "All" && input$map_length != "All_aggregated") {
@@ -786,12 +924,23 @@ server <- function(input, output, session) {
       }
       
       
-      # Round coordinates to create 1x1 degree grid cells
-      raster_data <- valid_data %>%
-        mutate(
-          lon_bin = floor(lon) + 0.5,  # Center of 1-degree cell
-          lat_bin = floor(lat) + 0.5   # Center of 1-degree cell
-        ) 
+      # Round coordinates to create grid cells based on sector
+      # Artisanal: 0.5 degree resolution, Industrial: 1 degree resolution
+      if (input$map_sector == "artisanal") {
+        # For artisanal data, use 0.5 degree resolution
+        raster_data <- valid_data %>%
+          mutate(
+            lon_bin = floor(lon * 2) / 2 + 0.25,  # Center of 0.5-degree cell
+            lat_bin = floor(lat * 2) / 2 + 0.25   # Center of 0.5-degree cell
+          )
+      } else {
+        # For industrial data, use 1 degree resolution
+        raster_data <- valid_data %>%
+          mutate(
+            lon_bin = floor(lon) + 0.5,  # Center of 1-degree cell
+            lat_bin = floor(lat) + 0.5   # Center of 1-degree cell
+          )
+      }
       
       # Get the grouping variable based on the radio button selection
       group_var <- input$map_group_var
@@ -808,7 +957,7 @@ server <- function(input, output, session) {
             .groups = "drop"
           ) %>%
           mutate(effort_per_km2 = total_effort/pixel_area_km2)
-          
+        
       } else if ((group_var == "gear" && input$map_gear != "All" && input$map_gear != "All_aggregated") || 
                  (group_var == "length_category" && input$map_length != "All" && input$map_length != "All_aggregated")) {
         # For specific category (not "All" and not "All_aggregated"), we don't need to group by the variable
@@ -863,13 +1012,13 @@ server <- function(input, output, session) {
         labels <- c("<0.02", "0.02-0.2", "0.2-2", "2-20", "20-200", "200-2000", ">2000")
         colors <- c("#FFFFFF", "#EFF3FE", "#CADBEE", "#A8C9E0", "#E8F4A2", "#F1B16D", "#C54B53")
         names(colors) <- labels  # Ensures colors are mapped by name
-
+        
         raster_data$effort_bin <- cut(raster_data$effort_per_km2,
                                       breaks = c(-Inf, breaks, Inf),
                                       labels = labels,
                                       right = TRUE)
         raster_data$effort_bin <- factor(raster_data$effort_bin, levels = labels)
-
+        
         
         p <- p +
           # Add raster cells for fishing effort
@@ -880,7 +1029,7 @@ server <- function(input, output, session) {
                             values = colors,
                             na.value = "transparent",
                             drop = FALSE) +
-        #  Move legend title above and adjust legend size
+          #  Move legend title above and adjust legend size
           guides(fill = guide_legend(title.position = "top", 
                                      title.hjust = 0.5, 
                                      nrow = 1, 
@@ -910,7 +1059,7 @@ server <- function(input, output, session) {
                     aes(x = lon_bin, y = lat_bin, fill = effort_bin),
                     alpha = 0.7) +
           #   # Add facet by the selected variable
-            facet_wrap(as.formula(paste("~", input$map_group_var)), ncol = 3) +
+          facet_wrap(as.formula(paste("~", input$map_group_var)), ncol = 3) +
           scale_fill_manual(name = "Fishing Effort (kW hours/km²)",
                             values = colors,
                             na.value = "transparent",
@@ -924,7 +1073,7 @@ server <- function(input, output, session) {
           labs(
             title = "Modelled Fishing Effort"
           )
-
+        
       }
       
       # Add common theme elements
