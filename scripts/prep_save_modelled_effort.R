@@ -27,7 +27,6 @@ for(file in all_files){
   
 }
 
-test <- qs::qread(here("rf_model_data_ind/model_preds_1950_2017_AGO.qs"))
 
 
 data_dir <- file.path("/homevol/fishingeffort/data_storage")
@@ -52,4 +51,3 @@ for(file in all_files){
   
 }
 
-test <- qs::qread(here("rf_model_data/model_preds_1950_2017_AGO.qs"))
