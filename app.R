@@ -1,16 +1,16 @@
 # Fishing Effort Visualization Shiny App
-library(shiny)
-library(ggplot2)
-library(dplyr)
-library(qs)
-library(plotly)
-library(sf)  # For spatial data handling
-library(rnaturalearth)  # For world map data
-library(htmltools)
-library(scales)
-library(rnaturalearthdata)
-library(shinycssloaders)  # For loading spinners
-library(tidyr)
+suppressPackageStartupMessages(library(shiny))
+suppressPackageStartupMessages(library(ggplot2))
+suppressPackageStartupMessages(library(dplyr))
+suppressPackageStartupMessages(library(qs))
+suppressPackageStartupMessages(library(plotly))
+suppressPackageStartupMessages(library(sf))  # For spatial data handling
+suppressPackageStartupMessages(library(rnaturalearth))  # For world map data
+suppressPackageStartupMessages(library(htmltools))
+suppressPackageStartupMessages(library(scales))
+suppressPackageStartupMessages(library(rnaturalearthdata))
+suppressPackageStartupMessages(library(shinycssloaders))  # For loading spinners
+suppressPackageStartupMessages(library(tidyr))
 
 options(shiny.sanitize.errors = FALSE)
 

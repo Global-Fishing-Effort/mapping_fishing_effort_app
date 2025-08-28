@@ -2,6 +2,8 @@ library(qs)
 library(tidyverse)
 library(glue) 
 library(here)
+library(arrow)
+library(data.table)
 
 ### read in all prediction data and save to rf_model_data folder
 
@@ -11,10 +13,10 @@ all_files <- list.files(file.path(data_dir, "prep/random_forest/zenodo_data/mapp
 
 for(file in all_files){
   
-#  file <- all_files[118]
+#  file <- all_files[4]
   
-  data <- read.csv(file) %>%
-    dplyr::select(-data_type, -pixel_area_m2, -nom_hours_km2, -nom_days_km2, -eff_hours_km2, -eff_days_km2, -pixel_id)
+  data <- fread(file) %>%
+    dplyr::select(-data_type) 
   
   if(nrow(data) == 0){
     next()
@@ -23,7 +25,7 @@ for(file in all_files){
   file_name <- str_replace(basename(file), "\\.csv", "\\.qs")
   
   qs::qsave(data, here(glue("rf_model_data_ind/{file_name}")))
-  
+  # write_parquet(data, here(glue("rf_model_data_ind/{file_name}"))) # parquet is the same size... 
   
 }
 
@@ -37,7 +39,7 @@ for(file in all_files){
   
   #  file <- all_files[118]
   
-  data <- read.csv(file) %>%
+  data <- fread(file) %>%
     dplyr::select(-data_type, -pixel_area_m2, -nom_hours_km2, -nom_days_km2, -eff_hours_km2, -eff_days_km2, -pixel_id)
   
   if(nrow(data) == 0){
