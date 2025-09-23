@@ -8,6 +8,7 @@ library(qs)
 library(arrow)
 library(here)
 library(janitor)
+library(strex)
 library(glue)
 
 data_dir <- file.path("/homevol/fishingeffort/data_storage")
@@ -166,21 +167,23 @@ for(flag in flags){
   
   eff_df_clean_fin %>%
     filter(flag_country_iso3c == flag) %>%
-    write_parquet(., here(glue("rousseau_data/{flag}_effort.parquet")))
+    # write_parquet(., here(glue("rousseau_data/{flag}_effort.parquet")))
+    qs::qsave(., here(glue("rousseau_data/{flag}_effort.qs")))
   
 }
 
+
 # maybe save an "All" category? I am worried about how long it will take to run in the app if we try to aggregate them all there
 
-all_eff <- eff_df_clean_fin %>%
-  group_by(year, eez_sovereign_iso3c, eez_sovereign_name, fao_fishing_id, 
-           fao_major_fishing_area, gear, length_category, f_group, sector) %>%
-  summarise(nom_active = sum(nom_active, na.rm = TRUE),
-            eff_active = sum(eff_active, na.rm = TRUE)) %>%
-  ungroup() %>%
-  mutate(flag_country_iso3c = "All",
-         flag_country_name = "All")
-
-write_parquet(all_eff, here("rousseau_data/All_effort.parquet")) # ok how do i
-# make this smaller... Ideally we would have EEZ included in this... It is just too big for shiny. 
+# all_eff <- eff_df_clean_fin %>%
+#   group_by(year, eez_sovereign_iso3c, eez_sovereign_name, fao_fishing_id, 
+#            fao_major_fishing_area, gear, length_category, f_group, sector) %>%
+#   summarise(nom_active = sum(nom_active, na.rm = TRUE),
+#             eff_active = sum(eff_active, na.rm = TRUE)) %>%
+#   ungroup() %>%
+#   mutate(flag_country_iso3c = "All",
+#          flag_country_name = "All")
+# 
+# write_parquet(all_eff, here("rousseau_data/All_effort.parquet")) # ok how do i
+# # make this smaller... Ideally we would have EEZ included in this... It is just too big for shiny. 
 
