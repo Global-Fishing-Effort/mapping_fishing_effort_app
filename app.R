@@ -48,8 +48,8 @@ data <- data_industrial
 data_timeseries_ind <- qs::qread("timeseries_data/all_timeseries_data_grouped_ind.qs")
 data_timeseries_art <- qs::qread("timeseries_data/all_timeseries_data_grouped_art.qs")
 
-# For backward compatibility, keep 'data_timeseries' as industrial data initially
-data_timeseries <- data_timeseries_ind
+# # For backward compatibility, keep 'data_timeseries' as industrial data initially
+# data_timeseries <- data_timeseries_ind
 
 # UI
 ui <- fluidPage(
