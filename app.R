@@ -51,6 +51,26 @@ data_timeseries_art <- qs::qread("timeseries_data/all_timeseries_data_grouped_ar
 # # For backward compatibility, keep 'data_timeseries' as industrial data initially
 # data_timeseries <- data_timeseries_ind
 
+# Get list of available Rousseau data files (country codes)
+rousseau_files <- list.files("rousseau_data", pattern = ".*_effort\\.qs$", full.names = FALSE)
+rousseau_countries <- gsub("_effort\\.qs$", "", rousseau_files)
+
+# Load country names mapping from external file
+country_names <- qs::qread("data/country_names_mapping.qs")
+
+# Function to read Rousseau data for a specific country
+read_rousseau_data <- function(country_code) {
+  tryCatch({
+    file_path <- file.path("rousseau_data", paste0(country_code, "_effort.qs"))
+    if (file.exists(file_path)) {
+      return(qs::qread(file_path))
+    }
+    return(NULL)
+  }, error = function(e) {
+    return(NULL)
+  })
+}
+
 # UI
 ui <- fluidPage(
   titlePanel(
@@ -141,6 +161,16 @@ ui <- fluidPage(
                          ),
                          
                          mainPanel(
+                           div(
+                             style = "background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; padding: 15px; margin-bottom: 20px;",
+                             h4("New Modeled Spatial Data", style = "margin-top: 0; color: #495057;"),
+                             p("This tab displays ", strong("new modeled fishing effort data"), 
+                               " created using our latest random forest spatial allocation methodology. 
+                               This represents our most current approach to mapping global fishing effort 
+                               using AIS data (industrial) and Sentinel-2/Skylight vessel detections (artisanal).
+                               See the About tab for more information.",
+                               style = "margin-bottom: 0; color: #6c757d;")
+                           ),
                            plotOutput("map", height = "600px")
                          )
                        )
@@ -213,7 +243,69 @@ ui <- fluidPage(
                          ),
                          
                          mainPanel(
+                           div(
+                             style = "background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; padding: 15px; margin-bottom: 20px;",
+                             h4("New Modeled Time Series Data", style = "margin-top: 0; color: #495057;"),
+                             p("This tab displays ", strong("new modeled fishing effort time series"), 
+                               " created using our latest random forest spatial allocation methodology. 
+                               This represents our most current approach to mapping temporal trends in 
+                               global fishing effort using combined industrial and artisanal data. 
+                               See the About tab for more information.",
+                               style = "margin-bottom: 0; color: #6c757d;")
+                           ),
                            withSpinner(plotlyOutput("timeSeries", height = 
+                                                      "500px"), caption = 
+                                         "This takes a few seconds to load")
+                         )
+                       )
+              ),
+              
+              # Rousseau et al. 2024 data Tab
+              tabPanel("Rousseau et al. 2024 data",
+                       sidebarLayout(
+                         sidebarPanel(
+                           radioButtons("rousseau_effort_type", "Select Effort Type:",
+                                        choices = c("Nominal" = "nominal", 
+                                                    "Effective" = "effective"),
+                                        selected = "nominal"),
+                           
+                           radioButtons("rousseau_group_var", "Group by:",
+                                        choices = c("Gear Type" = "gear", 
+                                                    "Vessel Length Category" = "length_category",
+                                                    "Functional Group" = "f_group",
+                                                    "Sector" = "sector"),
+                                        selected = "gear"),
+                           
+                           selectInput("rousseau_flag_country", "Select Flag Country (Fishing Fleet):",
+                                       choices = NULL,
+                                       selected = NULL,
+                                       multiple = FALSE),
+                           
+                           radioButtons("rousseau_location_type", "Select Location Type:",
+                                        choices = c("EEZ" = "eez", 
+                                                    "FAO Fishing Area" = "fao"),
+                                        selected = "eez"),
+                           
+                           uiOutput("rousseau_location_selector"),
+                           
+                           # Download button for Rousseau tab
+                           downloadButton("downloadRousseauData", "Download Data")
+                         ),
+                         
+                         mainPanel(
+                           div(
+                             style = "background-color: #fff3cd; border: 1px solid #ffeaa7; border-radius: 5px; padding: 15px; margin-bottom: 20px;",
+                             h4("Rousseau et al. 2024 Dataset", style = "margin-top: 0; color: #856404;"),
+                             p("This tab displays ", strong("data from "), 
+                               tags$a(href = "https://www.nature.com/articles/s41597-023-02824-6", 
+                                      "Rousseau et al. 2024", style = "color: #856404; text-decoration: underline;"), 
+                               " representing a previous spatial allocation model and dataset. 
+                               This provides an independent comparison to the new modeled data 
+                               shown in the other tabs, using different methodological approaches 
+                               for mapping global fishing effort. See the About tab for more information.",
+                               style = "margin-bottom: 0; color: #856404;")
+                           ),
+                           withSpinner(plotlyOutput("rousseauTimeSeries", height = 
                                                       "500px"), caption = 
                                          "This takes a few seconds to load")
                          )
@@ -226,22 +318,28 @@ ui <- fluidPage(
                          style = "max-width: 1000px; margin: 0 auto; padding: 20px;",
                          h2("About this website", style = "text-align: center; margin-bottom: 20px;"),
                          p("This app provides an interactive platform for
-                         exploring and downloading mapped global industrial 
+                         exploring and downloading mapped global 
                          fishing effort data. 
                           Users can filter by ", strong("year, country, gear 
-                                                        type, vessel length, 
+                                                        type, vessel length, sector,
                                                         Exclusive Economic Zone 
                                                         (EEZ), and FAO 
                                                         statistical area"), 
                            " using the selection sidebar in each tab."),
                          
                          p("This latest version of our mapping methodology 
-                           integrates country-level fishing effort estimates (", 
-                           em(tags$a(href = "https://doi.org/10.1073/pnas.1820344116", "Rousseau et al. 2019")), 
-                           ") with a statistical spatial allocation model. 
-                            This model is built using AIS-derived fishing activity 
-                            from", tags$a(href = "https://globalfishingwatch.org/datasets-and-code/", "Global 
-                           Fishing Watch"), "combined with environmental, economic, and governance variables."),
+                           integrates country-level fishing effort estimates with 
+                           a statistical spatial allocation model using random forest modeling. 
+                           The industrial model is built using AIS-derived fishing activity 
+                           from ", tags$a(href = "https://globalfishingwatch.org/datasets-and-code/", "Global 
+                           Fishing Watch"), ", while the artisanal model is built using 
+                           vessel detections from Sentinel-2 from ", 
+                           tags$a(href = "https://globalfishingwatch.org/datasets-and-code/", "Global 
+                           Fishing Watch"), " and vessel detections provided by ", 
+                           tags$a(href = "https://www.skylight.global/", "Skylight"), 
+                           " (via Minderoo Foundation). We combine environmental, economic, 
+                           and governance variables with the AIS and vessel detections 
+                           to predict fishing effort globally."),
                          
                          p("For each fishing country, we trained a ", 
                            strong("two-stage hurdle random forest model"), 
@@ -259,7 +357,7 @@ ui <- fluidPage(
                              (the proportion of a country's total fishing effort
                              ) in each cell where fishing is predicted to occur. 
                              These estimates are then scaled to ", strong("kW days of fishing effort"), 
-                           "using total fishing effort values from ", 
+                           "using total fishing effort values (or number of vessels for artisanal) from ", 
                            em(tags$a(href = "https://doi.org/10.1073/pnas.1820344116", 
                                      "Rousseau et al. 2019")), " (Figure 1)."),
                          # Adding Figure 1 below the text
@@ -273,31 +371,24 @@ ui <- fluidPage(
                          p("Mapped effort estimates are provided as nominal 
                            fishing effort (kilowatt days) or effective fishing 
                            effort (kilowatt days), with a spatial resolution of 
-                           1° cell, spanning the years 1950-2017 for 116 
-                           countries, covering 90% of the world’s total 
-                           industrial fishing effort for 2017. To estimate 
-                           effective effort, we have assumed a year-on-year 
+                           1° cell (industrial) and 0.5° cell (artisanal), 
+                           spanning the years 1950-2017. To estimate 
+                           effective effort, Rousseau et al. 2019 have assumed a year-on-year 
                            increase in technical efficiency of 3.5%, as in 
                            Rousseau et al. 2019."),
                          
-                         p("This app was created, and is under continuous 
+                         p("This app and the underlying data was created, and is under continuous 
                            development by Gage Clawson, Camilla Novaglio & 
                            Julia Blanchard from the Institute for Marine & 
                            Antarctic Studies (IMAS), University of Tasmania. "),
                          
                          
                          h3("Caveats and limitations", style = "margin-top: 30px"),
-                         p("This data is not comprehensive. Currently, the model
-                           maps country-level fishing effort for approximately 
-                           90% of the country-level global industrial fishing 
-                           effort data in 2017 (the most recent year of effort 
-                           data). Future iterations of the model are planned to 
-                           estimate the remaining 10%, as well as coastal 
-                           artisanal effort, that are not well captured by 
-                           the AIS dataset. Estimates in Southeast Asia, aside 
-                           from China, are likely too concentrated (for example,
+                         p("This data is likely not comprehensive and represents modeled outputs only. For example, 
+                           estimates in Southeast Asia, aside 
+                           from China, are likely too concentrated for some years (e.g.,
                            Indonesia). This is an artifact of insufficient AIS 
-                           data in this region. "),
+                           data in this region."),
                          p("Additionally, users should be aware that historical 
                            predictions (1950-2014) may not capture:"),
                          tags$ul(
@@ -309,8 +400,29 @@ ui <- fluidPage(
                          ),
                          
                          
+                         h3("Rousseau et al. 2024 Data Tab", style = "margin-top: 30px;"),
+                         p("The ", strong("'Rousseau et al. 2024 data' tab"), 
+                           " provides access to an independent dataset of mapped 
+                           global fishing activity from ", 
+                           tags$a(href = "https://www.nature.com/articles/s41597-023-02824-6", 
+                                  "Rousseau et al. 2024"), ": \"A database of mapped 
+                           global fishing activity 1950–2017\". This dataset 
+                           represents a previous spatial allocation of 
+                           fishing effort data that is different from the modeled 
+                           estimates shown in the other tabs."),
+                         
+                         p("The Rousseau et al. 2024 dataset offers additional 
+                           grouping options including functional groups, allowing for detailed analysis of fishing 
+                           patterns by different fleet characteristics. Users 
+                           can explore this data by individual flag country, 
+                           with the same temporal coverage (1950-2017) and 
+                           location filtering options (EEZ and FAO areas) as 
+                           the other tabs. Unfortunately, the mapped data (with latitude and longitude points) for the Rousseau data
+                           is too large to add to this shiny app, however, this data can be accessed via the IMAS data portal here: 
+                           https://data.imas.utas.edu.au/attachments/1241a51d-c8c2-4432-aa68-3d2bae142794/"),
+                         
                          h3("How should I use this tool?", style = "margin-top: 30px;"),
-                         p("This app has two tabs that allow you to visualise 
+                         p("This app has three tabs that allow you to visualise 
                            and download fishing effort data:"),
                          tags$ul(
                            tags$li(strong("The 'Map' tab"), " 
@@ -319,13 +431,20 @@ ui <- fluidPage(
                                    selected region (EEZ or FAO statistical area). 
                                    You can also specify the year (between 1950 
                                    and 2017), flag country (e.g. Angola, Albania
-                                   , Argentina), gear type (e.g. bottom trawling, longline), 
+                                   , Argentina), sector (industrial or artisanal), 
+                                   gear type (e.g. bottom trawling, longline), 
                                    and vessel length category (less than 6m, 
                                    6-12m, 12-24m, 24-50m, over 50m) you are 
                                    interested in exploring."),
                            tags$li(strong("The 'Time series' tab"), " gives you 
                                    the same options but allows you to explore 
-                                   trends in fishing effort.")
+                                   trends in fishing effort across both industrial 
+                                   and artisanal sectors combined."),
+                           tags$li(strong("The 'Rousseau et al. 2024 data' tab"), " 
+                                   provides access to an independent dataset with 
+                                   additional grouping options including functional 
+                                   groups and sectors, allowing for detailed 
+                                   country-specific analysis.")
                          ),
                          
                          h3("How should I cite data from this site?", style = "margin-top: 30px;"),
@@ -354,7 +473,7 @@ ui <- fluidPage(
                          h3("Acknowledgments", style = "margin-top: 30px;"),
                          p("The development of this app was funded by the Food 
                            and Agriculture Organization of the United Nation 
-                           (FAO). We would also like to acknowledge the use of 
+                           (FAO) and the Minderoo Foundation. We would also like to acknowledge the use of 
                            computing facilities provided by Digital Research 
                            Services, IT Services at the University of Tasmania."),
                          br()
@@ -742,9 +861,13 @@ server <- function(input, output, session) {
                 .groups = "drop")
   })
   
-  # Define color palette
+  # Define color palette - expanded to handle more categories
   mypal <- c("#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", 
-             "#8c564b", "#e377c2", "#7f7f7f", "#bcbd22", "#17becf")
+             "#8c564b", "#e377c2", "#7f7f7f", "#bcbd22", "#17becf",
+             "#aec7e8", "#ffbb78", "#98df8a", "#ff9896", "#c5b0d5",
+             "#c49c94", "#f7b6d3", "#c7c7c7", "#dbdb8d", "#9edae5",
+             "#393b79", "#5254a3", "#6b6ecf", "#9c9ede", "#637939",
+             "#8ca252", "#b5cf6b", "#cedb9c", "#8c6d31", "#bd9e39")
   
   # Time series plot
   output$timeSeries <- renderPlotly({
@@ -780,7 +903,7 @@ server <- function(input, output, session) {
       scale_fill_manual(values = mypal) +
       theme_bw() +
       labs(
-        title = paste(effort_type_label, "Fishing Effort Over Time"),
+        title = paste(effort_type_label, "Fishing Effort Over Time - Modeled"),
         y = "kW days",
         fill = legend_label
       ) +
@@ -1080,10 +1203,11 @@ server <- function(input, output, session) {
     },
     content = function(file) {
       # Use the filtered data for Time Series tab
-      data_to_download <- filtered_data()
+      data_to_download <- filtered_data() %>%
+        mutate(data_source = "Clawson et al. in prep")
       
       # For the download, include all variables from the filtered dataset
-      # This includes year, flag_country_name, gear, length_category, eez_sovereign_name, fao_major_fishing_area, and fishing hours
+      # This includes year, flag_country_name, gear, length_category, eez_sovereign_name, fao_major_fishing_area, fishing hours, and data_source
       write.csv(data_to_download, file, row.names = FALSE)
     }
   )
@@ -1091,19 +1215,211 @@ server <- function(input, output, session) {
   # Download handler for Map tab
   output$downloadMapData <- downloadHandler(
     filename = function() {
-      # Get the flag countries and location type
+      # Get the flag countries, location type, and year
       flag_countries <- paste(input$map_flag_country, collapse = "_")
       location_type <- ifelse(input$map_location_type == "eez", "EEZ", "FAO")
+      year <- input$map_year
       
-      paste("fishing_effort_data_", flag_countries, "_", location_type, "_", Sys.Date(), ".csv", sep = "")
+      paste("fishing_effort_data_", flag_countries, "_", location_type, "_", year, "_", Sys.Date(), ".csv", sep = "")
     },
     content = function(file) {
       # Use the filtered data for Map tab
-      data_to_download <- filtered_data_map()
+      data_to_download <- filtered_data_map() %>%
+        mutate(data_source = "Clawson et al. in prep")
       
       # For the download, include all variables from the filtered dataset
-      # This includes year, flag_country_name, gear, length_category, eez_sovereign_name, fao_major_fishing_area, and fishing hours
+      # This includes year, flag_country_name, gear, length_category, eez_sovereign_name, fao_major_fishing_area, fishing hours, and data_source
       write.csv(data_to_download, file, row.names = FALSE)
+    }
+  )
+  
+  # ===== ROUSSEAU TAB LOGIC =====
+  
+  # Initialize Rousseau flag country choices on app start
+  observe({
+    # Get available countries and map to names using external country mapping
+    available_countries <- intersect(rousseau_countries, names(country_names))
+    country_choices <- setNames(available_countries, country_names[available_countries])
+    country_choices <- country_choices[order(names(country_choices))]
+    
+    updateSelectInput(session, "rousseau_flag_country", 
+                      choices = country_choices, 
+                      selected = if(length(country_choices) > 0) country_choices[1] else NULL)
+  })
+  
+  # Reactive function to get Rousseau data for selected country
+  rousseau_data <- reactive({
+    req(input$rousseau_flag_country)
+    
+    # Read data for specific country
+    data <- read_rousseau_data(input$rousseau_flag_country)
+    if (is.null(data)) {
+      return(NULL)
+    }
+    
+    # Filter out rows with zero effort
+    data <- data %>%
+      filter(nom_active > 0 | eff_active > 0)
+    
+    return(data)
+  })
+  
+  # Helper function to get Rousseau effort columns
+  get_rousseau_effort_columns <- function(effort_type) {
+    if (effort_type == "nominal") {
+      return("nom_active")
+    } else {
+      return("eff_active")
+    }
+  }
+  
+  # Dynamic UI for Rousseau location selection
+  output$rousseau_location_selector <- renderUI({
+    req(input$rousseau_flag_country, input$rousseau_location_type, rousseau_data())
+    
+    data <- rousseau_data()
+    if (is.null(data)) {
+      return(NULL)
+    }
+    
+    # Get location choices based on location type
+    if (input$rousseau_location_type == "eez") {
+      location_choices <- sort(unique(data$eez_sovereign_name))
+      location_label <- "Select EEZ (Fishing Location):"
+    } else {
+      location_choices <- sort(unique(data$fao_major_fishing_area))
+      location_label <- "Select FAO Area (Fishing Location):"
+    }
+    
+    # Add "All" option at the beginning
+    location_choices_with_all <- c("All" = "All", setNames(as.list(location_choices), location_choices))
+    
+    selectInput("rousseau_location_selection", location_label,
+                choices = location_choices_with_all,
+                selected = "All",
+                multiple = TRUE)
+  })
+  
+  # Filtered Rousseau data based on inputs
+  filtered_rousseau_data <- reactive({
+    req(input$rousseau_flag_country, input$rousseau_location_selection, input$rousseau_location_type)
+    
+    data <- rousseau_data()
+    if (is.null(data)) {
+      return(NULL)
+    }
+    
+    # Filter by location if not "All"
+    if (!("All" %in% input$rousseau_location_selection)) {
+      if (input$rousseau_location_type == "eez") {
+        data <- data %>% 
+          filter(eez_sovereign_name %in% input$rousseau_location_selection)
+      } else {
+        data <- data %>% 
+          filter(fao_major_fishing_area %in% input$rousseau_location_selection)
+      }
+    }
+    
+    return(data)
+  })
+  
+  # Aggregated Rousseau data for plotting
+  aggregated_rousseau_data <- reactive({
+    req(filtered_rousseau_data(), input$rousseau_effort_type, input$rousseau_group_var)
+    
+    data <- filtered_rousseau_data()
+    if (is.null(data)) {
+      return(NULL)
+    }
+    
+    # Get effort column
+    effort_col <- get_rousseau_effort_columns(input$rousseau_effort_type)
+    
+    # Group by selected variable and year, then summarize
+    data %>%
+      group_by(year, !!sym(input$rousseau_group_var)) %>%
+      summarize(total_effort = sum(!!sym(effort_col), na.rm = TRUE),
+                .groups = "drop")
+  })
+  
+  # Rousseau time series plot
+  output$rousseauTimeSeries <- renderPlotly({
+    req(aggregated_rousseau_data(), input$rousseau_effort_type, input$rousseau_group_var)
+    
+    data_complete <- aggregated_rousseau_data()
+    if (is.null(data_complete) || nrow(data_complete) == 0) {
+      return(plotly_empty())
+    }
+    
+    # Ensure all year x group combinations are present
+    data_complete <- data_complete %>%
+      complete(year = full_seq(year, 1), !!sym(input$rousseau_group_var), fill = list(total_effort = 0))
+    
+    # Order groups by total effort
+    group_order <- data_complete %>%
+      group_by(!!sym(input$rousseau_group_var)) %>%
+      summarise(total = sum(total_effort, na.rm = TRUE)) %>%
+      arrange(desc(total)) %>%
+      pull(!!sym(input$rousseau_group_var))
+    
+    data_complete[[input$rousseau_group_var]] <- factor(data_complete[[input$rousseau_group_var]], levels = group_order)
+    
+    # Get effort type label
+    effort_type_label <- if(input$rousseau_effort_type == "nominal") "Nominal" else "Effective"
+    
+    # Get the appropriate label for the legend
+    legend_label <- case_when(
+      input$rousseau_group_var == "gear" ~ "Gear Type",
+      input$rousseau_group_var == "length_category" ~ "Vessel Length",
+      input$rousseau_group_var == "f_group" ~ "Functional Group",
+      input$rousseau_group_var == "sector" ~ "Sector",
+      TRUE ~ input$rousseau_group_var
+    )
+    
+    # Create ggplot object with geom_area
+    p <- ggplot(data_complete, aes(x = year, y = total_effort, fill = !!sym(input$rousseau_group_var))) +
+      geom_area(stat = "identity", alpha = 0.85, position = "stack") +
+      scale_x_continuous(
+        breaks = unique(data_complete$year),
+        labels = ifelse(unique(data_complete$year) %% 2 == 0 | 
+                          unique(data_complete$year) %in% c(min(data_complete$year), max(data_complete$year)), 
+                        unique(data_complete$year), "")
+      ) + 
+      scale_fill_manual(values = mypal) +
+      theme_bw() +
+      labs(
+        title = paste(effort_type_label, "Fishing Effort Over Time - Rousseau et al. 2024"),
+        y = "kW days",
+        fill = legend_label
+      ) +
+      theme(axis.text.y = element_text(size = 12),
+            axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1, size = 10),
+            axis.title.y = element_text(size = 12),
+            axis.title.x = element_blank(),
+            legend.position = "bottom",
+            legend.title = element_text(size = 12, face = "bold"),
+            legend.text = element_text(size = 12))
+    
+    # Convert to plotly
+    ggplotly(p, tooltip = c("x", "y", "fill")) %>%
+      layout(legend = list(orientation = "h", y = -0.2))
+  })
+  
+  # Download handler for Rousseau tab
+  output$downloadRousseauData <- downloadHandler(
+    filename = function() {
+      flag_country <- input$rousseau_flag_country
+      location_type <- ifelse(input$rousseau_location_type == "eez", "EEZ", "FAO")
+      
+      paste("rousseau_fishing_effort_data_", flag_country, "_", location_type, "_", Sys.Date(), ".csv", sep = "")
+    },
+    content = function(file) {
+      data_to_download <- filtered_rousseau_data()
+      if (!is.null(data_to_download)) {
+        data_to_download <- data_to_download %>%
+          mutate(data_source = "Rousseau et al. 2024")
+        write.csv(data_to_download, file, row.names = FALSE)
+      }
     }
   )
 }
