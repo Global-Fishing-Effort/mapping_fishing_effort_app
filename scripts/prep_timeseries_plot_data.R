@@ -23,7 +23,6 @@ all_data_tidy <- all_data %>%
   
   qs::qsave(all_data_tidy, here("timeseries_data/all_timeseries_data_grouped_ind.qs"))
   
-  
 
   ### read in all prediction data and save to rf_model_data folder
   
@@ -43,5 +42,5 @@ all_data_tidy <- all_data %>%
   
   qs::qsave(all_data_tidy, here("timeseries_data/all_timeseries_data_grouped_art.qs"))
   
-  
+
   
