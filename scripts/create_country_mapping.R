@@ -41,6 +41,13 @@ for(file in files) {
 # Get final unique combinations
 flags_df <- unique(flags_df)
 
+flags_df <- flags_df %>%
+  mutate(flag_country_name = case_when(
+    flag_country_iso3c == "COG" ~ "Republic of the Congo",
+    flag_country_iso3c == "COD" ~ "Democratic Republic of the Congo",
+    TRUE ~ flag_country_name
+  ))
+
 cat("\nFound", nrow(flags_df), "unique country mappings:\n")
 print(flags_df)
 
@@ -53,3 +60,6 @@ qs::qsave(country_names, "data/country_names_mapping.qs")
 cat("\nCountry names mapping saved to data/country_names_mapping.qs\n")
 cat("Total countries:", length(country_names), "\n")
 
+
+# 
+# country_names <- qread(here("data/country_names_mapping.qs"))
