@@ -107,7 +107,7 @@ ui <- fluidPage(
                            uiOutput("map_length_selector"),
                            
                            selectInput("map_flag_country", "Select Flag Country (Fishing Fleet):",
-                                       choices = c("All" = "All", setNames(as.list(unique(data$flag_country_name)), unique(data$flag_country_name))),
+                                       choices = c("All" = "All", setNames(as.list(sort(unique(data$flag_country_name))), sort(unique(data$flag_country_name)))),
                                        selected = "All",
                                        multiple = TRUE),
                            
@@ -197,7 +197,7 @@ ui <- fluidPage(
                            
                            
                            selectInput("flag_country", "Select Flag Country (Fishing Fleet):",
-                                       choices = c("All" = "All", setNames(as.list(unique(data$flag_country_name)), unique(data$flag_country_name))),
+                                       choices = c("All" = "All", setNames(as.list(sort(unique(data$flag_country_name))), sort(unique(data$flag_country_name)))),
                                        selected = "All",
                                        multiple = TRUE),
                            
@@ -529,7 +529,7 @@ server <- function(input, output, session) {
     current_dataset <- current_data()
     
     # Update flag country choices
-    flag_choices <- c("All" = "All", setNames(as.list(unique(current_dataset$flag_country_name)), unique(current_dataset$flag_country_name)))
+    flag_choices <- c("All" = "All", setNames(as.list(sort(unique(current_dataset$flag_country_name))), sort(unique(current_dataset$flag_country_name))))
     updateSelectInput(session, "flag_country", choices = flag_choices, selected = "All")
     
     # Update group variable choices based on sector
@@ -550,7 +550,7 @@ server <- function(input, output, session) {
     current_dataset <- current_map_data()
     
     # Update flag country choices
-    flag_choices <- c("All" = "All", setNames(as.list(unique(current_dataset$flag_country_name)), unique(current_dataset$flag_country_name)))
+    flag_choices <- c("All" = "All", setNames(as.list(sort(unique(current_dataset$flag_country_name))), sort(unique(current_dataset$flag_country_name))))
     updateSelectInput(session, "map_flag_country", choices = flag_choices, selected = "All")
     
     # Update group variable choices based on sector
@@ -1013,6 +1013,8 @@ server <- function(input, output, session) {
         return(
           ggplot() +
             geom_sf(data = world, fill = "lightgray", color = "white", size = 0.2) +
+            annotate("text", x = 0, y = 0, label = "No effort for this query", 
+                     size = 6, color = "darkred", fontface = "bold") +
             theme_bw() 
         )
       }
@@ -1077,7 +1079,22 @@ server <- function(input, output, session) {
         
       }
       
-      
+      # Check if all effort is zero
+      if (nrow(raster_data) == 0 || sum(raster_data$total_effort, na.rm = TRUE) == 0) {
+        return(
+          ggplot() +
+            geom_sf(data = world, fill = "lightgray", color = "white", size = 0.2) +
+            annotate("text", x = 0, y = 0, label = "No effort for this query", 
+                     size = 6, color = "darkred", fontface = "bold") +
+            coord_sf(xlim = c(-180, 180), ylim = c(-90, 90)) +
+            theme_bw() +
+            labs(title = "Modelled Fishing Effort") +
+            theme(
+              axis.title.x = element_blank(),
+              axis.title.y = element_blank()
+            )
+        )
+      }
       
       # Create the base map
       p <- ggplot() +
@@ -1104,7 +1121,7 @@ server <- function(input, output, session) {
         
         breaks <- c(0.02, 0.2, 2, 20, 200, 2000)
         labels <- c("<0.02", "0.02-0.2", "0.2-2", "2-20", "20-200", "200-2000", ">2000")
-        colors <- c("#FFFFFF", "#EFF3FE", "#CADBEE", "#A8C9E0", "#E8F4A2", "#F1B16D", "#C54B53")
+        colors <- c("#F0F0F0", "#EFF3FE", "#CADBEE", "#A8C9E0", "#E8F4A2", "#F1B16D", "#C54B53")
         names(colors) <- labels  # Ensures colors are mapped by name
         
         raster_data$effort_bin <- cut(raster_data$effort_per_km2,

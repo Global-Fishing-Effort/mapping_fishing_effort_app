@@ -18,7 +18,12 @@ all_data_tidy <- all_data %>%
   summarise(nom_active_fishing_days = sum(nom_active_fishing_days, na.rm = TRUE),
             eff_active_fishing_days = sum(eff_active_fishing_days, na.rm = TRUE)) %>%
   ungroup() %>%
-  mutate(sector = "Industrial")
+  mutate(sector = "Industrial") %>%
+  mutate(eez_sovereign_name = case_when(
+    eez_sovereign_name == "Congo - Kinshasa" ~ "Democratic Republic of the Congo",
+    eez_sovereign_name == "Congo - Brazzaville" ~ "Republic of the Congo",
+    TRUE ~ eez_sovereign_name
+  ))
 
   
   qs::qsave(all_data_tidy, here("timeseries_data/all_timeseries_data_grouped_ind.qs"))
@@ -37,10 +42,20 @@ all_data_tidy <- all_data %>%
     summarise(nom_active_fishing_days = sum(nom_active_fishing_days, na.rm = TRUE),
               eff_active_fishing_days = sum(eff_active_fishing_days, na.rm = TRUE)) %>%
     ungroup() %>%
-    mutate(sector = "Artisanal")
+    mutate(sector = "Artisanal") %>%
+    mutate(eez_sovereign_name = case_when(
+      eez_sovereign_name == "Congo - Kinshasa" ~ "Democratic Republic of the Congo",
+      eez_sovereign_name == "Congo - Brazzaville" ~ "Republic of the Congo",
+      TRUE ~ eez_sovereign_name
+    )) %>%
+    mutate(flag_country_name = case_when(
+      flag_country_name == "Congo - Kinshasa" ~ "Democratic Republic of the Congo",
+      flag_country_name == "Congo - Brazzaville" ~ "Republic of the Congo",
+      TRUE ~ flag_country_name
+    ))
+  
   
   
   qs::qsave(all_data_tidy, here("timeseries_data/all_timeseries_data_grouped_art.qs"))
-  
 
   

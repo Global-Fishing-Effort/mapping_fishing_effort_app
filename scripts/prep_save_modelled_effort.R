@@ -16,7 +16,13 @@ for(file in all_files){
 #  file <- all_files[4]
   
   data <- fread(file) %>%
-    dplyr::select(-data_type) 
+    dplyr::select(-data_type) %>%
+    mutate(eez_sovereign_name = case_when(
+      eez_sovereign_name == "Congo - Kinshasa" ~ "Democratic Republic of the Congo",
+      eez_sovereign_name == "Congo - Brazzaville" ~ "Republic of the Congo",
+      TRUE ~ eez_sovereign_name
+    ))
+  
   
   if(nrow(data) == 0){
     next()
@@ -40,7 +46,18 @@ for(file in all_files){
   #  file <- all_files[118]
   
   data <- fread(file) %>%
-    dplyr::select(-data_type, -pixel_area_m2, -nom_hours_km2, -nom_days_km2, -eff_hours_km2, -eff_days_km2, -pixel_id)
+    dplyr::select(-data_type, -pixel_area_m2, -nom_hours_km2, -nom_days_km2, -eff_hours_km2, -eff_days_km2, -pixel_id) %>%
+    mutate(eez_sovereign_name = case_when(
+      eez_sovereign_name == "Congo - Kinshasa" ~ "Democratic Republic of the Congo",
+      eez_sovereign_name == "Congo - Brazzaville" ~ "Republic of the Congo",
+      TRUE ~ eez_sovereign_name
+    )) %>%
+    mutate(flag_country_name = case_when(
+      flag_country_name == "Congo - Kinshasa" ~ "Democratic Republic of the Congo",
+      flag_country_name == "Congo - Brazzaville" ~ "Republic of the Congo",
+      TRUE ~ flag_country_name
+    ))
+  
   
   if(nrow(data) == 0){
     next()
