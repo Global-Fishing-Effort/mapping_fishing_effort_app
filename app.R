@@ -362,7 +362,7 @@ ui <- fluidPage(
                                      "Rousseau et al. 2019")), " (Figure 1)."),
                          # Adding Figure 1 below the text
                          tags$hr(),  # Horizontal line for separation
-                         img(src = "flowchart.jpg", height = "auto", width = "100%"),
+                         img(src = "flowchart.png", height = "auto", width = "100%"),
                          p(strong("Figure 1: "), "Flowchart of methodology,
                            showing data integration (green), statistical
                            modelling approach (blue) and framework to ensure
