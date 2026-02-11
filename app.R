@@ -362,11 +362,26 @@ ui <- fluidPage(
                                      "Rousseau et al. 2019")), " (Figure 1)."),
                          # Adding Figure 1 below the text
                          tags$hr(),  # Horizontal line for separation
-                         img(src = "flowchart.png", height = "auto", width = "100%"),
-                         p(strong("Figure 1: "), "Flowchart of methodology,
-                           showing data integration (green), statistical
-                           modelling approach (blue) and framework to ensure
-                           possibilities for future updates (orange).  "),
+                         img(src = "MS_fig1_new.png", height = "auto", width = "100%"),
+                         p(strong("Figure 1: "), "Schematic overview of the two-
+                           stage random forest hurdle modelling and spatial 
+                           allocation workflow. (A) Observed inputs used to 
+                           train models, including AIS apparent fishing effort 
+                           for industrial fleets (2015–2024) satellite-based 
+                           vessel detections for artisanal fleets (2009–2024) 
+                           and environmental and governance predictors (e.g., 
+                           sea-surface temperature, chlorophyll, depth, 
+                           distance to shore, EEZ/FAO regions). (B) Two-stage 
+                           hurdle models: Stage 1 predicts fishing 
+                           presence/absence, and Stage 2 predicts relative 
+                           effort intensity (proportions), with exclusion 
+                           layers applied as appropriate (e.g., sea ice; 
+                           industrial fishing-access constraints; artisanal 
+                           populated/coastal zones). (C) Model predictions are 
+                           then used to spatially allocate reported global 
+                           fishing effort totals to produce annual gridded 
+                           fishing-effort surfaces (1° × 1°; 1950–2017). 
+                           Icons adapted from Canva.com.  "),
                          
                          p("Mapped effort estimates are provided as nominal 
                            fishing effort (kilowatt days) or effective fishing 
