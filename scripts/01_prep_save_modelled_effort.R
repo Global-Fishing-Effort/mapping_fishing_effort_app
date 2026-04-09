@@ -9,7 +9,9 @@ library(data.table)
 
 data_dir <- file.path("/homevol/fishingeffort/data_storage")
 
-all_files <- list.files(file.path(data_dir, "prep/random_forest/zenodo_data/mapped_by_flag_country/"), full.names = TRUE)
+all_files <- list.files(file.path(data_dir, "prep/random_forest/zenodo_data/mapped_by_flag_country_industrial/"), full.names = TRUE)
+
+# all_files <- list.files(file.path(data_dir, "prep/random_forest/predictions_flag_no_access/"), full.names = TRUE)[-148]
 
 for(file in all_files){
   
@@ -39,7 +41,7 @@ for(file in all_files){
 
 data_dir <- file.path("/homevol/fishingeffort/data_storage")
 
-all_files <- list.files(file.path(data_dir, "prep/random_forest/zenodo_data/artisanal_skylight_sentinel/mapped_by_flag_country/"), full.names = TRUE)
+all_files <- list.files(file.path(data_dir, "prep/random_forest/zenodo_data/artisanal_skylight_sentinel/mapped_by_flag_country_artisanal/"), full.names = TRUE)
 
 for(file in all_files){
   
