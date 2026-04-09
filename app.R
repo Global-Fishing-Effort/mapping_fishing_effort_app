@@ -1146,24 +1146,41 @@ server <- function(input, output, session) {
         raster_data$effort_bin <- factor(raster_data$effort_bin, levels = labels)
         
         
+        if (input$map_sector == "artisanal") {
+          # For artisanal data, use 0.5 degree resolution
+          w = 0.5
+          h = 0.5
+ 
+        } else {
+          # For industrial data, use 1 degree resolution
+          w = 1
+          h = 1
+  
+        }
+        
         p <- p +
-          # Add raster cells for fishing effort
-          geom_tile(data = raster_data, 
-                    aes(x = lon_bin, y = lat_bin, fill = effort_bin),
-                    alpha = 0.7) +
-          scale_fill_manual(name = "Fishing Effort (kW hours/km²)",
-                            values = colors,
-                            na.value = "transparent",
-                            drop = FALSE) +
-          #  Move legend title above and adjust legend size
-          guides(fill = guide_legend(title.position = "top", 
-                                     title.hjust = 0.5, 
-                                     nrow = 1, 
-                                     label.position = "bottom")) +
-          # Set labels
-          labs(
-            title = "Modelled Fishing Effort"
-          )
+          geom_tile(
+            data = raster_data,
+            aes(x = lon_bin, y = lat_bin, fill = effort_bin),
+            width = w,
+            height = h,
+            alpha = 0.7
+          ) +
+          scale_fill_manual(
+            name = "Fishing Effort (kW hours/km²)",
+            values = colors,
+            na.value = "transparent",
+            drop = FALSE
+          ) +
+          guides(
+            fill = guide_legend(
+              title.position = "top",
+              title.hjust = 0.5,
+              nrow = 1,
+              label.position = "bottom"
+            )
+          ) +
+          labs(title = "Modelled Fishing Effort")
         
       } else {
         
@@ -1178,12 +1195,28 @@ server <- function(input, output, session) {
                                       right = TRUE)
         raster_data$effort_bin <- factor(raster_data$effort_bin, levels = labels)
         
+        if (input$map_sector == "artisanal") {
+          # For artisanal data, use 0.5 degree resolution
+          w = 0.5
+          h = 0.5
+          
+        } else {
+          # For industrial data, use 1 degree resolution
+          w = 1
+          h = 1
+          
+        }
+        
         
         p <- p +
           # Add raster cells for fishing effort
-          geom_tile(data = raster_data, 
-                    aes(x = lon_bin, y = lat_bin, fill = effort_bin),
-                    alpha = 0.7) +
+          geom_tile(
+            data = raster_data,
+            aes(x = lon_bin, y = lat_bin, fill = effort_bin),
+            width = w,
+            height = h,
+            alpha = 0.7
+          ) +
           #   # Add facet by the selected variable
           facet_wrap(as.formula(paste("~", input$map_group_var)), ncol = 3) +
           scale_fill_manual(name = "Fishing Effort (kW hours/km²)",
