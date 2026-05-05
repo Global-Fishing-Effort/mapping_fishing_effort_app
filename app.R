@@ -20,6 +20,9 @@ data_files_ind <- list.files("rf_model_data_ind", pattern = "model_preds_1950_20
 # Read all artisanal data files
 data_files_art <- list.files("rf_model_data_art", pattern = "model_preds_1950_2017_.*\\.qs$", full.names = TRUE)
 
+# Read all combined data files
+data_files_combined <- list.files("rf_model_data_combined", pattern = "model_preds_1950_2017_.*\\.qs$", full.names = TRUE)
+
 # Function to read and process each file
 read_data_file <- function(file_path) {
   # Extract the flag country code from the filename
@@ -39,6 +42,10 @@ data_industrial <- lapply(data_files_ind, read_data_file) %>%
 
 # Read and combine all artisanal data files
 data_artisanal <- lapply(data_files_art, read_data_file) %>%
+  bind_rows()
+
+# Read and combine all combined data files
+data_combined <- lapply(data_files_combined, read_data_file) %>%
   bind_rows()
 
 # For backward compatibility, keep 'data' as industrial data initially
@@ -71,6 +78,35 @@ read_rousseau_data <- function(country_code) {
   })
 }
 
+# Function to read Rousseau "All" data based on group variable
+read_rousseau_all_data <- function(group_var) {
+  tryCatch({
+    # Map group variables to file names
+    file_mapping <- c(
+      "gear" = "All_gear_effort.qs",
+      "length_category" = "All_length_effort.qs",
+      "f_group" = "All_fgroup_effort.qs",
+      "sector" = "All_sector_effort.qs"
+    )
+    
+    file_name <- file_mapping[group_var]
+    if (is.na(file_name)) {
+      return(NULL)
+    }
+    
+    file_path <- file.path("rousseau_data", "all_dfs", file_name)
+    if (file.exists(file_path)) {
+      return(qs::qread(file_path))
+    }
+    return(NULL)
+  }, error = function(e) {
+    return(NULL)
+  })
+}
+
+All_cat_rousseau <- list.files("rousseau_data", pattern = ".*_effort\\.qs$", full.names = FALSE)
+
+
 # UI
 ui <- fluidPage(
   titlePanel(
@@ -90,7 +126,8 @@ ui <- fluidPage(
                          sidebarPanel(
                            radioButtons("map_sector", "Select Sector:",
                                         choices = c("Industrial" = "industrial", 
-                                                    "Artisanal" = "artisanal"),
+                                                    "Artisanal" = "artisanal",
+                                                    "Combined (Industrial + Artisanal)" = "combined"),
                                         selected = "industrial"),
                            
                            radioButtons("map_effort_type", "Select Effort Type:",
@@ -264,6 +301,11 @@ ui <- fluidPage(
               tabPanel("Rousseau et al. 2024 data",
                        sidebarLayout(
                          sidebarPanel(
+                           radioButtons("rousseau_sector", "Select Sector:",
+                                        choices = c("Industrial" = "industrial", 
+                                                    "Artisanal" = "artisanal"),
+                                        selected = "industrial"),
+                           
                            radioButtons("rousseau_effort_type", "Select Effort Type:",
                                         choices = c("Nominal" = "nominal", 
                                                     "Effective" = "effective"),
@@ -272,8 +314,7 @@ ui <- fluidPage(
                            radioButtons("rousseau_group_var", "Group by:",
                                         choices = c("Gear Type" = "gear", 
                                                     "Vessel Length Category" = "length_category",
-                                                    "Functional Group" = "f_group",
-                                                    "Sector" = "sector"),
+                                                    "Functional Group" = "f_group"),
                                         selected = "gear"),
                            
                            selectInput("rousseau_flag_country", "Select Flag Country (Fishing Fleet):",
@@ -534,8 +575,11 @@ server <- function(input, output, session) {
   current_map_data <- reactive({
     if (input$map_sector == "industrial") {
       return(data_industrial)
-    } else {
+    } else if (input$map_sector == "artisanal") {
       return(data_artisanal)
+    } else {
+      # Combined: use pre-processed combined data
+      return(data_combined)
     }
   })
   
@@ -573,8 +617,13 @@ server <- function(input, output, session) {
       updateRadioButtons(session, "map_group_var", 
                          choices = c("Gear Type" = "gear", "Vessel Length Category" = "length_category"),
                          selected = "gear")
-    } else {
+    } else if (input$map_sector == "artisanal") {
       # For artisanal, only vessel length category is available
+      updateRadioButtons(session, "map_group_var", 
+                         choices = c("Vessel Length Category" = "length_category"),
+                         selected = "length_category")
+    } else {
+      # For combined, only vessel length category is available (common to both)
       updateRadioButtons(session, "map_group_var", 
                          choices = c("Vessel Length Category" = "length_category"),
                          selected = "length_category")
@@ -1036,7 +1085,7 @@ server <- function(input, output, session) {
       
       
       # Round coordinates to create grid cells based on sector
-      # Artisanal: 0.5 degree resolution, Industrial: 1 degree resolution
+      # Artisanal: 0.5 degree resolution, Industrial & Combined: 1 degree resolution
       if (input$map_sector == "artisanal") {
         # For artisanal data, use 0.5 degree resolution
         raster_data <- valid_data %>%
@@ -1045,7 +1094,7 @@ server <- function(input, output, session) {
             lat_bin = floor(lat * 2) / 2 + 0.25   # Center of 0.5-degree cell
           )
       } else {
-        # For industrial data, use 1 degree resolution
+        # For industrial and combined data, use 1 degree resolution
         raster_data <- valid_data %>%
           mutate(
             lon_bin = floor(lon) + 0.5,  # Center of 1-degree cell
@@ -1150,12 +1199,12 @@ server <- function(input, output, session) {
           # For artisanal data, use 0.5 degree resolution
           w = 0.5
           h = 0.5
- 
+          
         } else {
-          # For industrial data, use 1 degree resolution
+          # For industrial and combined data, use 1 degree resolution
           w = 1
           h = 1
-  
+          
         }
         
         p <- p +
@@ -1201,7 +1250,7 @@ server <- function(input, output, session) {
           h = 0.5
           
         } else {
-          # For industrial data, use 1 degree resolution
+          # For industrial and combined data, use 1 degree resolution
           w = 1
           h = 1
           
@@ -1307,18 +1356,48 @@ server <- function(input, output, session) {
     country_choices <- setNames(available_countries, country_names[available_countries])
     country_choices <- country_choices[order(names(country_choices))]
     
+    # Add "All" option at the beginning
+    country_choices <- c("All" = "All", country_choices)
+    
     updateSelectInput(session, "rousseau_flag_country", 
                       choices = country_choices, 
-                      selected = if(length(country_choices) > 0) country_choices[1] else NULL)
+                      selected = "All")
   })
   
   # Reactive function to get Rousseau data for selected country
   rousseau_data <- reactive({
-    req(input$rousseau_flag_country)
+    req(input$rousseau_flag_country, input$rousseau_group_var, input$rousseau_sector)
     
-    # Read data for specific country
-    data <- read_rousseau_data(input$rousseau_flag_country)
-    if (is.null(data)) {
+    # Check if "All" is selected
+    if (input$rousseau_flag_country == "All") {
+      # Read aggregated data based on group variable
+      data <- read_rousseau_all_data(input$rousseau_group_var)
+      if (is.null(data)) {
+        return(NULL)
+      }
+    } else {
+      # Read data for specific country
+      data <- read_rousseau_data(input$rousseau_flag_country)
+      if (is.null(data)) {
+        return(NULL)
+      }
+    }
+    
+    # Check if sector column exists and filter by sector
+    if ("sector" %in% names(data)) {
+      # Map radio button values to data values
+      # industrial -> "Industrial"
+      # artisanal -> "Artisanal Powered" or "Artisanal Unpowered"
+      if (input$rousseau_sector == "industrial") {
+        data <- data %>%
+          filter(sector == "Industrial")
+      } else if (input$rousseau_sector == "artisanal") {
+        data <- data %>%
+          filter(sector %in% c("Artisanal Powered", "Artisanal Unpowered"))
+      }
+    } else {
+      # If sector column doesn't exist, return NULL with a warning
+      warning("Rousseau data does not contain a 'sector' column")
       return(NULL)
     }
     
@@ -1409,11 +1488,23 @@ server <- function(input, output, session) {
   
   # Rousseau time series plot
   output$rousseauTimeSeries <- renderPlotly({
-    req(aggregated_rousseau_data(), input$rousseau_effort_type, input$rousseau_group_var)
+    # Check if we have required inputs
+    req(input$rousseau_effort_type, input$rousseau_group_var)
     
+    # Get aggregated data
     data_complete <- aggregated_rousseau_data()
+    
+    # Handle NULL or empty data
     if (is.null(data_complete) || nrow(data_complete) == 0) {
-      return(plotly_empty())
+      # Return an empty plotly with a message
+      return(
+        plot_ly() %>%
+          layout(
+            title = list(text = "No data available for the selected filters", x = 0.5, xanchor = "center"),
+            xaxis = list(visible = FALSE),
+            yaxis = list(visible = FALSE)
+          )
+      )
     }
     
     # Ensure all year x group combinations are present

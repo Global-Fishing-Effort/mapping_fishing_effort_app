@@ -1,4 +1,4 @@
-# Here we need to prep the data from Rousseau et al. and Watson I think we can split it into 
+# Here we need to prep the data from Rousseau et al. I think we can split it into 
 # multiple files (industrial and artisanal), and save as parquets? Then when reading
 # into the app, we can read in as parquet and filter that way, which should speed things up.
 
@@ -112,42 +112,6 @@ eff_df_clean_fin <- eff_df_clean %>%
                             sector == "UP" ~ "Artisanal Unpowered",
                             TRUE ~ sector))
 
-# test <- eff_df_clean_fin %>%
-#   distinct(eez_sovereign_iso3c, eez_sovereign_name) %>%
-#   collect()
-
-
-# eff_df_ind <- eff_df_clean %>%
-#   filter(sector == "I") %>%
-#    mutate(sector = "Industrial") 
-# %>%
-#   collect()
-
-# qs::qsave(eff_df_ind, here("rousseau_data/rousseau_effort_ind.qs")) # both too big for github. Need to figure this out... Or talk to Julia about what to do...
-# write_parquet(eff_df_ind, here("rousseau_data/rousseau_effort_ind.parquet"))
-
-
-# test <- eff_df_clean %>%
-#   distinct(sector)
-# collect(test)
-
-# eff_df_art <- eff_df_clean %>%
-#   filter(sector == "APW") %>%
-#   mutate(sector = "Artisanal Powered")
-# %>%
- # collect()
-
-# qs::qsave(eff_df_ind, here("rousseau_data/rousseau_effort_artp.qs")) # also too big...
-# write_parquet(eff_df_ind, here("rousseau_data/rousseau_effort_artp.parquet"))
-
-
-# eff_df_art <- eff_df_clean %>%
-#   filter(sector == "UP") %>%
-#   mutate(sector = "Artisanal Unpowered") %>%
-#   collect()
-
-# qs::qsave(eff_df_ind, here("rousseau_data/rousseau_effort_artup.qs")) # too big
-# write_parquet(eff_df_ind, here("rousseau_data/rousseau_effort_artup.parquet"))
 
 ## maybe save by flag country? Then we can figure out how to put it in the plot in the app...
 
@@ -173,17 +137,75 @@ for(flag in flags){
 }
 
 
-# maybe save an "All" category? I am worried about how long it will take to run in the app if we try to aggregate them all there
+# maybe save an "All" category? All category is just far too big to work in the Shiny...
 
 # all_eff <- eff_df_clean_fin %>%
-#   group_by(year, eez_sovereign_iso3c, eez_sovereign_name, fao_fishing_id, 
+#   group_by(year, eez_sovereign_iso3c, eez_sovereign_name, fao_fishing_id,
 #            fao_major_fishing_area, gear, length_category, f_group, sector) %>%
 #   summarise(nom_active = sum(nom_active, na.rm = TRUE),
 #             eff_active = sum(eff_active, na.rm = TRUE)) %>%
 #   ungroup() %>%
 #   mutate(flag_country_iso3c = "All",
 #          flag_country_name = "All")
+
+
+# qsave(all_eff, here("rousseau_data/All_effort.qs"))
 # 
 # write_parquet(all_eff, here("rousseau_data/All_effort.parquet")) # ok how do i
 # # make this smaller... Ideally we would have EEZ included in this... It is just too big for shiny. 
+
+## ok lets try to save an "All" flag category separately for each group by. So we'll
+## save a file for just gear type, and one for just vessel length, etc. 
+
+# gear df first 
+gear_df <-  eff_df_clean_fin %>%
+  group_by(year, eez_sovereign_iso3c, eez_sovereign_name, fao_fishing_id,
+           fao_major_fishing_area, gear, sector) %>%
+  summarise(nom_active = sum(nom_active, na.rm = TRUE),
+            eff_active = sum(eff_active, na.rm = TRUE)) %>%
+  ungroup() %>%
+  mutate(flag_country_iso3c = "All",
+         flag_country_name = "All")
+
+qs::qsave(gear_df, here("rousseau_data/all_dfs/All_gear_effort.qs"))
+
+# now length
+length_df <-  eff_df_clean_fin %>%
+  group_by(year, eez_sovereign_iso3c, eez_sovereign_name, fao_fishing_id,
+           fao_major_fishing_area, length_category, sector) %>%
+  summarise(nom_active = sum(nom_active, na.rm = TRUE),
+            eff_active = sum(eff_active, na.rm = TRUE)) %>%
+  ungroup() %>%
+  mutate(flag_country_iso3c = "All",
+         flag_country_name = "All")
+
+qs::qsave(length_df, here("rousseau_data/all_dfs/All_length_effort.qs"))
+
+
+
+# now fgroup
+f_df <-  eff_df_clean_fin %>%
+  group_by(year, eez_sovereign_iso3c, eez_sovereign_name, fao_fishing_id,
+           fao_major_fishing_area, f_group, sector) %>%
+  summarise(nom_active = sum(nom_active, na.rm = TRUE),
+            eff_active = sum(eff_active, na.rm = TRUE)) %>%
+  ungroup() %>%
+  mutate(flag_country_iso3c = "All",
+         flag_country_name = "All")
+
+qs::qsave(f_df, here("rousseau_data/all_dfs/All_fgroup_effort.qs"))
+
+# now sector
+sector_df <-  eff_df_clean_fin %>%
+  group_by(year, eez_sovereign_iso3c, eez_sovereign_name, fao_fishing_id,
+           fao_major_fishing_area, sector, sector) %>%
+  summarise(nom_active = sum(nom_active, na.rm = TRUE),
+            eff_active = sum(eff_active, na.rm = TRUE)) %>%
+  ungroup() %>%
+  mutate(flag_country_iso3c = "All",
+         flag_country_name = "All")
+
+qs::qsave(sector_df, here("rousseau_data/all_dfs/All_sector_effort.qs"))
+
+
 
