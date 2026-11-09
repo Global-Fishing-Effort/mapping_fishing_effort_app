@@ -11,8 +11,6 @@ data_dir <- file.path("/homevol/fishingeffort/data_storage")
 
 all_files <- list.files(file.path(data_dir, "prep/random_forest/zenodo_data/mapped_by_flag_country_industrial/"), full.names = TRUE)
 
-# all_files <- list.files(file.path(data_dir, "prep/random_forest/predictions_flag_no_access/"), full.names = TRUE)[-148]
-
 for(file in all_files){
   
   #  file <- all_files[4]

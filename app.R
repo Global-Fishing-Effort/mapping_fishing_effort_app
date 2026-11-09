@@ -32,6 +32,18 @@ ROUSSEAU_BOX_STYLE <- paste(
   "border-radius: 5px; padding: 15px; margin-bottom: 20px;"
 )
 
+REVIEW_BANNER_STYLE <- paste(
+  "background-color: #f8d7da; border: 1px solid #f5c2c7; color: #842029;",
+  "border-radius: 5px; padding: 12px 15px; margin: 10px 0 20px 0;"
+)
+
+REVIEW_DISCLAIMER_TEXT <- paste(
+  "The manuscript describing these modelled fishing effort data is currently",
+  "undergoing scientific peer review. The data, methods and results shown in",
+  "this app are provisional and may change before publication. Please interpret",
+  "and use them with caution."
+)
+
 # Expanded palette for stacked area plots with many categories.
 mypal <- c(
   "#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd",
@@ -78,6 +90,68 @@ get_effort_columns <- function(effort_type) {
 # Rousseau data use slightly different column names.
 get_rousseau_effort_column <- function(effort_type) {
   switch(effort_type, nominal = "nom_active", effective = "eff_active")
+}
+
+# Column name and dropdown label for the chosen location type (EEZ or FAO area).
+location_column <- function(location_type) {
+  if (location_type == "eez") "eez_sovereign_name" else "fao_major_fishing_area"
+}
+
+location_label <- function(location_type) {
+  if (location_type == "eez") "Select EEZ (Fishing Location):" else "Select FAO Area (Fishing Location):"
+}
+
+# Keep rows matching the selected flag countries and locations. "All" means no filter.
+filter_selection <- function(df, flags = "All", locations = "All", location_type = "eez") {
+  if (!"All" %in% flags) {
+    df <- df %>% filter(flag_country_name %in% flags)
+  }
+  if (!"All" %in% locations) {
+    df <- df %>% filter(.data[[location_column(location_type)]] %in% locations)
+  }
+  df
+}
+
+# "Group by" options for each sector. Gear data only exist for the industrial sector.
+group_choices_for <- function(sector) {
+  if (sector == "industrial") {
+    c("Gear Type" = "gear", "Vessel Length Category" = "length_category")
+  } else {
+    c("Vessel Length Category" = "length_category")
+  }
+}
+
+# Location dropdown, limited to locations fished by the selected flag countries.
+# Keeps the user's previous selection where it is still available.
+location_ui <- function(input_id, df, selected_flags, location_type, previous_value = "All") {
+  df <- filter_selection(df, flags = selected_flags)
+  choices <- make_choices(df[[location_column(location_type)]])
+  selected <- intersect(previous_value, names(choices))
+  if (length(selected) == 0) selected <- "All"
+  
+  selectInput(input_id, location_label(location_type), choices = choices,
+              selected = selected, multiple = TRUE)
+}
+
+# Short, file-system-safe piece of a download filename built from user selections.
+filename_part <- function(x, max_items = 3) {
+  if (length(x) > max_items) return("multiple")
+  paste(gsub("[^A-Za-z0-9]+", "-", x), collapse = "_")
+}
+
+# All downloads of the new model data carry a source and peer-review status column.
+PROVISIONAL_STATUS <- "Provisional - manuscript under peer review"
+
+write_model_csv <- function(df, file) {
+  df %>%
+    mutate(data_source = "Clawson et al. in prep", data_status = PROVISIONAL_STATUS) %>%
+    write.csv(file, row.names = FALSE)
+}
+
+# Convert a time-series ggplot to an interactive plot with the legend below.
+interactive_plot <- function(p) {
+  ggplotly(p, tooltip = c("x", "y", "fill")) %>%
+    layout(legend = list(orientation = "h", y = -0.2))
 }
 
 # Text labels used in legends.
@@ -178,16 +252,8 @@ read_model_dataset <- function(data_dir) {
     bind_rows()
 }
 
-# Spatial model outputs used by the map tab.
-data_industrial <- read_model_dataset(MODEL_DATA_DIRS[["industrial"]])
-data_artisanal  <- read_model_dataset(MODEL_DATA_DIRS[["artisanal"]])
-data_combined   <- read_model_dataset(MODEL_DATA_DIRS[["combined"]])
-
-spatial_data <- list(
-  industrial = data_industrial,
-  artisanal  = data_artisanal,
-  combined   = data_combined
-)
+# Spatial model outputs used by the map tab (a named list: industrial, artisanal, combined).
+spatial_data <- lapply(MODEL_DATA_DIRS, read_model_dataset)
 
 # Pre-aggregated time-series model outputs.
 time_series_data <- list(
@@ -228,6 +294,8 @@ sector_choices <- c("Industrial" = "industrial", "Artisanal" = "artisanal")
 map_sector_choices <- c(sector_choices, "Combined (Industrial + Artisanal)" = "combined")
 effort_choices <- c("Nominal" = "nominal", "Effective" = "effective")
 location_choices <- c("EEZ" = "eez", "FAO Fishing Area" = "fao")
+flag_country_choices <- make_choices(spatial_data$industrial$flag_country_name)
+multi_select_help <- helpText("Choose 'All', or one or more specific options.")
 
 ui <- fluidPage(
   titlePanel(
@@ -237,6 +305,13 @@ ui <- fluidPage(
       img(src = "IMAS_logo.png", height = 200, width = 400)
     ),
     windowTitle = "Global Fishing Effort Mapper"
+  ),
+  
+  div(
+    style = REVIEW_BANNER_STYLE,
+    role = "alert",
+    strong("Disclaimer: under peer review. "),
+    REVIEW_DISCLAIMER_TEXT
   ),
   
   tabsetPanel(
@@ -251,24 +326,21 @@ ui <- fluidPage(
                          map_sector_choices, selected = "industrial"),
           radioButtons("map_effort_type", "Select Effort Type:",
                        choices = effort_choices, selected = "nominal"),
-          radioButtons(
-            "map_group_var", "Group by:",
-            choices = c("Gear Type" = "gear", "Vessel Length Category" = "length_category"),
-            selected = "gear"
-          ),
+          radioButtons("map_group_var", "Group by:",
+                       choices = group_choices_for("industrial"), selected = "gear"),
           uiOutput("map_gear_selector"),
           uiOutput("map_length_selector"),
           selectInput(
             "map_flag_country", "Select Flag Country (Fishing Fleet):",
-            choices = make_choices(data_industrial$flag_country_name),
-            selected = "All", multiple = TRUE
+            choices = flag_country_choices, selected = "All", multiple = TRUE
           ),
-          radioButtons("map_location_type", "Select Location Type:", 
+          radioButtons("map_location_type", "Select Location Type:",
                        choices = location_choices, selected = "eez"),
           uiOutput("map_location_selector"),
+          multi_select_help,
           sliderInput("map_year", "Select Year:", min = 1950, max = 2017,
                       value = 2017, step = 1, sep = "", animate = TRUE),
-          downloadButton("downloadMapData", "Download Data")
+          downloadButton("downloadMapData", "Download Data (selected year)")
         ),
         mainPanel(
           info_box(
@@ -293,19 +365,16 @@ ui <- fluidPage(
                        selected = "industrial"),
           radioButtons("effort_type", "Select Effort Type:", choices = effort_choices, 
                        selected = "nominal"),
-          radioButtons(
-            "group_var", "Group by:",
-            choices = c("Gear Type" = "gear", "Vessel Length Category" = "length_category"),
-            selected = "gear"
-          ),
+          radioButtons("group_var", "Group by:",
+                       choices = group_choices_for("industrial"), selected = "gear"),
           selectInput(
             "flag_country", "Select Flag Country (Fishing Fleet):",
-            choices = make_choices(data_industrial$flag_country_name),
-            selected = "All", multiple = TRUE
+            choices = flag_country_choices, selected = "All", multiple = TRUE
           ),
-          radioButtons("location_type", "Select Location Type:", 
+          radioButtons("location_type", "Select Location Type:",
                        choices = location_choices, selected = "eez"),
           uiOutput("location_selector"),
+          multi_select_help,
           downloadButton("downloadData", "Download Data")
         ),
         mainPanel(
@@ -314,7 +383,7 @@ ui <- fluidPage(
             "This tab displays ", strong("new modeled fishing effort time series"),
             " created using our latest random forest spatial allocation methodology. 
             This represents our most current approach to mapping temporal trends 
-            in global fishing effort using combined industrial and artisanal data. 
+            in global fishing effort for the industrial or artisanal sector.
             See the About tab for more information."
           ),
           withSpinner(plotlyOutput("timeSeries", height = "500px"), 
@@ -421,8 +490,8 @@ ui <- fluidPage(
         p("Mapped effort estimates are provided as nominal fishing effort 
           (kilowatt days) or effective fishing effort (kilowatt days), 
           with a spatial resolution of 1° cell (industrial) and 0.5° cell 
-          (artisanal), spanning the years 1950-2017. To estimate effective effort, 
-          Rousseau et al. 2019 assumed a year-on-year increase in technical efficiency of 3.5%, 
+          (artisanal), spanning the years 1950-2017. To estimate effective effort,
+          we assumed a year-on-year increase in technical efficiency of 3.5%,
           as in Rousseau et al. 2019."),
         p("This app and the underlying data was created, and is under continuous 
           development by Gage Clawson, Camilla Novaglio & Julia Blanchard from the 
@@ -433,6 +502,29 @@ ui <- fluidPage(
           only. For example, estimates in Southeast Asia, aside from China, are 
           likely too concentrated for some years (e.g., Indonesia). This is an 
           artifact of insufficient AIS data in this region."),
+        p(strong("Trawling is shown as a single combined category. "),
+          "Global Fishing Watch AIS data do not distinguish bottom trawling from
+          midwater trawling. In the source data from Rousseau et al. (2024), midwater and
+          unspecified trawling are reported together as a single 'midwater or
+          unspecified' category. For many nations, all trawling falls in that
+          category, so splitting trawling with national gear proportions mostly
+          reflects how the source data were reported, not the true gear mix,
+          and cannot capture spatial differences between the two gears within
+          a fleet. For this reason, the new modelled data in this app and in
+          the manuscript present all trawling as one 'Trawlers' category."),
+        p("For transparency, the ",
+          tags$a(href = "https://doi.org/10.5281/zenodo.19600603", "Zenodo repository"),
+          " also provides layers that split trawling into 'bottom trawl' and
+          'midwater or unspecified trawl', following Rousseau et al. Use these
+          with caution: the 'midwater or unspecified' layer may include substantial
+          bottom trawling, so treat the bottom-trawl layer as a lower bound. We
+          recommend the combined trawling data for most applications. The
+          'Rousseau et al. 2024 data' tab shows that dataset's original gear
+          categories, which keep this split."),
+        
+        h3("Peer review status", style = "margin-top: 30px"),
+        p(REVIEW_DISCLAIMER_TEXT, " The Rousseau et al. 2024 data shown in this
+          app are already published and are not part of this review."),
         
         h3("Rousseau et al. 2024 Data Tab", style = "margin-top: 30px;"),
         p("The ", strong("'Rousseau et al. 2024 data' tab"), " provides access 
@@ -456,13 +548,14 @@ ui <- fluidPage(
         p("This app has three tabs that allow you to visualise and download fishing effort data:"),
         tags$ul(
           tags$li(strong("The 'Map' tab"), 
-                  " allows you to explore spatially explicit industrial effort 
-                  data globally and for a selected region (EEZ or FAO statistical area). 
-                  You can also specify the year (between 1950 and 2017), flag country, 
-                  sector, gear type, and vessel length category."),
-          tags$li(strong("The 'Time series' tab"), " gives you the same options 
-                  but allows you to explore trends in fishing effort across both 
-                  industrial and artisanal sectors combined."),
+                  " allows you to explore spatially explicit industrial, artisanal,
+                  or combined effort data globally and for a selected region (EEZ or
+                  FAO statistical area). You can also specify the year (between 1950
+                  and 2017), flag country, sector, gear type (industrial only), and
+                  vessel length category."),
+          tags$li(strong("The 'Time series' tab"), " gives you similar options
+                  but allows you to explore trends in fishing effort over time
+                  for the industrial or artisanal sector."),
           tags$li(strong("The 'Rousseau et al. 2024 data' tab"), " provides 
                   access to an independent dataset with additional grouping 
                   options including functional groups and sectors, allowing for 
@@ -471,12 +564,12 @@ ui <- fluidPage(
         
         h3("How should I cite data from this site?", style = "margin-top: 30px;"),
         p("You can download the data used to create the plots shown in this interactive 
-          tool using the 'Download' button included under each tab. Additionally, ]
+          tool using the 'Download' button included under each tab. Additionally,
           all model data is available via Zenodo and our GitHub repository. As a 
           condition of this tool to access data, you must cite its use: Clawson, 
           S.G., Novaglio, C., & Blanchard J.L. (2025). Global Fishing Effort Model
-          Data and Shiny App: ", tags$a(href = "https://zenodo.org/records/19600603", 
-                                        "10.5281/zenodo.15110744.")),
+          Data and Shiny App: ", tags$a(href = "https://doi.org/10.5281/zenodo.19600603",
+                                        "10.5281/zenodo.19600603"), "."),
         
         h3("How can I contact you?", style = "margin-top: 30px;"),
         p("If you have any ideas on how to improve this app or if you found any 
@@ -538,62 +631,21 @@ server <- function(input, output, session) {
   current_time_series_data <- reactive(time_series_data[[input$sector]])
   current_map_data <- reactive(spatial_data[[input$map_sector]])
   
-  # Update time-series controls when switching between industrial and artisanal data.
-  observeEvent(input$sector, {
-    df <- current_spatial_data()
-    updateSelectInput(session, "flag_country", choices = make_choices(df$flag_country_name), selected = "All")
-    
-    if (input$sector == "industrial") {
-      updateRadioButtons(
-        session, "group_var",
-        choices = c("Gear Type" = "gear", "Vessel Length Category" = "length_category"),
-        selected = "gear"
-      )
-    } else {
-      updateRadioButtons(
-        session, "group_var",
-        choices = c("Vessel Length Category" = "length_category"),
-        selected = "length_category"
-      )
-    }
-  }, ignoreInit = TRUE)
-  
-  # Update map controls when switching sector. Combined and artisanal data do not support gear panels.
-  observeEvent(input$map_sector, {
-    df <- current_map_data()
-    updateSelectInput(session, "map_flag_country", choices = make_choices(df$flag_country_name), selected = "All")
-    
-    if (input$map_sector == "industrial") {
-      updateRadioButtons(
-        session, "map_group_var",
-        choices = c("Gear Type" = "gear", "Vessel Length Category" = "length_category"),
-        selected = "gear"
-      )
-    } else {
-      updateRadioButtons(
-        session, "map_group_var",
-        choices = c("Vessel Length Category" = "length_category"),
-        selected = "length_category"
-      )
-    }
-  }, ignoreInit = TRUE)
-  
-  # Build location choices after filtering by flag country.
-  location_ui <- function(input_id, df, selected_flags, location_type, previous_value = "All") {
-    if (!"All" %in% selected_flags) {
-      df <- df %>% filter(flag_country_name %in% selected_flags)
-    }
-    
-    location_col <- if (location_type == "eez") "eez_sovereign_name" else 
-      "fao_major_fishing_area"
-    location_label <- if (location_type == "eez") "Select EEZ (Fishing Location):" 
-    else "Select FAO Area (Fishing Location):"
-    choices <- make_choices(df[[location_col]])
-    selected <- intersect(previous_value, names(choices))
-    if (length(selected) == 0) selected <- "All"
-    
-    selectInput(input_id, location_label, choices = choices, selected = selected, multiple = TRUE)
+  # When the sector changes, reset the flag countries and offer only the
+  # "Group by" options that sector supports (gear is industrial only).
+  reset_sector_controls <- function(sector, df, flag_id, group_id) {
+    updateSelectInput(session, flag_id, choices = make_choices(df$flag_country_name), selected = "All")
+    group_choices <- group_choices_for(sector)
+    updateRadioButtons(session, group_id, choices = group_choices, selected = group_choices[[1]])
   }
+  
+  observeEvent(input$sector, {
+    reset_sector_controls(input$sector, current_spatial_data(), "flag_country", "group_var")
+  }, ignoreInit = TRUE)
+  
+  observeEvent(input$map_sector, {
+    reset_sector_controls(input$map_sector, current_map_data(), "map_flag_country", "map_group_var")
+  }, ignoreInit = TRUE)
   
   output$location_selector <- renderUI({
     req(input$flag_country, input$location_type)
@@ -621,9 +673,11 @@ server <- function(input, output, session) {
     req(input$map_sector, input$map_group_var)
     if (input$map_sector != "industrial" || input$map_group_var != "gear") return(NULL)
     
+    # "All_aggregated" draws one map of all gears; "All" draws one panel per gear.
     selectInput(
       "map_gear", "Select Gear Type:",
-      choices = c("All aggregated" = "All_aggregated", make_choices(current_map_data()$gear, include_all = TRUE)),
+      choices = c("All gears combined (one map)" = "All_aggregated",
+                  make_choices(current_map_data()$gear, all_label = "All gears (one map per gear)")),
       selected = "All_aggregated"
     )
   })
@@ -632,9 +686,11 @@ server <- function(input, output, session) {
     req(input$map_group_var)
     if (input$map_group_var != "length_category") return(NULL)
     
+    # "All_aggregated" draws one map of all lengths; "All" draws one panel per length class.
     selectInput(
       "map_length", "Select Vessel Length Category:",
-      choices = c("All aggregated" = "All_aggregated", make_choices(current_map_data()$length_category, include_all = TRUE)),
+      choices = c("All lengths combined (one map)" = "All_aggregated",
+                  make_choices(current_map_data()$length_category, all_label = "All lengths (one map per length class)")),
       selected = "All_aggregated"
     )
   })
@@ -642,19 +698,8 @@ server <- function(input, output, session) {
   # ---- Modelled time-series data ----
   filtered_time_series_data <- reactive({
     req(input$flag_country, input$location_selection, input$location_type)
-    
-    df <- current_time_series_data()
-    
-    if (!"All" %in% input$flag_country) {
-      df <- df %>% filter(flag_country_name %in% input$flag_country)
-    }
-    
-    if (!"All" %in% input$location_selection) {
-      location_col <- if (input$location_type == "eez") "eez_sovereign_name" else "fao_major_fishing_area"
-      df <- df %>% filter(.data[[location_col]] %in% input$location_selection)
-    }
-    
-    df
+    filter_selection(current_time_series_data(), input$flag_country,
+                     input$location_selection, input$location_type)
   })
   
   aggregated_time_series_data <- reactive({
@@ -676,24 +721,15 @@ server <- function(input, output, session) {
       title_suffix = "Modeled"
     )
     
-    ggplotly(p, tooltip = c("x", "y", "fill")) %>%
-      layout(legend = list(orientation = "h", y = -0.2))
+    interactive_plot(p)
   })
   
   # ---- Modelled map data ----
   filtered_map_data <- reactive({
     req(input$map_flag_country, input$map_location_selection, input$map_location_type, input$map_year, input$map_group_var)
     
-    df <- current_map_data()
-    
-    if (!"All" %in% input$map_flag_country) {
-      df <- df %>% filter(flag_country_name %in% input$map_flag_country)
-    }
-    
-    if (!"All" %in% input$map_location_selection) {
-      location_col <- if (input$map_location_type == "eez") "eez_sovereign_name" else "fao_major_fishing_area"
-      df <- df %>% filter(.data[[location_col]] %in% input$map_location_selection)
-    }
+    df <- filter_selection(current_map_data(), input$map_flag_country,
+                           input$map_location_selection, input$map_location_type)
     
     # Apply the selected category only when the user chooses one specific category.
     if (input$map_sector == "industrial" && input$map_group_var == "gear" && !is.null(input$map_gear) 
@@ -802,28 +838,18 @@ server <- function(input, output, session) {
   
   output$downloadData <- downloadHandler(
     filename = function() {
-      flag_countries <- paste(input$flag_country, collapse = "_")
-      location_type <- ifelse(input$location_type == "eez", "EEZ", "FAO")
-      paste0("fishing_effort_data_", flag_countries, "_", location_type, "_", Sys.Date(), ".csv")
+      paste0("fishing_effort_timeseries_", input$sector, "_", filename_part(input$flag_country), "_",
+             toupper(input$location_type), "_", Sys.Date(), ".csv")
     },
-    content = function(file) {
-      filtered_time_series_data() %>%
-        mutate(data_source = "Clawson et al. in prep") %>%
-        write.csv(file, row.names = FALSE)
-    }
+    content = function(file) write_model_csv(filtered_time_series_data(), file)
   )
   
   output$downloadMapData <- downloadHandler(
     filename = function() {
-      flag_countries <- paste(input$map_flag_country, collapse = "_")
-      location_type <- ifelse(input$map_location_type == "eez", "EEZ", "FAO")
-      paste0("fishing_effort_data_", flag_countries, "_", location_type, "_", input$map_year, "_", Sys.Date(), ".csv")
+      paste0("fishing_effort_map_", input$map_sector, "_", filename_part(input$map_flag_country), "_",
+             toupper(input$map_location_type), "_", input$map_year, "_", Sys.Date(), ".csv")
     },
-    content = function(file) {
-      filtered_map_data() %>%
-        mutate(data_source = "Clawson et al. in prep") %>%
-        write.csv(file, row.names = FALSE)
-    }
+    content = function(file) write_model_csv(filtered_map_data(), file)
   )
   
   # ---- Rousseau tab ----
@@ -862,31 +888,22 @@ server <- function(input, output, session) {
   
   output$rousseau_location_selector <- renderUI({
     req(input$rousseau_location_type, rousseau_data())
-    df <- rousseau_data()
-    if (is.null(df)) return(NULL)
-    
-    location_col <- if (input$rousseau_location_type == "eez") "eez_sovereign_name" 
-    else "fao_major_fishing_area"
-    location_label <- if (input$rousseau_location_type == "eez") "Select EEZ (Fishing Location):" 
-    else "Select FAO Area (Fishing Location):"
-    choices <- make_choices(df[[location_col]])
-    selected <- intersect(previous_rousseau_location(), names(choices))
-    if (length(selected) == 0) selected <- "All"
-    
-    selectInput("rousseau_location_selection", location_label, choices = choices, selected = selected, multiple = TRUE)
+    # Rousseau data are already limited to one country (or all), so no flag filter here.
+    location_ui(
+      input_id = "rousseau_location_selection",
+      df = rousseau_data(),
+      selected_flags = "All",
+      location_type = input$rousseau_location_type,
+      previous_value = previous_rousseau_location()
+    )
   })
   
   filtered_rousseau_data <- reactive({
     req(input$rousseau_location_selection, input$rousseau_location_type)
     df <- rousseau_data()
     if (is.null(df)) return(NULL)
-    
-    if (!"All" %in% input$rousseau_location_selection) {
-      location_col <- if (input$rousseau_location_type == "eez") "eez_sovereign_name" else "fao_major_fishing_area"
-      df <- df %>% filter(.data[[location_col]] %in% input$rousseau_location_selection)
-    }
-    
-    df
+    filter_selection(df, locations = input$rousseau_location_selection,
+                     location_type = input$rousseau_location_type)
   })
   
   aggregated_rousseau_data <- reactive({
@@ -923,22 +940,23 @@ server <- function(input, output, session) {
       title_suffix = "Rousseau et al. 2024"
     )
     
-    ggplotly(p, tooltip = c("x", "y", "fill")) %>%
-      layout(legend = list(orientation = "h", y = -0.2))
+    interactive_plot(p)
   })
   
   output$downloadRousseauData <- downloadHandler(
     filename = function() {
-      location_type <- ifelse(input$rousseau_location_type == "eez", "EEZ", "FAO")
-      paste0("rousseau_fishing_effort_data_", input$rousseau_flag_country, "_", location_type, "_", Sys.Date(), ".csv")
+      paste0("rousseau_fishing_effort_", input$rousseau_sector, "_", filename_part(input$rousseau_flag_country),
+             "_", toupper(input$rousseau_location_type), "_", Sys.Date(), ".csv")
     },
     content = function(file) {
+      # Write an empty file rather than a broken download when no data match.
       df <- filtered_rousseau_data()
-      if (!is.null(df)) {
-        df %>%
-          mutate(data_source = "Rousseau et al. 2024") %>%
-          write.csv(file, row.names = FALSE)
+      df <- if (is.null(df) || nrow(df) == 0) {
+        data.frame()
+      } else {
+        df %>% mutate(data_source = "Rousseau et al. 2024")
       }
+      write.csv(df, file, row.names = FALSE)
     }
   )
 }
